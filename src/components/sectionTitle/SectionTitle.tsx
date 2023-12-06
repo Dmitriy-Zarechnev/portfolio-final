@@ -1,16 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const SectionTitle = () => {
+type SectionTitlePropsType = {
+    mainTitle: string
+    subTitle?: string
+}
+export const SectionTitle = (props: SectionTitlePropsType) => {
     return (
         <StyledSectionTitle>
-            <SectionMainTitle>My Tech Stack</SectionMainTitle>
-            <SectionSubTitle> Technologies I’ve been working with recently</SectionSubTitle>
+            <SectionMainTitle>{props.mainTitle}</SectionMainTitle>
+            <SectionSubTitle> {props.subTitle}</SectionSubTitle>
         </StyledSectionTitle>
     )
 }
 
 const StyledSectionTitle = styled.div`
+  text-align: center;
 `
 
 const SectionMainTitle = styled.h2`
