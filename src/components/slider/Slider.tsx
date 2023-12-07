@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import hobbyFirst from '..//../assets/images/Hobby_1.webp'
 import {FlexWrapper} from '../FlexWrapper'
 
-
 export const Slider = () => {
     return (
         <StyledSlider>
