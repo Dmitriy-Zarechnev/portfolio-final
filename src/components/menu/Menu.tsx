@@ -19,5 +19,7 @@ const StyledMenu = styled.nav`
     gap: 30px;
     justify-content: center;
   }
+
+  align-self: center;
 `
 
