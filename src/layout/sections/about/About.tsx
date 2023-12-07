@@ -26,14 +26,15 @@ const StyledAbout = styled.section`
 `
 
 const AboutTextArea = styled.div`
-`
-
-const AboutText = styled.p`
   width: 50%;
 `
 
+const AboutText = styled.p`
+
+`
+
 const AboutPhoto = styled.img`
-  width: 500px;
-  height: 800px;
-  object-fit: cover;
+  width: 400px;
+  height: 700px;
+  object-fit: contain;
 `
