@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import {TechStack} from '../../../../components/techStack/TechStack'
+import {Icon} from '../../../../components/icon/Icon'
+import {FlexWrapper} from '../../../../components/FlexWrapper'
 
 type WorkPropsType = {
     title: string
@@ -16,8 +18,16 @@ export const Work = (props: WorkPropsType) => {
             <Title>{props.title}</Title>
             <Text>{props.text}</Text>
             <TechStack techText={props.techText}/>
-            <Link href={'#'}>Demo</Link>
-            <Link href={'#'}>Code</Link>
+            <FlexWrapper justify={'space-between'}>
+                <FlexWrapper align={'center'} gap={'5px'}>
+                    <Icon iconId={'link'} width={'40'} height={'40'} viewBox={'-3 -3 25 25'}/>
+                    <Link href={'#'}>Demo</Link>
+                </FlexWrapper>
+                <FlexWrapper align={'center'} gap={'5px'}>
+                    <Icon iconId={'gitHub'} width={'40'} height={'40'} viewBox={'-8 -8 100 100'}/>
+                    <Link href={'#'}>Code</Link>
+                </FlexWrapper>
+            </FlexWrapper>
         </StyledWork>
     )
 }
