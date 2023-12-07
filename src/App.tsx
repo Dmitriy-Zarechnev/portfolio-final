@@ -4,6 +4,7 @@ import {Main} from './layout/sections/main/Main'
 import {Skills} from './layout/sections/skills/Skills'
 import {Works} from './layout/sections/works/Works'
 import {Hobbies} from './layout/sections/slider/Hobbies'
+import {Contact} from './layout/sections/contacts/Contact'
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <Skills/>
             <Works/>
             <Hobbies/>
+            <Contact/>
         </div>
     )
 }
