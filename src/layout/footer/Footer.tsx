@@ -6,8 +6,8 @@ import {Menu} from '../../components/menu/Menu'
 import {SocialList} from '../../components/socialList/SocialList'
 
 const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact']
-const itemsIcons: Array<string> = ['gitHubHead', 'twitterHead', 'linkedHead']
-const iconsViewBox: Array<string> = ['0 0 30 30', '0 0 32 32', '0 0 30 30']
+const itemsIcons: Array<string> = ['gitHubFoot', 'twitterFoot', 'linkedFoot', 'telegramm']
+const iconsViewBox: Array<string> = ['0 0 30 30', '0 0 32 32', '0 0 30 30', '0 0 455 455']
 
 export const Footer = () => {
     return (
@@ -21,6 +21,7 @@ export const Footer = () => {
                 </FlexWrapper>
             </FlexWrapper>
             <Menu menuItems={items}/>
+            <Copyright>Designed and built by Zarechnev Dmitriy with Love & Tea</Copyright>
         </StyledFooter>
     )
 }
@@ -40,3 +41,4 @@ const Email = styled.span`
 
 `
 
+const Copyright = styled.small``
