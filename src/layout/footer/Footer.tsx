@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Icon} from '../../components/icon/Icon'
 import {Logo} from '../../components/logo/Logo'
 import {FlexWrapper} from '../../components/FlexWrapper'
 import {Menu} from '../../components/menu/Menu'
+import {SocialList} from '../../components/socialList/SocialList'
 
 const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact']
+const itemsIcons: Array<string> = ['gitHubFoot', 'twitterFoot', 'linkedFoot']
+const iconsViewBox: Array<string> = ['0 0 30 30', '0 0 32 32', '0 0 30 30']
 
 export const Footer = () => {
     return (
@@ -15,28 +17,11 @@ export const Footer = () => {
                 <FlexWrapper gap={'20px'} align={'center'}>
                     <Phone>+91 12345 09876</Phone>
                     <Email>info@example.com</Email>
-                    <SocialList>
-                        <SocialItem>
-                            <SocialLink href={'#'}>
-                                <Icon width={'30'} height={'30'} viewBox={'0 0 30 30'} iconId={'gitHubFoot'}/>
-                            </SocialLink>
-                        </SocialItem>
-                        <SocialItem>
-                            <SocialLink href={'#'}>
-                                <Icon width={'30'} height={'30'} viewBox={'0 0 32 32'} iconId={'twitterFoot'}/>
-                            </SocialLink>
-                        </SocialItem>
-                        <SocialItem>
-                            <SocialLink href={'#'}>
-                                <Icon width={'30'} height={'30'} viewBox={'0 0 30 30'} iconId={'linkedFoot'}/>
-                            </SocialLink>
-                        </SocialItem>
-                    </SocialList>
+                    <SocialList iconsLink={itemsIcons} iconsSizesViewBox={iconsViewBox} iconsSize={'30'}/>
                 </FlexWrapper>
             </FlexWrapper>
             <Menu menuItems={items}/>
         </StyledFooter>
-
     )
 }
 
@@ -55,13 +40,3 @@ const Email = styled.span`
 
 `
 
-const SocialList = styled.ul`
-  display: flex;
-  gap: 15px;
-`
-
-const SocialItem = styled.li`
-`
-
-const SocialLink = styled.a`
-`
