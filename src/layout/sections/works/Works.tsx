@@ -11,7 +11,6 @@ import pictureForth from '..//../../assets/images/img_4.webp'
 import pictureFifth from '..//../../assets/images/img_5.webp'
 import pictureSixth from '..//../../assets/images/img_6.webp'
 
-
 const worksItems: Array<string> = ['All', 'Landing Page', 'React', 'SPA']
 
 export const Works = () => {
