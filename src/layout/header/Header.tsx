@@ -5,8 +5,8 @@ import {Menu} from '../../components/menu/Menu'
 import {SocialList} from '../../components/socialList/SocialList'
 
 const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact']
-const itemsIcons: Array<string> = ['gitHubHead', 'twitterHead', 'linkedHead']
-const iconsViewBox: Array<string> = ['0 0 30 30', '0 0 32 32', '0 0 30 30']
+const itemsIcons: Array<string> = ['gitHubHead', 'twitterHead', 'linkedHead', 'telegrammHead']
+const iconsViewBox: Array<string> = ['0 0 30 30', '0 0 32 32', '0 0 30 30', '0 0 455 455']
 
 export const Header = () => {
     return (

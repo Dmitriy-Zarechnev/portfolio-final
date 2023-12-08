@@ -20,11 +20,11 @@ export const Work = (props: WorkPropsType) => {
             <TechStack techText={props.techText}/>
             <FlexWrapper justify={'space-between'}>
                 <FlexWrapper align={'center'} gap={'5px'}>
-                    <Icon iconId={'link'} width={'40'} height={'40'} viewBox={'-3 -3 25 25'}/>
+                    <Icon iconId={'linkChain'} width={'20'} height={'20'} viewBox={'0 0 20 20'}/>
                     <Link href={'#'}>Demo</Link>
                 </FlexWrapper>
                 <FlexWrapper align={'center'} gap={'5px'}>
-                    <Icon iconId={'gitHub'} width={'40'} height={'40'} viewBox={'-8 -8 100 100'}/>
+                    <Icon iconId={'linkGitHub'} width={'20'} height={'20'} viewBox={'0 0 20 20'}/>
                     <Link href={'#'}>Code</Link>
                 </FlexWrapper>
             </FlexWrapper>
