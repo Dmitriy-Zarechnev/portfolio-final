@@ -4,6 +4,8 @@ import {Logo} from '../../components/logo/Logo'
 import {Menu} from '../../components/menu/Menu'
 import {SocialList} from '../../components/socialList/SocialList'
 import {Theme} from '../../styles/Theme'
+import {Container} from '../../components/Container'
+import {FlexWrapper} from '../../components/FlexWrapper'
 
 const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact']
 const itemsIcons: Array<string> = ['gitHubHead', 'twitterHead', 'linkedHead', 'telegrammHead']
@@ -12,15 +14,17 @@ const iconsViewBox: Array<string> = ['0 0 30 30', '0 0 32 32', '0 0 30 30', '0 0
 export const Header = () => {
     return (
         <StyledHeader>
-            <Logo/>
-            <Menu menuItems={items}/>
-            <SocialList iconsLink={itemsIcons} iconsSizesViewBox={iconsViewBox} iconsSize={'30'}/>
+            <Container>
+                <FlexWrapper justify={'space-between'} align={'center'}>
+                    <Logo/>
+                    <Menu menuItems={items}/>
+                    <SocialList iconsLink={itemsIcons} iconsSizesViewBox={iconsViewBox} iconsSize={'30'}/>
+                </FlexWrapper>
+            </Container>
         </StyledHeader>
     )
 }
 
 const StyledHeader = styled.header`
   background-color: ${Theme.colors.primaryBg};
-  display: flex;
-  justify-content: space-between;
 `

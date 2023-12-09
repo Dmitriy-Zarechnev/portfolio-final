@@ -3,6 +3,7 @@ import {Icon} from '../icon/Icon'
 import styled from 'styled-components'
 import {LogoAnimation} from '../../styles/animations/Animations'
 
+
 export const Logo = () => {
     return (
         <StyledLogoIcon href="#">
