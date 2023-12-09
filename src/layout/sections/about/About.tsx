@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import {FlexWrapper} from '../../../components/FlexWrapper'
 import {SectionTitle} from '../../../components/sectionTitle/SectionTitle'
 import aboutPhoto from '../../../assets/images/about_photo.webp'
+import {AboutExperience} from './aboutExperience/AboutExperience'
 
 export const About = () => {
     return (
@@ -10,6 +11,7 @@ export const About = () => {
             <FlexWrapper align={'center'} justify={'space-around'}>
                 <AboutPhoto src={aboutPhoto} alt={'MyPhoto'}/>
                 <FlexWrapper direction={'column'}>
+
                     <AboutTextArea>
                         <SectionTitle mainTitle={'About me'}/>
                         <AboutText>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque corporis cumque deleniti fugiat hic impedit ipsam ipsum, labore laudantium quisquam quo repellat sed tenetur veniam voluptas voluptatibus. Ad animi asperiores consequuntur cumque dignissimos
@@ -18,32 +20,16 @@ export const About = () => {
                             quibusdam, quis quos rerum vel velit vero vitae voluptas? Consectetur consequuntur perferendis sapiente.
                         </AboutText>
                     </AboutTextArea>
+
                     <FlexWrapper direction={'column'}>
                         <SectionTitle mainTitle={'Work Experience'}/>
-                        <ExperienceBlock>
-                            <FlexWrapper>
-                                <TitleName>Junior Web Developer</TitleName>
-                                <IconNotButton>Full Time</IconNotButton>
-                            </FlexWrapper>
-                            <FlexWrapper >
-                                <Place>Dr. Rajkumar’s Learning App</Place>
-                                <Country>Bengaluru</Country>
-                                <Period>Sep 2021 - Dec 2021</Period>
-                            </FlexWrapper>
-                        </ExperienceBlock>
+                        <AboutExperience titleName={'Junior Web Developer'} iconNotButtonName={'Full Time'} placeName={'Dr. Rajkumar’s Learning App'} countryName={'Bengaluru'} periodName={'Sep 2021 - Dec 2021'}/>
+                        <AboutExperience titleName={'Web Development Intern'} iconNotButtonName={'Internship'} placeName={'IonPixelz Web Solutions'} countryName={'Bengaluru'} periodName={'Sep 2021 - Dec 2021'}/>
                     </FlexWrapper>
+
                     <FlexWrapper direction={'column'}>
                         <SectionTitle mainTitle={'Education'}/>
-                        <ExperienceBlock>
-                            <FlexWrapper>
-                                <TitleName>Bachelor in Electronics & Communication</TitleName>
-                                <IconNotButton>Full Time</IconNotButton>
-                            </FlexWrapper>
-                            <FlexWrapper justify={'space-between'}>
-                                <Place>Bangalore Instutute of Technology</Place>
-                                <Period>Aug 2015 - Dec 2020</Period>
-                            </FlexWrapper>
-                        </ExperienceBlock>
+                        <AboutExperience titleName={'Bachelor in Electronics & Communication'} iconNotButtonName={'Full Time'} placeName={'Bangalore Instutute of Technology'} countryName={'Bengaluru'} periodName={'Aug 2015 - Dec 2020'}/>
                     </FlexWrapper>
                 </FlexWrapper>
             </FlexWrapper>
@@ -68,25 +54,5 @@ const AboutText = styled.p`
 
 `
 
-const ExperienceBlock=styled.section`
-    border-bottom: 2px solid #EBEAED;
-`
 
-const TitleName=styled.h3`
-    flex-grow: 1;
-`
 
-const IconNotButton=styled.span`
-`
-
-const Place=styled.span`
-`
-
-const Country=styled.span`
-  flex-grow: 1;
-`
-
-const Period=styled.span`
-      
-  
-`
