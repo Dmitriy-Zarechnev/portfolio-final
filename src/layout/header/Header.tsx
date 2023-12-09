@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import {Logo} from '../../components/logo/Logo'
 import {Menu} from '../../components/menu/Menu'
 import {SocialList} from '../../components/socialList/SocialList'
+import {Theme} from '../../styles/Theme'
 
 const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact']
 const itemsIcons: Array<string> = ['gitHubHead', 'twitterHead', 'linkedHead', 'telegrammHead']
@@ -19,7 +20,7 @@ export const Header = () => {
 }
 
 const StyledHeader = styled.header`
-  background-color: #121313;
+  background-color: ${Theme.colors.primaryBg};
   display: flex;
   justify-content: space-between;
 `
