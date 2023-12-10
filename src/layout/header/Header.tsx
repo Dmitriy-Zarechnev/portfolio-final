@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {Logo} from '../../components/logo/Logo'
 import {SocialList} from '../../components/socialList/SocialList'
-import {Theme} from '../../styles/Theme'
+import {theme} from '../../styles/theme'
 import {Container} from '../../components/Container'
 import {FlexWrapper} from '../../components/FlexWrapper'
 import {HeaderMenu} from './headerMenu/HeaderMenu'
@@ -49,7 +49,7 @@ export const Header = () => {
 }
 
 const StyledHeader = styled.header`
-  background-color: ${Theme.colors.primaryBg};
+  background-color: ${theme.colors.primaryBg};
   padding: 20px 0;
   position: fixed;
   top: 0;

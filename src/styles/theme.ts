@@ -1,4 +1,4 @@
-export const Theme = {
+export const theme = {
     colors: {
         primaryBg: '#191919',
         secondaryBg: '#363636',
@@ -6,7 +6,7 @@ export const Theme = {
         primaryFont: '#CCCCCC',
         secondaryFont: '#A7A7A7',
         linkFont: '#FFFFFF',
-        accent: 'linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%)',
+        accent: '#2157F2',
         textColor: '#D9D9D9'
     }
 }

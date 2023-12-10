@@ -1,5 +1,5 @@
 import {createGlobalStyle} from 'styled-components'
-import {Theme} from './Theme'
+import {theme} from './theme'
 
 export const GlobalStyle = createGlobalStyle`
   *,
@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: ${Theme.colors.primaryBg};
+    background-color: ${theme.colors.primaryBg};
     line-height: 1.2;
   }
 
@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: ${Theme.colors.textColor};
+    color: ${theme.colors.textColor};
   }
 
   a {
