@@ -30,7 +30,6 @@ const StyledHeaderMenu = styled.nav`
     gap: 30px;
     justify-content: center;
   }
-
 `
 
 const Link = styled.a`
@@ -40,6 +39,7 @@ const Link = styled.a`
   text-align: center;
   color: transparent;
 `
+
 const Mask = styled.span`
   position: absolute;
   top: 0;

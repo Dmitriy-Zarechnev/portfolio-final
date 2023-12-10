@@ -44,7 +44,7 @@ export const Header = () => {
         <StyledHeader>
             <Container>
                 <FlexWrapper justify={'space-between'} align={'center'}>
-                    <Logo iconId={'logo'} width={'60'} height={'60'} viewBox={'0 0 32 32'} fill={`${theme.colors.secondaryFont}`}/>
+                    <Logo iconId={'logo'} width={'60'} height={'60'} viewBox={'0 0 32 32'} fill={`${theme.colors.accent}`}/>
                     <HeaderMenu menuItems={items}/>
                     <SocialList iconsLink={itemsIcons} iconsSizesViewBox={iconsViewBox} iconsSize={iconsSize} iconsFill={iconsColor}/>
                 </FlexWrapper>

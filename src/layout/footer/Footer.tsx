@@ -2,11 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import {Logo} from '../../components/logo/Logo'
 import {FlexWrapper} from '../../components/FlexWrapper'
-import {Menu} from '../../components/menu/Menu'
 import {SocialList} from '../../components/socialList/SocialList'
 import {theme} from '../../styles/theme'
+import {FooterMenu} from './footerMenu/FooterMenu'
 
-const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact']
+const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects']
 const itemsIcons: Array<string> = ['gitHubFoot', 'gmailFoot', 'whatsappFoot', 'telegrammFoot']
 const iconsViewBox: Array<string> = ['0 0 30 30', '-0.5 0 48 48', '0 0 32 32', '2 2 20 20']
 const iconsSize: Array<string> = ['30', '30', '30', '30']
@@ -22,7 +22,7 @@ export const Footer = () => {
                     <SocialList iconsLink={itemsIcons} iconsSizesViewBox={iconsViewBox} iconsSize={iconsSize} iconsFill={iconsColor}/>
                 </FlexWrapper>
             </FlexWrapper>
-            <Menu menuItems={items}/>
+            <FooterMenu menuItems={items}/>
             <Copyright>Designed and built by Zarechnev Dmitriy with Love & Tea</Copyright>
         </StyledFooter>
     )
