@@ -7,7 +7,7 @@ import {LogoAnimation} from '../../styles/animations/Animations'
 export const Logo = () => {
     return (
         <StyledLogoIcon href="#">
-            <Icon iconId={'logo'} width={'120'} height={'120'} viewBox={'0 0 32 32'}/>
+            <Icon iconId={'logo'} width={'60'} height={'60'} viewBox={'0 0 32 32'}/>
         </StyledLogoIcon>
     )
 }

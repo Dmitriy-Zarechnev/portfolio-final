@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Logo} from '../../components/logo/Logo'
-import {Menu} from '../../components/menu/Menu'
 import {SocialList} from '../../components/socialList/SocialList'
 import {Theme} from '../../styles/Theme'
 import {Container} from '../../components/Container'
 import {FlexWrapper} from '../../components/FlexWrapper'
+import {HeaderMenu} from './headerMenu/HeaderMenu'
 
 const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact']
 // const iconsObj: Array<object> = [
@@ -40,7 +40,7 @@ export const Header = () => {
             <Container>
                 <FlexWrapper justify={'space-between'} align={'center'}>
                     <Logo/>
-                    <Menu menuItems={items}/>
+                    <HeaderMenu menuItems={items}/>
                     <SocialList iconsLink={itemsIcons} iconsSizesViewBox={iconsViewBox} iconsSize={iconsSize}/>
                 </FlexWrapper>
             </Container>
@@ -50,4 +50,10 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
   background-color: ${Theme.colors.primaryBg};
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 `

@@ -20,6 +20,5 @@ const StyledMenu = styled.nav`
     justify-content: center;
   }
 
-  align-self: center;
 `
 
