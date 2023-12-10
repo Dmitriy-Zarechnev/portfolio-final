@@ -9,7 +9,6 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     background-color: ${theme.colors.primaryBg};
-    line-height: 1.2;
   }
 
   body {
@@ -19,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: ${theme.colors.textColor};
+    line-height: 1.2;
   }
 
   a {
