@@ -73,7 +73,11 @@ const IconNotButton = styled.div`
   
 `
 
-const PlaceWrapper = styled.div``
+const PlaceWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  width: 35%;
+`
 
 const Place = styled.span`
   color: ${theme.colors.secondaryFont};
@@ -81,17 +85,25 @@ const Place = styled.span`
   font-weight: 500;
 `
 
-const LocationWrapper =styled.div``
+const LocationWrapper =styled.div`
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+`
 
 const Country = styled.span`
   color: ${theme.colors.secondaryFont};
   font-size: 12px;
   font-weight: 500;
 
-  flex-grow: 1;
+  
 `
 
-const DatesWrapper =styled.div``
+const DatesWrapper =styled.div`
+  display: flex;
+  align-items: center;
+  width: 17%;
+  `
 
 const Period = styled.span`
   color: ${theme.colors.secondaryFont};
