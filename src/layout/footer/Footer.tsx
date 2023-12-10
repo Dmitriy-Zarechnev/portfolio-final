@@ -6,8 +6,9 @@ import {Menu} from '../../components/menu/Menu'
 import {SocialList} from '../../components/socialList/SocialList'
 
 const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact']
-const itemsIcons: Array<string> = ['gitHubFoot', 'twitterFoot', 'linkedFoot', 'telegrammFoot']
-const iconsViewBox: Array<string> = ['0 0 30 30', '0 0 32 32', '0 0 30 30', '0 0 455 455']
+const itemsIcons: Array<string> = ['gitHubFoot', 'gmailFoot', 'whatsappFoot', 'telegrammFoot']
+const iconsViewBox: Array<string> = ['0 0 30 30', '-0.5 0 48 48', '0 0 32 32', '2 2 20 20']
+const iconsSize: Array<string> = ['30', '30', '30', '30']
 
 export const Footer = () => {
     return (
@@ -17,7 +18,7 @@ export const Footer = () => {
                 <FlexWrapper gap={'20px'} align={'center'}>
                     <Phone>+91 12345 09876</Phone>
                     <Email>info@example.com</Email>
-                    <SocialList iconsLink={itemsIcons} iconsSizesViewBox={iconsViewBox} iconsSize={'30'}/>
+                    <SocialList iconsLink={itemsIcons} iconsSizesViewBox={iconsViewBox} iconsSize={iconsSize}/>
                 </FlexWrapper>
             </FlexWrapper>
             <Menu menuItems={items}/>

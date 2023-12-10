@@ -8,8 +8,31 @@ import {Container} from '../../components/Container'
 import {FlexWrapper} from '../../components/FlexWrapper'
 
 const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact']
-const itemsIcons: Array<string> = ['gitHubHead', 'twitterHead', 'linkedHead', 'telegrammHead']
-const iconsViewBox: Array<string> = ['0 0 30 30', '0 0 32 32', '0 0 30 30', '0 0 455 455']
+// const iconsObj: Array<object> = [
+//     {
+//         id: 'gitHubHead',
+//         size: '40',
+//         viewBox: '0 0 30 30'
+//     },
+//     {
+//         id: 'gmailHead',
+//         size: '40',
+//         viewBox: '-0.5 0 48 48'
+//     },
+//     {
+//         id: 'whatsappHead',
+//         size: '40',
+//         viewBox: '0 0 32 32'
+//     },
+//     {
+//         id: 'telegrammHead',
+//         size: '50',
+//         viewBox: '0 0 24 24'
+//     }
+// ]
+const itemsIcons: Array<string> = ['gitHubHead', 'gmailHead', 'whatsappHead', 'telegrammHead']
+const iconsViewBox: Array<string> = ['0 0 30 30', '-0.5 0 48 48', '0 0 32 32', '2 2 20 20']
+const iconsSize: Array<string> = ['30', '30', '30', '30']
 
 export const Header = () => {
     return (
@@ -18,7 +41,7 @@ export const Header = () => {
                 <FlexWrapper justify={'space-between'} align={'center'}>
                     <Logo/>
                     <Menu menuItems={items}/>
-                    <SocialList iconsLink={itemsIcons} iconsSizesViewBox={iconsViewBox} iconsSize={'30'}/>
+                    <SocialList iconsLink={itemsIcons} iconsSizesViewBox={iconsViewBox} iconsSize={iconsSize}/>
                 </FlexWrapper>
             </Container>
         </StyledHeader>
