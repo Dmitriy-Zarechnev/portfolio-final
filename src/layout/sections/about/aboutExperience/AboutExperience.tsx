@@ -17,17 +17,23 @@ type AboutExperiencePropsType = {
 export const AboutExperience = (props: AboutExperiencePropsType) => {
     return (
         <StyledAboutExperience>
-            <FlexWrapper align={'center'}>
+            <TitleWrapper>
                 <TitleName>{props.titleName}</TitleName>
                 <IconNotButton>{props.iconNotButtonName}</IconNotButton>
-            </FlexWrapper>
+            </TitleWrapper>
             <FlexWrapper align={'center'}>
-                <Icon iconId={'place'} width={'16'} height={'12'} viewBox={'0 0 16 12'} fill={`${theme.colors.secondaryFont}`}/>
-                <Place>{props.placeName}</Place>
-                <Icon iconId={'location'} width={'16'} height={'12'} viewBox={'0 0 16 12'} fill={`${theme.colors.secondaryFont}`}/>
-                <Country>{props.countryName}</Country>
-                <Icon iconId={'dates'} width={'16'} height={'12'} viewBox={'0 0 16 12'} fill={`${theme.colors.secondaryFont}`}/>
-                <Period>{props.periodName}</Period>
+                <PlaceWrapper>
+                    <Icon iconId={'place'} width={'16'} height={'12'} viewBox={'0 0 16 12'} fill={`${theme.colors.secondaryFont}`}/>
+                    <Place>{props.placeName}</Place>
+                </PlaceWrapper>
+                <LocationWrapper>
+                    <Icon iconId={'location'} width={'16'} height={'12'} viewBox={'0 0 16 12'} fill={`${theme.colors.secondaryFont}`}/>
+                    <Country>{props.countryName}</Country>
+                </LocationWrapper>
+                <DatesWrapper>
+                    <Icon iconId={'dates'} width={'16'} height={'12'} viewBox={'0 0 16 12'} fill={`${theme.colors.secondaryFont}`}/>
+                    <Period>{props.periodName}</Period>
+                </DatesWrapper>
             </FlexWrapper>
         </StyledAboutExperience>
     )
@@ -35,24 +41,47 @@ export const AboutExperience = (props: AboutExperiencePropsType) => {
 
 const StyledAboutExperience = styled.section`
   border-bottom: 2px solid ${theme.colors.secondaryFont};
+  margin-bottom: 20px;
+`
+
+const TitleWrapper =styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
 `
 
 const TitleName = styled.h3`
   color: ${theme.colors.primaryFont};
   font-size: 20px;
   font-weight: 400;
-
+  
   flex-grow: 1;
 `
 
-const IconNotButton = styled.span`
+const IconNotButton = styled.div`
+  width: 84px;
+  height: 24px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background-color: #7495f6;
+
+  color: ${theme.colors.accent};
+  padding: 7px 0;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  
 `
+
+const PlaceWrapper = styled.div``
 
 const Place = styled.span`
   color: ${theme.colors.secondaryFont};
   font-size: 12px;
   font-weight: 500;
 `
+
+const LocationWrapper =styled.div``
 
 const Country = styled.span`
   color: ${theme.colors.secondaryFont};
@@ -61,6 +90,8 @@ const Country = styled.span`
 
   flex-grow: 1;
 `
+
+const DatesWrapper =styled.div``
 
 const Period = styled.span`
   color: ${theme.colors.secondaryFont};

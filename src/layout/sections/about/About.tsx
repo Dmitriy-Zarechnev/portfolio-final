@@ -88,6 +88,7 @@ const AboutText = styled.p`
   color: ${theme.colors.textColor};
   font-size: 24px;
   font-weight: 300;
+  margin-bottom: 40px;
 `
 
 

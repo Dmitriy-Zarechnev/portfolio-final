@@ -31,4 +31,5 @@ const SectionSubTitle = styled.h3`
   text-align: center;
   font-size: 32px;
   font-weight: 400;
+  margin-bottom: 30px;
 `
