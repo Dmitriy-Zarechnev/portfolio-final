@@ -4,21 +4,22 @@ import {Logo} from '../../components/logo/Logo'
 import {FlexWrapper} from '../../components/FlexWrapper'
 import {Menu} from '../../components/menu/Menu'
 import {SocialList} from '../../components/socialList/SocialList'
+import {theme} from '../../styles/theme'
 
 const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact']
 const itemsIcons: Array<string> = ['gitHubFoot', 'gmailFoot', 'whatsappFoot', 'telegrammFoot']
 const iconsViewBox: Array<string> = ['0 0 30 30', '-0.5 0 48 48', '0 0 32 32', '2 2 20 20']
 const iconsSize: Array<string> = ['30', '30', '30', '30']
-
+const iconsColor: string = `${theme.colors.workLinkSvg}`
 export const Footer = () => {
     return (
         <StyledFooter>
             <FlexWrapper justify={'space-between'} align={'center'}>
-                <Logo/>
+                <Logo iconId={'logo'} width={'60'} height={'60'} viewBox={'0 0 32 32'} fill={`${theme.colors.workLinkSvg}`}/>
                 <FlexWrapper gap={'20px'} align={'center'}>
                     <Phone>+91 12345 09876</Phone>
                     <Email>info@example.com</Email>
-                    <SocialList iconsLink={itemsIcons} iconsSizesViewBox={iconsViewBox} iconsSize={iconsSize}/>
+                    <SocialList iconsLink={itemsIcons} iconsSizesViewBox={iconsViewBox} iconsSize={iconsSize} iconsFill={iconsColor}/>
                 </FlexWrapper>
             </FlexWrapper>
             <Menu menuItems={items}/>

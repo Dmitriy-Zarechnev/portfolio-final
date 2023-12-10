@@ -12,36 +12,41 @@ const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects', 'Contac
 //     {
 //         id: 'gitHubHead',
 //         size: '40',
-//         viewBox: '0 0 30 30'
+//         viewBox: '0 0 30 30',
+//         fill: 'white'
 //     },
 //     {
 //         id: 'gmailHead',
 //         size: '40',
-//         viewBox: '-0.5 0 48 48'
+//         viewBox: '-0.5 0 48 48',
+//         fill: 'white'
 //     },
 //     {
 //         id: 'whatsappHead',
 //         size: '40',
-//         viewBox: '0 0 32 32'
+//         viewBox: '0 0 32 32',
+//         fill: 'white'
 //     },
 //     {
 //         id: 'telegrammHead',
 //         size: '50',
-//         viewBox: '0 0 24 24'
+//         viewBox: '0 0 24 24',
+//         fill: 'white'
 //     }
 // ]
 const itemsIcons: Array<string> = ['gitHubHead', 'gmailHead', 'whatsappHead', 'telegrammHead']
 const iconsViewBox: Array<string> = ['0 0 30 30', '-0.5 0 48 48', '0 0 32 32', '2 2 20 20']
 const iconsSize: Array<string> = ['30', '30', '30', '30']
+const iconsColor: string = `${theme.colors.secondaryFont}`
 
 export const Header = () => {
     return (
         <StyledHeader>
             <Container>
                 <FlexWrapper justify={'space-between'} align={'center'}>
-                    <Logo/>
+                    <Logo iconId={'logo'} width={'60'} height={'60'} viewBox={'0 0 32 32'} fill={`${theme.colors.secondaryFont}`}/>
                     <HeaderMenu menuItems={items}/>
-                    <SocialList iconsLink={itemsIcons} iconsSizesViewBox={iconsViewBox} iconsSize={iconsSize}/>
+                    <SocialList iconsLink={itemsIcons} iconsSizesViewBox={iconsViewBox} iconsSize={iconsSize} iconsFill={iconsColor}/>
                 </FlexWrapper>
             </Container>
         </StyledHeader>

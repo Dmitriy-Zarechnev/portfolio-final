@@ -6,6 +6,7 @@ type SocialListPropsType = {
     iconsLink: Array<string>
     iconsSizesViewBox: Array<string>
     iconsSize: Array<string>
+    iconsFill:string
 }
 
 export const SocialList = (props: SocialListPropsType) => {
@@ -15,7 +16,7 @@ export const SocialList = (props: SocialListPropsType) => {
                 return (
                     <SocialItem key={index}>
                         <SocialLink href={'#'}>
-                            <Icon width={props.iconsSize[index]} height={props.iconsSize[index]} viewBox={props.iconsSizesViewBox[index]} iconId={el}/>
+                            <Icon width={props.iconsSize[index]} height={props.iconsSize[index]} viewBox={props.iconsSizesViewBox[index]} iconId={el} fill={props.iconsFill}/>
                         </SocialLink>
                     </SocialItem>
                 )
@@ -33,6 +34,9 @@ const SocialItem = styled.li`
 `
 
 const SocialLink = styled.a`
+    &:hover{
+      fill: red;
+    }
 `
 
 

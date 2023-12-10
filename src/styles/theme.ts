@@ -7,6 +7,8 @@ export const theme = {
         secondaryFont: '#A7A7A7',
         linkFont: '#FFFFFF',
         accent: '#2157F2',
-        textColor: '#D9D9D9'
+        textColor: '#D9D9D9',
+
+        workLinkSvg: '#FCFCFC'
     }
 }
