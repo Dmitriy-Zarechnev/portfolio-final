@@ -26,7 +26,7 @@ const Link = styled.a`
   font-family: 'DM Sans', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  color: ${theme.colors.linkFont};
+  color: ${theme.colors.contactColor};
 `
 
 const ListItem = styled.li`

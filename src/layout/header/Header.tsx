@@ -37,7 +37,7 @@ const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects', 'Contac
 const itemsIcons: Array<string> = ['gitHubSocialLink', 'gmailSocialLink', 'whatsappSocialLink', 'telegrammSocialLink']
 const iconsViewBox: Array<string> = ['0 0 30 30', '-0.5 0 48 48', '0 0 32 32', '2 2 20 20']
 const iconsSize: Array<string> = ['30', '30', '30', '30']
-const iconsColor: string = `${theme.colors.secondaryFont}`
+const iconsColor: string = `${theme.colors.primaryTextColor}`
 
 export const Header = () => {
     return (

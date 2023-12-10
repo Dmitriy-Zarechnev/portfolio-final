@@ -34,12 +34,13 @@ const MainTextArea = styled.div`
 `
 
 const MainHello = styled.h3`
+  color: ${theme.colors.primaryTitle};
   font-size: 20px;
   font-weight: 700;
 `
 
 const MainText = styled.span`
-  color: ${theme.colors.linkFont};
+  color: ${theme.colors.primaryTitle};
   font-size: 40px;
   font-weight: 700;
 `
@@ -54,6 +55,7 @@ const MyName = styled.span`
 const MainTitle = styled.h1`
   font-size: 35px;
   font-weight: 700;
+  color: ${theme.colors.primaryTitle};
 `
 
 const PhotoWrapper = styled.div`

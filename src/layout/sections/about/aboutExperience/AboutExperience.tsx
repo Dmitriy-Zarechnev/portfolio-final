@@ -23,15 +23,15 @@ export const AboutExperience = (props: AboutExperiencePropsType) => {
             </TitleWrapper>
             <FlexWrapper align={'center'}>
                 <PlaceWrapper>
-                    <Icon iconId={'place'} width={'16'} height={'12'} viewBox={'0 0 16 12'} fill={`${theme.colors.secondaryFont}`}/>
+                    <Icon iconId={'place'} width={'16'} height={'12'} viewBox={'0 0 16 12'} fill={`${theme.colors.secondaryTextColor}`}/>
                     <Place>{props.placeName}</Place>
                 </PlaceWrapper>
                 <LocationWrapper>
-                    <Icon iconId={'location'} width={'16'} height={'12'} viewBox={'0 0 16 12'} fill={`${theme.colors.secondaryFont}`}/>
+                    <Icon iconId={'location'} width={'16'} height={'12'} viewBox={'0 0 16 12'} fill={`${theme.colors.secondaryTextColor}`}/>
                     <Country>{props.countryName}</Country>
                 </LocationWrapper>
                 <DatesWrapper>
-                    <Icon iconId={'dates'} width={'16'} height={'12'} viewBox={'0 0 16 12'} fill={`${theme.colors.secondaryFont}`}/>
+                    <Icon iconId={'dates'} width={'16'} height={'12'} viewBox={'0 0 16 12'} fill={`${theme.colors.secondaryTextColor}`}/>
                     <Period>{props.periodName}</Period>
                 </DatesWrapper>
             </FlexWrapper>
@@ -40,7 +40,8 @@ export const AboutExperience = (props: AboutExperiencePropsType) => {
 }
 
 const StyledAboutExperience = styled.section`
-  border-bottom: 2px solid ${theme.colors.secondaryFont};
+  border-bottom: 2px solid #EBEAED;
+  padding-bottom: 20px;
   margin-bottom: 20px;
 `
 
@@ -51,7 +52,7 @@ const TitleWrapper =styled.div`
 `
 
 const TitleName = styled.h3`
-  color: ${theme.colors.primaryFont};
+  color: ${theme.colors.primaryTextColor};
   font-size: 20px;
   font-weight: 400;
   
@@ -63,7 +64,7 @@ const IconNotButton = styled.div`
   height: 24px;
   flex-shrink: 0;
   border-radius: 100px;
-  background-color: #7495f6;
+  background-color: #D7FFE0;
 
   color: ${theme.colors.accent};
   padding: 7px 0;
@@ -80,7 +81,7 @@ const PlaceWrapper = styled.div`
 `
 
 const Place = styled.span`
-  color: ${theme.colors.secondaryFont};
+  color: ${theme.colors.secondaryTextColor};
   font-size: 12px;
   font-weight: 500;
 `
@@ -92,7 +93,7 @@ const LocationWrapper =styled.div`
 `
 
 const Country = styled.span`
-  color: ${theme.colors.secondaryFont};
+  color: ${theme.colors.secondaryTextColor};
   font-size: 12px;
   font-weight: 500;
 
@@ -106,7 +107,7 @@ const DatesWrapper =styled.div`
   `
 
 const Period = styled.span`
-  color: ${theme.colors.secondaryFont};
+  color: ${theme.colors.secondaryTextColor};
   font-size: 12px;
   font-weight: 500;
 `

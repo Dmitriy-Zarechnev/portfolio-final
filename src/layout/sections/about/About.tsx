@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import {FlexWrapper} from '../../../components/FlexWrapper'
-import {SectionTitle} from '../../../components/sectionTitle/SectionTitle'
 import aboutPhoto from '../../../assets/images/about_photo.webp'
 import {AboutExperience} from './aboutExperience/AboutExperience'
 import {Container} from '../../../components/Container'
@@ -19,7 +18,7 @@ export const About = () => {
 
 
                     <AboutTextArea>
-                        <SectionTitle mainTitle={'About me'}/>
+                        <SectionAboutTitle>About Me</SectionAboutTitle>
                         <AboutText>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque corporis cumque deleniti fugiat hic impedit ipsam ipsum, labore laudantium quisquam quo repellat sed tenetur veniam voluptas voluptatibus. Ad animi asperiores consequuntur cumque dignissimos
                             distinctio dolor dolorum excepturi explicabo, harum hic labore numquam officiis quia quos repellat similique sunt totam?
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi consectetur corporis delectus enim eos eveniet harum illum in minus perspiciatis sed totam, ut, voluptate voluptatibus! Assumenda aut cumque distinctio dolorem enim eum minima mollitia nam
@@ -28,13 +27,13 @@ export const About = () => {
                         </AboutText>
 
                         <FlexWrapper direction={'column'}>
-                            <SectionTitle subTitle={'Work Experience'}/>
+                            <SectionAboutTitle>Work Experience</SectionAboutTitle>
                             <AboutExperience titleName={'Junior Web Developer'} iconNotButtonName={'Full Time'} placeName={'Dr. Rajkumar’s Learning App'} countryName={'Bengaluru'} periodName={'Sep 2021 - Dec 2021'}/>
                             <AboutExperience titleName={'Web Development Intern'} iconNotButtonName={'Internship'} placeName={'IonPixelz Web Solutions'} countryName={'Bengaluru'} periodName={'Sep 2021 - Dec 2021'}/>
                         </FlexWrapper>
 
                         <FlexWrapper direction={'column'}>
-                            <SectionTitle subTitle={'Education'}/>
+                            <SectionAboutTitle>Education</SectionAboutTitle>
                             <AboutExperience titleName={'Bachelor in Electronics & Communication'} iconNotButtonName={'Full Time'} placeName={'Bangalore Instutute of Technology'} countryName={'Bengaluru'} periodName={'Aug 2015 - Dec 2020'}/>
                         </FlexWrapper>
                     </AboutTextArea>
@@ -85,11 +84,16 @@ const AboutTextArea = styled.div`
 `
 
 const AboutText = styled.p`
-  color: ${theme.colors.textColor};
+  color: ${theme.colors.primaryTextColor};
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 40px;
 `
-
+const SectionAboutTitle = styled.h3`
+  color: ${theme.colors.primaryTitle};
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 30px;
+`
 
 

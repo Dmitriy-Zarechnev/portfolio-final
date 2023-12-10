@@ -10,12 +10,12 @@ const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects']
 const itemsIcons: Array<string> = ['gitHubSocialLink', 'gmailSocialLink', 'whatsappSocialLink', 'telegrammSocialLink']
 const iconsViewBox: Array<string> = ['0 0 30 30', '-0.5 0 48 48', '0 0 32 32', '2 2 20 20']
 const iconsSize: Array<string> = ['30', '30', '30', '30']
-const iconsColor: string = `${theme.colors.workLinkSvg}`
+const iconsColor: string = `${theme.colors.contactColor}`
 export const Footer = () => {
     return (
         <StyledFooter>
             <FlexWrapper justify={'space-between'} align={'center'}>
-                <Logo iconId={'logo'} width={'60'} height={'60'} viewBox={'0 0 32 32'} fill={`${theme.colors.workLinkSvg}`}/>
+                <Logo iconId={'logo'} width={'60'} height={'60'} viewBox={'0 0 32 32'} fill={`${theme.colors.contactColor}`}/>
                 <FlexWrapper gap={'20px'} align={'center'}>
                     <Phone>+91 12345 09876</Phone>
                     <Email>info@example.com</Email>

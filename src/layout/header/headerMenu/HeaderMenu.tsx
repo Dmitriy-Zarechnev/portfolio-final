@@ -47,7 +47,7 @@ const Mask = styled.span`
   display: inline-block;
   height: 50%;
   overflow-y: hidden;
-  color: ${theme.colors.secondaryFont};
+  color: ${theme.colors.primaryTextColor};
 
   & + & {
     top: 50%;
