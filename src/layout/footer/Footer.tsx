@@ -7,7 +7,7 @@ import {theme} from '../../styles/theme'
 import {FooterMenu} from './footerMenu/FooterMenu'
 
 const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects']
-const itemsIcons: Array<string> = ['gitHubFoot', 'gmailFoot', 'whatsappFoot', 'telegrammFoot']
+const itemsIcons: Array<string> = ['gitHubSocialLink', 'gmailSocialLink', 'whatsappSocialLink', 'telegrammSocialLink']
 const iconsViewBox: Array<string> = ['0 0 30 30', '-0.5 0 48 48', '0 0 32 32', '2 2 20 20']
 const iconsSize: Array<string> = ['30', '30', '30', '30']
 const iconsColor: string = `${theme.colors.workLinkSvg}`
