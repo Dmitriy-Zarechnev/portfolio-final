@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import {theme} from '../../styles/theme'
 
 type SectionTitlePropsType = {
-    mainTitle: string
+    mainTitle?: string
     subTitle?: string
 }
 export const SectionTitle = (props: SectionTitlePropsType) => {
@@ -19,7 +20,15 @@ const StyledSectionTitle = styled.div`
 `
 
 const SectionMainTitle = styled.h2`
+  color: ${theme.colors.primaryFont};
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
 `
 
 const SectionSubTitle = styled.h3`
+  color: ${theme.colors.secondaryFont};
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
 `

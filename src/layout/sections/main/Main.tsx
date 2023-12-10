@@ -16,34 +16,35 @@ export const Main = () => {
                         <MyName> Dmitriy Zarechnev</MyName>
                         <MainTitle>A Web Developer and a Builder Things for Web</MainTitle>
                     </MainTextArea>
-                    <Photo src={mainPhoto} alt="myPhoto"/>
+                    <PhotoWrapper>
+                        <Photo src={mainPhoto} alt="MyMainPhoto"/>
+                    </PhotoWrapper>
                 </FlexWrapper>
             </Container>
         </StyledMain>
     )
 }
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
   min-height: 100vh;
   display: flex;
 `
 
 const MainTextArea = styled.div`
-
 `
 
 const MainHello = styled.h3`
   font-size: 20px;
   font-weight: 700;
-  `
+`
 
 const MainText = styled.span`
   color: ${theme.colors.linkFont};
   font-size: 40px;
   font-weight: 700;
-  `
+`
 
-const MyName = styled.h2`
+const MyName = styled.span`
   font-size: 55px;
   font-weight: 700;
   color: ${theme.colors.accent};
@@ -53,6 +54,23 @@ const MyName = styled.h2`
 const MainTitle = styled.h1`
   font-size: 35px;
   font-weight: 700;
+`
+
+const PhotoWrapper = styled.div`
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    width: 350px;
+    height: 500px;
+    border: 5px solid ${theme.colors.accent};
+
+    position: absolute;
+    top: -24px;
+    left: 24px;
+    z-index: -1;
+  }
 `
 
 const Photo = styled.img`
