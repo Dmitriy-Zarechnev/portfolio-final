@@ -39,7 +39,7 @@ const Image = styled.img`
   width: 100%;
   height: 300px;
   object-fit: cover;
-    border-top-right-radius: 20px;
+  border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 `
 
@@ -70,6 +70,7 @@ const Text = styled.p`
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 12px;
+  flex-grow: 1;
 `
 
 const Link = styled.a`

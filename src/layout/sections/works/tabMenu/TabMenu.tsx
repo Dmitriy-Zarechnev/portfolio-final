@@ -1,19 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const Menu = (props: { menuItems: Array<string> }) => {
+export const TabMenu = (props: { menuItems: Array<string> }) => {
     return (
-        <StyledMenu>
+        <StyledTabMenu>
             <ul>
                 {props.menuItems.map((el: string, index: number) => {
                     return <li key={index}><a href="">{el}</a></li>
                 })}
             </ul>
-        </StyledMenu>
+        </StyledTabMenu>
     )
 }
 
-const StyledMenu = styled.nav`
+const StyledTabMenu = styled.nav`
   ul {
     display: flex;
     gap: 30px;
