@@ -37,12 +37,14 @@ const MainHello = styled.h3`
   color: ${theme.colors.primaryTitle};
   font-size: 20px;
   font-weight: 700;
+  letter-spacing: -1px;
 `
 
 const MainText = styled.span`
   color: ${theme.colors.primaryTitle};
   font-size: 40px;
   font-weight: 700;
+  letter-spacing: -1px;
 `
 
 const MyName = styled.span`
@@ -50,12 +52,14 @@ const MyName = styled.span`
   font-weight: 700;
   color: ${theme.colors.accent};
   margin: 10px 0;
+  letter-spacing: -1px;
 `
 
 const MainTitle = styled.h1`
   font-size: 35px;
   font-weight: 700;
   color: ${theme.colors.primaryTitle};
+  letter-spacing: -1px;
 `
 
 const PhotoWrapper = styled.div`

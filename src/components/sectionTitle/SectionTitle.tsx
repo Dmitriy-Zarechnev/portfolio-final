@@ -21,15 +21,14 @@ const StyledSectionTitle = styled.div`
 
 const SectionMainTitle = styled.h2`
   color: ${theme.colors.primaryTitle};
-  text-align: center;
   font-size: 48px;
   font-weight: 700;
+  margin-bottom: 30px;
 `
 
 const SectionSubTitle = styled.h3`
   color: ${theme.colors.secondaryTitle};
-  text-align: center;
   font-size: 32px;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 125px;
 `

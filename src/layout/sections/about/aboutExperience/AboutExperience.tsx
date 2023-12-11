@@ -39,7 +39,7 @@ export const AboutExperience = (props: AboutExperiencePropsType) => {
     )
 }
 
-const StyledAboutExperience = styled.section`
+const StyledAboutExperience = styled.div`
   border-bottom: 2px solid #EBEAED;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -55,6 +55,7 @@ const TitleName = styled.h3`
   color: ${theme.colors.primaryTextColor};
   font-size: 20px;
   font-weight: 400;
+  letter-spacing: 1px;
   
   flex-grow: 1;
 `
@@ -71,7 +72,6 @@ const IconNotButton = styled.div`
   text-align: center;
   font-size: 10px;
   font-weight: 600;
-  
 `
 
 const PlaceWrapper = styled.div`
@@ -84,6 +84,7 @@ const Place = styled.span`
   color: ${theme.colors.secondaryTextColor};
   font-size: 12px;
   font-weight: 500;
+  letter-spacing: 1px;
 `
 
 const LocationWrapper =styled.div`
@@ -96,19 +97,20 @@ const Country = styled.span`
   color: ${theme.colors.secondaryTextColor};
   font-size: 12px;
   font-weight: 500;
-
-  
+  letter-spacing: 1px;
 `
 
 const DatesWrapper =styled.div`
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 17%;
-  `
+  width: 20%;
+`
 
 const Period = styled.span`
   color: ${theme.colors.secondaryTextColor};
   font-size: 12px;
   font-weight: 500;
+  letter-spacing: 1px;
 `
 

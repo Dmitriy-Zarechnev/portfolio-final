@@ -12,10 +12,7 @@ export const About = () => {
             <Container>
                 <FlexWrapper align={'center'} justify={'space-between'}>
 
-                    <AboutPhotoWrapper>
-                        <AboutPhoto src={aboutPhoto} alt={'MyPhotoWithFlowers'}/>
-                    </AboutPhotoWrapper>
-
+                    <AboutPhoto src={aboutPhoto} alt={'MyPhotoWithFlowers'}/>
 
                     <AboutTextArea>
                         <SectionAboutTitle>About Me</SectionAboutTitle>
@@ -45,12 +42,11 @@ export const About = () => {
 }
 
 const StyledAbout = styled.section`
-  min-height: 100vh;
   display: flex;
 `
-
+/*
 const AboutPhotoWrapper = styled.div`
-    /* Стили для рамки
+     Стили для рамки
   position: relative;
   z-index: 0;
 
@@ -66,10 +62,8 @@ const AboutPhotoWrapper = styled.div`
     left: -50px;
     z-index: -1;
   }
-*/
-
-
 `
+ */
 
 const AboutPhoto = styled.img`
   height: 700px;
@@ -89,11 +83,13 @@ const AboutText = styled.p`
   font-weight: 300;
   margin-bottom: 40px;
 `
+
 const SectionAboutTitle = styled.h3`
   color: ${theme.colors.primaryTitle};
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 30px;
+  letter-spacing: -0.4px;
 `
 
 
