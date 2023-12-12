@@ -33,7 +33,7 @@ const StyledMain = styled.section`
 const MainTextArea = styled.div`
 `
 
-const MainHello = styled.h3`
+const MainHello = styled.h2`
   color: ${theme.colors.primaryTitle};
   font-size: 20px;
   font-weight: 700;

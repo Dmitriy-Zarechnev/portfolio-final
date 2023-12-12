@@ -11,7 +11,6 @@ export const About = () => {
         <StyledAbout>
             <Container>
                 <FlexWrapper align={'center'} justify={'space-between'}>
-
                     <AboutPhoto src={aboutPhoto} alt={'MyPhotoWithFlowers'}/>
 
                     <AboutTextArea>
