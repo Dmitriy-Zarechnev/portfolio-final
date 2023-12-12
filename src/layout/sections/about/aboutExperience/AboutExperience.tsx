@@ -61,11 +61,8 @@ const TitleName = styled.h3`
 `
 
 const IconNotButton = styled.div`
-  width: 84px;
-  height: 24px;
-  flex-shrink: 0;
-  border-radius: 100px;
-  background-color: #D7FFE0;
+  width: 150px;
+  background-color: ${theme.colors.buttonBg};
 
   color: ${theme.colors.accent};
   padding: 7px 0;

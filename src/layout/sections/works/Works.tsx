@@ -20,12 +20,12 @@ export const Works = () => {
             <Container>
                 <SectionTitle mainTitle={'Projects'} subTitle={'Things I’ve built so far'}/>
                 <TabMenu menuItems={worksItems}/>
-                <FlexWrapper justify={'center'} wrap={'wrap'} gap={'60px 34px'}>
+                <FlexWrapper justify={'center'} wrap={'wrap'} gap={'60px 34px'} align={'stretch'}>
                     <Work title={'First Title'} text={'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content'}
                           src={pictureFirst} techText={'React, JavaScript, SASS, HTML'}/>
                     <Work title={'Second Title'} text={'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content'}
                           src={pictureSecond} techText={'React, JavaScript, SASS, HTML'}/>
-                    <Work title={'Third Title'} text={'This is sample project Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis delectus dolores ducimus esse fugiat fugit impedit ipsam iure, magnam nisi, non optio quaerat quam repellendus repudiandae sapiente suscipit! random things are here in description This is sample project lorem ipsum generator for dummy content'}
+                    <Work title={'Third Title'} text={'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content'}
                           src={pictureThird} techText={'React, JavaScript, SASS, HTML'}/>
                     <Work title={'Forth Title'} text={'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content'}
                           src={pictureForth} techText={'React, JavaScript, SASS, HTML'}/>

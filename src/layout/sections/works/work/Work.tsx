@@ -17,9 +17,9 @@ export const Work = (props: WorkPropsType) => {
         <StyledWork>
             <ImageWrapper>
                 <Image src={props.src} alt="ProjectPicture"/>
+                <Button>View Project</Button>
             </ImageWrapper>
 
-            <Button>Hello</Button>
             <TextWrapper>
                 <Title>{props.title}</Title>
                 <Text>{props.text}</Text>
@@ -60,6 +60,18 @@ const ImageWrapper = styled.div`
       border-top-right-radius: 20px;
       border-top-left-radius: 20px;
     }
+
+    ${Button} {
+      opacity: 1;
+    }
+  }
+
+  ${Button} {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 `
 
@@ -72,12 +84,13 @@ const Image = styled.img`
 `
 
 const TextWrapper = styled.div`
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   padding: 25px 30px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-`
+  `
 
 const Title = styled.h3`
   color: ${theme.colors.worksCards};
