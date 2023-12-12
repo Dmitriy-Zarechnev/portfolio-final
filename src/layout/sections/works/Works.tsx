@@ -41,5 +41,4 @@ export const Works = () => {
 
 
 const StyledWorks = styled.section`
-  background-color: darkgoldenrod;
 `

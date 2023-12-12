@@ -8,12 +8,14 @@ export const Hobbies = () => {
     return (
         <StyledHobbies>
             <SectionTitle mainTitle={'Hobbies'} subTitle={'How i spend free time'}/>
-            <FlexWrapper direction={'column'} align={'center'}><Slider/></FlexWrapper>
+            <FlexWrapper direction={'column'} align={'center'}>
+                <Slider/>
+            </FlexWrapper>
         </StyledHobbies>
     )
 }
 
 const StyledHobbies = styled.section`
-  background-color: darkgreen;
+  
 `
 

@@ -30,5 +30,5 @@ const SectionSubTitle = styled.h3`
   color: ${theme.colors.secondaryTitle};
   font-size: 32px;
   font-weight: 400;
-  margin-bottom: 125px;
+  margin-bottom: 75px;
 `

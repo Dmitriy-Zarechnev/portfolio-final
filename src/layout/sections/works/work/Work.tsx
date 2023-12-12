@@ -21,8 +21,8 @@ export const Work = (props: WorkPropsType) => {
             </ImageWrapper>
 
             <TextWrapper>
-                <Title>{props.title}</Title>
-                <Text>{props.text}</Text>
+                <ProjectTitle>{props.title}</ProjectTitle>
+                <ProjectText>{props.text}</ProjectText>
                 <TechStack techText={props.techText}/>
                 <LinkWrapper>
                     <Link href={'#'}>Live Preview</Link>
@@ -92,7 +92,7 @@ const TextWrapper = styled.div`
   border-bottom-right-radius: 20px;
   `
 
-const Title = styled.h3`
+export const ProjectTitle = styled.h3`
   color: ${theme.colors.worksCards};
   text-align: center;
   font-size: 28px;
@@ -102,7 +102,7 @@ const Title = styled.h3`
 `
 
 
-const Text = styled.p`
+ export const ProjectText = styled.p`
   color: ${theme.colors.primaryTextColor};
   font-size: 18px;
   font-weight: 300;

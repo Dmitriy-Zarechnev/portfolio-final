@@ -32,11 +32,11 @@ export const GlobalStyle = createGlobalStyle`
   button {
     background-color: unset;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     color: ${theme.colors.accent};
   }
 
   section {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 `
