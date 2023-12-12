@@ -33,6 +33,8 @@ const StyledWork = styled.div`
   max-width: 375px;
   box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.20);
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
 `
 
 const Image = styled.img`
@@ -60,17 +62,18 @@ const Title = styled.h3`
   margin-bottom: 17px;
 `
 
-const LinkWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-`
 
 const Text = styled.p`
   color: ${theme.colors.primaryTextColor};
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 12px;
-  flex-grow: 1;
+  flex: 1 1 auto;
+`
+
+const LinkWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
 `
 
 const Link = styled.a`
