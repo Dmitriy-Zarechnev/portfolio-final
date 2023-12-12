@@ -10,6 +10,7 @@ export const theme = {
 
         accent: '#004219',
         buttonBg: '#D7FFE0',
+        borderColor: '#004219',
 
         worksCards: '#000000',
 

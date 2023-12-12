@@ -13,4 +13,8 @@ export const Button = styled.button`
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
+
+  &:focus-visible {
+    outline: 1px solid ${theme.colors.borderColor};
+  }
 `
