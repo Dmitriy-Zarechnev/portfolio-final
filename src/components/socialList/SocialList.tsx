@@ -1,12 +1,12 @@
 import React from 'react'
 import {Icon} from '../icon/Icon'
 import styled from 'styled-components'
+import {theme} from '../../styles/theme'
 
 type SocialListPropsType = {
     iconsLink: Array<string>
     iconsSizesViewBox: Array<string>
     iconsSize: Array<string>
-    iconsFill:string
 }
 
 export const SocialList = (props: SocialListPropsType) => {
@@ -16,7 +16,7 @@ export const SocialList = (props: SocialListPropsType) => {
                 return (
                     <SocialItem key={index}>
                         <SocialLink href={'#'}>
-                            <Icon width={props.iconsSize[index]} height={props.iconsSize[index]} viewBox={props.iconsSizesViewBox[index]} iconId={el} fill={props.iconsFill}/>
+                            <Icon width={props.iconsSize[index]} height={props.iconsSize[index]} viewBox={props.iconsSizesViewBox[index]} iconId={el}/>
                         </SocialLink>
                     </SocialItem>
                 )
@@ -34,9 +34,13 @@ const SocialItem = styled.li`
 `
 
 const SocialLink = styled.a`
-    &:hover{
-      fill: red;
-    }
+  color: ${theme.colors.contactColor};
+  display: inline-block;
+
+  &:hover {
+    color: ${theme.colors.accent};
+    transform: translateY(-4px);
+  }
 `
 
 

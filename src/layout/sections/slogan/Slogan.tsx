@@ -1,21 +1,42 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Container} from '../../../components/Container'
+import {theme} from '../../../styles/theme'
+import {FlexWrapper} from '../../../components/FlexWrapper'
 
 export const Slogan = () => {
     return (
         <StyledSlogan>
-            <StyledTitle> Let’s work together on your next product</StyledTitle>
-            <StyledEmail href={'#'}>zarechnev5021@gmail.com</StyledEmail>
+            <Container>
+                <FlexWrapper direction={'column'} align={'center'}>
+                    <StyledTitle> Let’s work together on your next product:</StyledTitle>
+                    <StyledEmail href={'#'}>zarechnev5021@gmail.com</StyledEmail>
+                </FlexWrapper>
+            </Container>
         </StyledSlogan>
     )
 }
 
 const StyledSlogan = styled.section`
-  min-height: 30vh;
-  background-color: aqua;
 `
 const StyledTitle = styled.h2`
+  font-family: 'DM Sans', sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 70px;
+  color: ${theme.colors.contactColor};
 `
 
 const StyledEmail = styled.a`
+  font-family: 'DM Sans', sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -1px;
+  color: ${theme.colors.primaryTextColor};
+
+  &:hover {
+    color: ${theme.colors.accent};
+  }
 `

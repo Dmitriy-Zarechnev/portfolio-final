@@ -37,7 +37,6 @@ const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects', 'Contac
 const itemsIcons: Array<string> = ['gitHubSocialLink', 'gmailSocialLink', 'whatsappSocialLink', 'telegrammSocialLink']
 const iconsViewBox: Array<string> = ['0 0 30 30', '-0.5 0 48 48', '0 0 32 32', '2 2 20 20']
 const iconsSize: Array<string> = ['30', '30', '30', '30']
-const iconsColor: string = `${theme.colors.primaryTextColor}`
 
 export const Header = () => {
     return (
@@ -46,7 +45,9 @@ export const Header = () => {
                 <FlexWrapper justify={'space-between'} align={'center'}>
                     <Logo iconId={'logo'} width={'60'} height={'60'} viewBox={'0 0 32 32'} fill={`${theme.colors.accent}`}/>
                     <HeaderMenu menuItems={items}/>
-                    <SocialList iconsLink={itemsIcons} iconsSizesViewBox={iconsViewBox} iconsSize={iconsSize} iconsFill={iconsColor}/>
+                    <LinkWrapper>
+                        <SocialList iconsLink={itemsIcons} iconsSizesViewBox={iconsViewBox} iconsSize={iconsSize}/>
+                    </LinkWrapper>
                 </FlexWrapper>
             </Container>
         </StyledHeader>
@@ -61,5 +62,8 @@ const StyledHeader = styled.header`
   left: 0;
   right: 0;
   z-index: 9999;
+`
 
+const LinkWrapper = styled.div`
+  color: ${theme.colors.primaryTextColor};
 `

@@ -46,12 +46,10 @@ const StyledForm = styled.form`
     color: ${theme.colors.primaryTextColor};
   }
 
-  &:hover {
-    ${Button} {
-      border: 2px solid ${theme.colors.borderColor};
-      transform: scale(1.1);
-      color: ${theme.colors.accent};
-    }
+  ${Button}:hover {
+    border: 2px solid ${theme.colors.borderColor};
+    transform: scale(1.1);
+    color: ${theme.colors.accent};
   }
 `
 
