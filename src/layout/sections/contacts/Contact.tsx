@@ -41,6 +41,18 @@ const StyledForm = styled.form`
     resize: none;
     height: 160px;
   }
+
+  ${Button} {
+    color: ${theme.colors.primaryTextColor};
+  }
+
+  &:hover {
+    ${Button} {
+      border: 2px solid ${theme.colors.borderColor};
+      transform: scale(1.1);
+      color: ${theme.colors.accent};
+    }
+  }
 `
 
 const Field = styled.input`
