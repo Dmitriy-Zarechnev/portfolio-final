@@ -30,6 +30,7 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  
 `
 
 const Field = styled.input``
