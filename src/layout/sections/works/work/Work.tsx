@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import {TechStack} from '../../../../components/techStack/TechStack'
 import {Icon} from '../../../../components/icon/Icon'
 import {theme} from '../../../../styles/theme'
+import {Button} from '../../../../components/Button'
 
 type WorkPropsType = {
     title: string
@@ -14,7 +15,11 @@ type WorkPropsType = {
 export const Work = (props: WorkPropsType) => {
     return (
         <StyledWork>
-            <Image src={props.src} alt=""/>
+            <ImageWrapper>
+                <Image src={props.src} alt="ProjectPicture"/>
+            </ImageWrapper>
+
+            <Button>Hello</Button>
             <TextWrapper>
                 <Title>{props.title}</Title>
                 <Text>{props.text}</Text>
@@ -35,6 +40,27 @@ const StyledWork = styled.div`
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+`
+
+const ImageWrapper = styled.div`
+  position: relative;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+  &:hover {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+  }
 `
 
 const Image = styled.img`
@@ -74,11 +100,16 @@ const Text = styled.p`
 const LinkWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+
 `
 
 const Link = styled.a`
   color: ${theme.colors.worksCards};
   font-size: 16px;
   font-weight: 400;
-  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
 `

@@ -8,7 +8,8 @@ export const theme = {
         primaryTextColor: '#666666',
         secondaryTextColor: '#A7A7A7',
 
-        accent: '#0FBF61',
+        accent: '#004219',
+        buttonBg: '#D7FFE0',
 
         worksCards: '#000000',
 

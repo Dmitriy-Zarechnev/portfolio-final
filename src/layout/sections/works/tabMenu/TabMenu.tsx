@@ -20,10 +20,13 @@ const StyledTabMenu = styled.nav`
     gap: 30px;
     justify-content: center;
   }
+
+  margin-bottom: 40px;
 `
 
 const ListItem = styled.li`
-
+  position: relative;
+  
 `
 
 const Link = styled.a`
@@ -32,4 +35,21 @@ const Link = styled.a`
   font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
+  
+  &:hover {
+    &::before {
+      height: 5px;
+    }
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    background-color: ${theme.colors.accent};
+
+    position: absolute;
+    bottom: -5px;
+    left: -10px;
+    right: -10px;
+  }
 `

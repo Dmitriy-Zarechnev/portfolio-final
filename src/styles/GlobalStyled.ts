@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: ${theme.colors.primaryTextColor};
-    line-height: 1.2;
+    line-height: 1.4;
   }
 
   a {
@@ -32,6 +32,8 @@ export const GlobalStyle = createGlobalStyle`
   button {
     background-color: unset;
     border: none;
+    cursor:pointer;
+    color: ${theme.colors.accent};
   }
 
   section {
