@@ -8,7 +8,7 @@ export const Slogan = () => {
     return (
         <StyledSlogan>
             <Container>
-                <FlexWrapper direction={'column'} align={'center'}>
+                <FlexWrapper direction={'column'} align={'center'} justify={'center'}>
                     <StyledTitle> Let’s work together on your next product:</StyledTitle>
                     <StyledEmail href={'#'}>zarechnev5021@gmail.com</StyledEmail>
                 </FlexWrapper>
@@ -19,6 +19,7 @@ export const Slogan = () => {
 
 const StyledSlogan = styled.section`
 `
+
 const StyledTitle = styled.h2`
   font-family: 'DM Sans', sans-serif;
   font-size: 58px;
