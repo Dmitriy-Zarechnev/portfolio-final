@@ -26,8 +26,8 @@ const StyledSkill = styled.div`
 `
 
 const SkillTitle = styled.span`
-  color: ${theme.colors.primaryTitle};
-  font-size: 25px;
+  color: ${theme.colors.secondaryTitle};
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
   text-align: center;

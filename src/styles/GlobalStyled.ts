@@ -11,6 +11,11 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${theme.colors.primaryBg};
   }
 
+  *::selection {
+    color: ${theme.colors.contactColor};
+    background-color: ${theme.colors.buttonBg};
+  }
+
   body {
     margin: 0;
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -21,9 +26,11 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.4;
   }
 
+
   a {
     text-decoration: none;
   }
+
 
   ul {
     list-style: none;
@@ -39,4 +46,5 @@ export const GlobalStyle = createGlobalStyle`
   section {
     padding: 50px 0;
   }
+
 `
