@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import hobbyFirst from '..//../assets/images/Hobby_1.webp'
-import {FlexWrapper} from '../FlexWrapper'
 import {ProjectText, ProjectTitle} from '../../layout/sections/works/work/Work'
 import {theme} from '../../styles/theme'
 
@@ -9,15 +8,15 @@ import {theme} from '../../styles/theme'
 export const Slider = () => {
     return (
         <StyledSlider>
-            <FlexWrapper>
-                <Slide>
-                    <ProjectTitle>Badminton</ProjectTitle>
-                    <Image src={hobbyFirst} alt="Badminton"/>
-                    <ProjectText>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eos labore quia. A adipisci explicabo fuga iste minima odit sed.
-                    </ProjectText>
-                </Slide>
-            </FlexWrapper>
+
+            <Slide>
+                <ProjectTitle>Badminton</ProjectTitle>
+                <Image src={hobbyFirst} alt="Badminton"/>
+                <ProjectText>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eos labore quia. A adipisci explicabo fuga iste minima odit sed.
+                </ProjectText>
+            </Slide>
+
             <Pagination>
                 <span> </span>
                 <span className={'active'}> </span>

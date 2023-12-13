@@ -20,7 +20,7 @@ export const Slogan = () => {
 const StyledSlogan = styled.section`
 `
 
-const StyledTitle = styled.h2`
+const StyledTitle = styled.h3`
   font-family: 'DM Sans', sans-serif;
   font-size: 58px;
   font-weight: 700;

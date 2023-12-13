@@ -9,7 +9,7 @@ export const HeaderMenu = (props: { menuItems: Array<string> }) => {
                 {props.menuItems.map((el: string, index: number) => {
                     return (
                         <ListItem key={index} role="menuitem">
-                            <Link href="">
+                            <Link href="#">
                                 {el}
                                 <Mask>
                                     <span>{el}</span>

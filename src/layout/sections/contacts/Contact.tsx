@@ -12,10 +12,10 @@ export const Contact = () => {
                 <SectionTitle mainTitle={'Contact'} subTitle={'Together we will stand'}/>
                 <StyledForm>
                     <StyledLabel htmlFor="name" aria-labelledby="name">Your Name </StyledLabel>
-                    <Field id={'name'} type={'text'} placeholder={'Name'}/>
+                    <Field title={'Write down your name'} id={'name'} type={'text'} placeholder={'Name'}/>
                     <StyledLabel htmlFor="email" aria-labelledby="email">Your email address: </StyledLabel>
-                    <Field id={'email'} type={'email'} placeholder={'Email'}/>
-                    <Field placeholder={'Your message starts with…'} as={'textarea'}/>
+                    <Field title={'Write down your email'} id={'email'} type={'email'} placeholder={'Email'}/>
+                    <Field title={'Write down message'} placeholder={'Your message starts with…'} as={'textarea'}/>
                     <Button type={'submit'}>Send Message</Button>
                 </StyledForm>
             </Container>
@@ -30,6 +30,7 @@ const StyledForm = styled.form`
   margin: 0 auto;
   max-width: 540px;
   width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,16 +66,11 @@ const Field = styled.input`
     text-transform: capitalize;
   }
 
-  &:focus-visible {
-    outline: 1px solid ${theme.colors.borderColor};
-  }
-
 `
 
 const StyledLabel = styled.label`
-  display: flex;
-  flex-direction: column;
+  align-self: flex-start;
   color: ${theme.colors.contactColor};
-  width: 100%;
+  text-transform: capitalize;
 `
 

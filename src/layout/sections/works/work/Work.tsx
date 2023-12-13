@@ -4,6 +4,7 @@ import {TechStack} from '../../../../components/techStack/TechStack'
 import {Icon} from '../../../../components/icon/Icon'
 import {theme} from '../../../../styles/theme'
 import {Button} from '../../../../components/Button'
+import {FlexWrapper} from '../../../../components/FlexWrapper'
 
 type WorkPropsType = {
     title: string
@@ -24,11 +25,11 @@ export const Work = (props: WorkPropsType) => {
                 <ProjectTitle>{props.title}</ProjectTitle>
                 <ProjectText>{props.text}</ProjectText>
                 <TechStack techText={props.techText}/>
-                <LinkWrapper>
+                <FlexWrapper justify={'space-between'}>
                     <Link href={'#'}>Live Preview</Link>
                     <Icon iconId={'linkLogo'} width={'20'} height={'20'} viewBox={'0 0 32 32'} fill={`${theme.colors.worksCards}`}/>
                     <Link href={'#'}>View Code</Link>
-                </LinkWrapper>
+                </FlexWrapper>
             </TextWrapper>
         </StyledWork>
     )
@@ -90,7 +91,7 @@ const TextWrapper = styled.div`
   padding: 25px 30px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  `
+`
 
 export const ProjectTitle = styled.h3`
   color: ${theme.colors.worksCards};
@@ -102,18 +103,12 @@ export const ProjectTitle = styled.h3`
 `
 
 
- export const ProjectText = styled.p`
+export const ProjectText = styled.p`
   color: ${theme.colors.primaryTextColor};
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 12px;
   flex: 1 1 auto;
-`
-
-const LinkWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-
 `
 
 const Link = styled.a`
@@ -124,5 +119,4 @@ const Link = styled.a`
   &:hover {
     text-decoration: underline;
   }
-
 `

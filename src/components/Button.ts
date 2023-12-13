@@ -14,7 +14,4 @@ export const Button = styled.button`
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  &:focus-visible {
-    outline: 1px solid ${theme.colors.borderColor};
-  }
 `

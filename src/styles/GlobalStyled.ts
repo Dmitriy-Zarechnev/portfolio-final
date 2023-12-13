@@ -21,6 +21,10 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${theme.colors.buttonBg};
   }
 
+  *:focus-visible {
+    outline: 2px solid ${theme.colors.borderColor};
+  }
+
   body {
     margin: 0;
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -31,11 +35,10 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.4;
   }
 
-
   a {
     text-decoration: none;
+    cursor: pointer;
   }
-
 
   ul {
     list-style: none;
@@ -52,4 +55,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 50px 0;
   }
 
+  label {
+    cursor: pointer;
+  }
 `
