@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {FlexWrapper} from '../../../components/FlexWrapper'
-import aboutPhoto from '../../../assets/images/about_photo.webp'
-import {AboutExperience} from './aboutExperience/AboutExperience'
+import aboutPhoto from '../../../assets/images/about_me_photo.webp'
 import {Container} from '../../../components/Container'
 import {theme} from '../../../styles/theme'
 
@@ -10,28 +9,16 @@ export const About = () => {
     return (
         <StyledAbout>
             <Container>
-                <FlexWrapper align={'center'} justify={'space-between'}>
+                <FlexWrapper align={'center'} justify={'space-between'} gap={'25px'}>
                     <AboutPhoto src={aboutPhoto} alt={'MyPhotoWithFlowers'}/>
 
                     <AboutTextArea>
                         <SectionAboutTitle>About Me</SectionAboutTitle>
                         <AboutText>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque corporis cumque deleniti fugiat hic impedit ipsam ipsum, labore laudantium quisquam quo repellat sed tenetur veniam voluptas voluptatibus. Ad animi asperiores consequuntur cumque dignissimos
                             distinctio dolor dolorum excepturi explicabo, harum hic labore numquam officiis quia quos repellat similique sunt totam?
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi consectetur corporis delectus enim eos eveniet harum illum in minus perspiciatis sed totam, ut, voluptate voluptatibus! Assumenda aut cumque distinctio dolorem enim eum minima mollitia nam
-                            optio
-                            quibusdam, quis quos rerum vel velit vero vitae voluptas? Consectetur consequuntur perferendis sapiente.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi consectetur corporis delectus enim eos eveniet harum
                         </AboutText>
 
-                        <FlexWrapper direction={'column'}>
-                            <SectionAboutTitle>Work Experience</SectionAboutTitle>
-                            <AboutExperience titleName={'Junior Web Developer'} iconNotButtonName={'Full Time'} placeName={'Dr. Rajkumar’s Learning App'} countryName={'Bengaluru'} periodName={'Sep 2021 - Dec 2021'}/>
-                            <AboutExperience titleName={'Web Development Intern'} iconNotButtonName={'Internship'} placeName={'IonPixelz Web Solutions'} countryName={'Bengaluru'} periodName={'Sep 2021 - Dec 2021'}/>
-                        </FlexWrapper>
-
-                        <FlexWrapper direction={'column'}>
-                            <SectionAboutTitle>Education</SectionAboutTitle>
-                            <AboutExperience titleName={'Bachelor in Electronics & Communication'} iconNotButtonName={'Full Time'} placeName={'Bangalore Instutute of Technology'} countryName={'Bengaluru'} periodName={'Aug 2015 - Dec 2020'}/>
-                        </FlexWrapper>
                     </AboutTextArea>
                 </FlexWrapper>
             </Container>
@@ -63,13 +50,12 @@ const AboutPhotoWrapper = styled.div`
  */
 
 const AboutPhoto = styled.img`
-  height: 700px;
-  object-fit: contain;
-  border-radius: 30px;
+  width: 40%;
+  //height: 700px;
+  object-fit: cover;
 `
 
 const AboutTextArea = styled.div`
-  width: 70%;
   display: flex;
   flex-direction: column;
 `
