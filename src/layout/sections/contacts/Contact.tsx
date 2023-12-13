@@ -45,12 +45,7 @@ const StyledForm = styled.form`
     color: ${theme.colors.primaryTextColor};
   }
 
-  ${Button}:hover {
-    border: 2px solid ${theme.colors.borderColor};
-    transform: scale(1.1);
-    color: ${theme.colors.accent};
-  }
-`
+  `
 
 const Field = styled.input`
   width: 100%;

@@ -24,20 +24,21 @@ export const About = () => {
                                 <SectionAboutTitle>Experience</SectionAboutTitle>
                                 <MyBackgroundText>
                                     Bachelor in Electronics & Communication:
+                                    <Place>Lorem ipsum dolor sit amet, consectetur</Place>
                                     <Time> Aug 2015 - Dec 2020</Time>
                                 </MyBackgroundText>
                             </MyBackground>
                             <MyBackground>
                                 <SectionAboutTitle>Education</SectionAboutTitle>
                                 <MyBackgroundText>
-                                    Bachelor in Electronics & Communication:
-                                    <Time> Aug 2015 - Dec 2020</Time>
+                                    National Research Tomsk Polytechnic University:
+                                    <Place>NPP: desing, operation and engineering</Place>
+                                    <Time> Aug 2012 - Feb 2018 </Time>
                                 </MyBackgroundText>
                             </MyBackground>
                         </AboutMyBackgroundArea>
                         <Button>Download CV</Button>
                     </AboutTextArea>
-
                 </FlexWrapper>
             </Container>
         </StyledAbout>
@@ -106,13 +107,30 @@ const AboutMyBackgroundArea = styled.div`
 `
 
 const MyBackground = styled.div`
-  margin-bottom: 20px;
-`
-
-
-const Time = styled.span`
+    margin-bottom: 20px;
 `
 
 const MyBackgroundText = styled.p`
+  color: ${theme.colors.secondaryTitle};
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
 `
+const Place = styled.span`
+  display: block;
+  color: ${theme.colors.contactColor};
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+`
+
+const Time = styled.span`
+  display: block;
+  color: ${theme.colors.accent};
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+`
+
+
 
