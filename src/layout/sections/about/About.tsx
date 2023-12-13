@@ -4,6 +4,7 @@ import {FlexWrapper} from '../../../components/FlexWrapper'
 import aboutPhoto from '../../../assets/images/about_me_photo.webp'
 import {Container} from '../../../components/Container'
 import {theme} from '../../../styles/theme'
+import {Button} from '../../../components/Button'
 
 export const About = () => {
     return (
@@ -18,8 +19,25 @@ export const About = () => {
                             distinctio dolor dolorum excepturi explicabo, harum hic labore numquam officiis quia quos repellat similique sunt totam?
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi consectetur corporis delectus enim eos eveniet harum
                         </AboutText>
-
+                        <AboutMyBackgroundArea>
+                            <MyBackground>
+                                <SectionAboutTitle>Experience</SectionAboutTitle>
+                                <MyBackgroundText>
+                                    Bachelor in Electronics & Communication:
+                                    <Time> Aug 2015 - Dec 2020</Time>
+                                </MyBackgroundText>
+                            </MyBackground>
+                            <MyBackground>
+                                <SectionAboutTitle>Education</SectionAboutTitle>
+                                <MyBackgroundText>
+                                    Bachelor in Electronics & Communication:
+                                    <Time> Aug 2015 - Dec 2020</Time>
+                                </MyBackgroundText>
+                            </MyBackground>
+                        </AboutMyBackgroundArea>
+                        <Button>Download CV</Button>
                     </AboutTextArea>
+
                 </FlexWrapper>
             </Container>
         </StyledAbout>
@@ -51,13 +69,22 @@ const AboutPhotoWrapper = styled.div`
 
 const AboutPhoto = styled.img`
   width: 40%;
-  //height: 700px;
   object-fit: cover;
 `
 
 const AboutTextArea = styled.div`
   display: flex;
   flex-direction: column;
+
+  ${Button} {
+    align-self: center;
+  }
+
+  ${Button}:hover {
+    border: 2px solid ${theme.colors.borderColor};
+    transform: scale(1.1);
+    color: ${theme.colors.accent};
+  }
 `
 
 const AboutText = styled.p`
@@ -74,5 +101,18 @@ const SectionAboutTitle = styled.h2`
   margin-bottom: 30px;
   letter-spacing: -0.4px;
 `
+const AboutMyBackgroundArea = styled.div`
 
+`
+
+const MyBackground = styled.div`
+  margin-bottom: 20px;
+`
+
+
+const Time = styled.span`
+`
+
+const MyBackgroundText = styled.p`
+`
 
