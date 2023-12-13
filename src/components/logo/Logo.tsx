@@ -20,12 +20,6 @@ export const Logo = (props: LogoPropsType) => {
 }
 
 const StyledLogoIcon = styled.a`
-  animation: ${LogoAnimation} 30s linear infinite;
-  
-  @media (prefers-reduced-motion: reduce) {
-    a {
-      animation: none;
-    }
-  }
+  animation: ${LogoAnimation} 45s linear infinite;
 `
 

@@ -9,6 +9,11 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     background-color: ${theme.colors.primaryBg};
+
+    @media (prefers-reduced-motion: reduce) {
+      animation: none;
+    }
+
   }
 
   *::selection {

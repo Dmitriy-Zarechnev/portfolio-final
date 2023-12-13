@@ -12,8 +12,7 @@ export const Main = () => {
                 <FlexWrapper align={'center'} justify={'space-between'}>
                     <MainTextArea>
                         <MainHello>Hello There</MainHello>
-                        <MainText>My name is</MainText>
-                        <MyName> Dmitriy Zarechnev</MyName>
+                        <MainText>My name is <MyName> Dmitriy Zarechnev</MyName></MainText>
                         <MainTitle>A Web Developer and a Builder Things for Web</MainTitle>
                     </MainTextArea>
                     <PhotoWrapper>
@@ -31,9 +30,11 @@ const StyledMain = styled.section`
 `
 
 const MainTextArea = styled.div`
+  display: flex;
+  flex-direction: column;
 `
 
-const MainHello = styled.h2`
+const MainHello = styled.span`
   color: ${theme.colors.primaryTitle};
   font-size: 20px;
   font-weight: 700;

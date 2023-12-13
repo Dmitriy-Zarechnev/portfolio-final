@@ -5,19 +5,20 @@ import {theme} from '../../../styles/theme'
 export const HeaderMenu = (props: { menuItems: Array<string> }) => {
     return (
         <StyledHeaderMenu>
-            <ul>
+            <ul role="menu">
                 {props.menuItems.map((el: string, index: number) => {
-                    return <ListItem key={index}>
-                        <Link href="">
-                            {el}
-                            <Mask>
-                                <span>{el}</span>
-                            </Mask>
-                            <Mask>
-                                <span>{el}</span>
-                            </Mask>
-                        </Link>
-                    </ListItem>
+                    return (
+                        <ListItem key={index} role="menuitem">
+                            <Link href="">
+                                {el}
+                                <Mask>
+                                    <span>{el}</span>
+                                </Mask>
+                                <Mask>
+                                    <span>{el}</span>
+                                </Mask>
+                            </Link>
+                        </ListItem>)
                 })}
             </ul>
         </StyledHeaderMenu>
@@ -51,6 +52,7 @@ const Mask = styled.span`
 
   & + & {
     top: 50%;
+
     span {
       display: inline-block;
       transform: translateY(-50%);

@@ -33,7 +33,6 @@ export const About = () => {
                             <AboutExperience titleName={'Bachelor in Electronics & Communication'} iconNotButtonName={'Full Time'} placeName={'Bangalore Instutute of Technology'} countryName={'Bengaluru'} periodName={'Aug 2015 - Dec 2020'}/>
                         </FlexWrapper>
                     </AboutTextArea>
-
                 </FlexWrapper>
             </Container>
         </StyledAbout>
@@ -41,11 +40,10 @@ export const About = () => {
 }
 
 const StyledAbout = styled.section`
-  display: flex;
 `
-/*
+/* Стили для рамки
 const AboutPhotoWrapper = styled.div`
-     Стили для рамки
+
   position: relative;
   z-index: 0;
 
@@ -83,7 +81,7 @@ const AboutText = styled.p`
   margin-bottom: 40px;
 `
 
-const SectionAboutTitle = styled.h3`
+const SectionAboutTitle = styled.h2`
   color: ${theme.colors.primaryTitle};
   font-size: 42px;
   font-weight: 700;
