@@ -20,7 +20,8 @@ export const Slogan = () => {
 const StyledSlogan = styled.section`
 `
 
-const StyledTitle = styled.h3`
+const StyledTitle = styled.p`
+  text-align: center;
   font-family: 'DM Sans', sans-serif;
   font-size: 58px;
   font-weight: 700;
@@ -39,5 +40,6 @@ const StyledEmail = styled.a`
 
   &:hover {
     color: ${theme.colors.accent};
+    text-decoration: underline;
   }
 `
