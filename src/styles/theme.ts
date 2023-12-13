@@ -3,10 +3,10 @@ export const theme = {
         primaryBg: '#FFF',
 
         primaryTitle: '#42446E',
-        secondaryTitle: '#666666',
+        secondaryTitle: '#404040',
 
-        primaryTextColor: '#666666',
-        secondaryTextColor: '#A7A7A7',
+        primaryTextColor: '#404040',
+        secondaryTextColor: '#4a4a4a',
 
         accent: '#004219',
         buttonBg: '#D7FFE0',
