@@ -41,11 +41,9 @@ const StyledForm = styled.form`
     height: 160px;
   }
 
-  ${Button} {
-    color: ${theme.colors.primaryTextColor};
-  }
+  
 
-  `
+`
 
 const Field = styled.input`
   width: 100%;

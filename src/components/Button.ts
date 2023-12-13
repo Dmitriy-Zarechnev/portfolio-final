@@ -13,10 +13,10 @@ export const Button = styled.button`
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  
+
   &:hover {
+    color: ${theme.colors.accent};
     border: 2px solid ${theme.colors.borderColor};
     transform: scale(1.1);
-    color: ${theme.colors.accent};
   }
 `
