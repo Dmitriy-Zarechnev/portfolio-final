@@ -47,26 +47,6 @@ export const About = () => {
 
 const StyledAbout = styled.section`
 `
-/* Стили для рамки
-const AboutPhotoWrapper = styled.div`
-
-  position: relative;
-  z-index: 0;
-
-  &::before {
-    content: '';
-    width: 300px;
-    height: 740px;
-    border: 3px solid ${theme.colors.accent};
-    border-radius: 30px;
-
-    position: absolute;
-    top: -20px;
-    left: -50px;
-    z-index: -1;
-  }
-`
- */
 
 const AboutPhoto = styled.img`
   width: 40%;
@@ -81,11 +61,6 @@ const AboutTextArea = styled.div`
     align-self: center;
   }
 
-  ${Button}:hover {
-    border: 2px solid ${theme.colors.borderColor};
-    transform: scale(1.1);
-    color: ${theme.colors.accent};
-  }
 `
 
 const AboutText = styled.p`
@@ -107,7 +82,7 @@ const AboutMyBackgroundArea = styled.div`
 `
 
 const MyBackground = styled.div`
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 `
 
 const MyBackgroundText = styled.p`
