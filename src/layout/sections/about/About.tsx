@@ -77,6 +77,7 @@ const SectionAboutTitle = styled.h2`
   margin-bottom: 30px;
   letter-spacing: -0.4px;
 `
+
 const AboutMyBackgroundArea = styled.div`
 
 `
@@ -91,6 +92,7 @@ const MyBackgroundText = styled.p`
   font-weight: 400;
   letter-spacing: 1px;
 `
+
 const Place = styled.span`
   display: block;
   color: ${theme.colors.contactColor};
