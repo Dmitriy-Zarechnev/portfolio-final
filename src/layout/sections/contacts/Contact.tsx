@@ -12,10 +12,10 @@ export const Contact = () => {
                 <SectionTitle mainTitle={'Contact'} subTitle={'Together we will stand'}/>
                 <StyledForm>
                     <StyledLabel htmlFor="name" aria-labelledby="name">Your Name </StyledLabel>
-                    <Field title={'Write down your name'} id={'name'} type={'text'} placeholder={'Name'}/>
+                    <Field id={'name'} type={'text'} placeholder={'Name'} title={'Write down your name'}/>
                     <StyledLabel htmlFor="email" aria-labelledby="email">Your email address: </StyledLabel>
-                    <Field title={'Write down your email'} id={'email'} type={'email'} placeholder={'Email'}/>
-                    <Field title={'Write down message'} placeholder={'Your message starts with…'} as={'textarea'}/>
+                    <Field id={'email'} type={'email'} placeholder={'Email'} title={'Write down your email'}/>
+                    <Field placeholder={'Your message starts with…'} as={'textarea'} title={'Write down message'}/>
                     <Button type={'submit'}>Send Message</Button>
                 </StyledForm>
             </Container>
