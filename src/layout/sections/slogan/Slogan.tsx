@@ -4,6 +4,8 @@ import {Container} from '../../../components/Container'
 import {theme} from '../../../styles/theme'
 import {FlexWrapper} from '../../../components/FlexWrapper'
 
+
+
 export const Slogan = () => {
     return (
         <StyledSlogan>
