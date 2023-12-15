@@ -26,6 +26,7 @@ const StyledHeaderMenu = styled.nav`
 `
 
 const Link = styled.a`
+  display: block;
   position: relative;
 
   font-family: 'DM Sans', sans-serif;
@@ -35,7 +36,7 @@ const Link = styled.a`
   color: ${theme.colors.primaryTextColor};
   padding: 6px 20px;
   transition: .5s;
-  z-index: 2;
+  z-index: 1;
 
   &:hover {
     color: ${theme.colors.accent};
@@ -48,13 +49,12 @@ const Link = styled.a`
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: -1;
     border-bottom: 2px solid ${theme.colors.accent};
     border-radius: 15px;
     transform: scale(0) translateY(30px);
     opacity: 0;
     transition: .5s;
-
   }
 
   &:hover span {
