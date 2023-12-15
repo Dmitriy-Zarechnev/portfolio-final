@@ -27,7 +27,7 @@ const StyledTitle = styled.p`
   font-weight: 700;
   letter-spacing: -1px;
   line-height: 70px;
-  color: ${theme.colors.contactColor};
+  color: ${theme.colors.primaryTitle};
 `
 
 const StyledEmail = styled.a`
@@ -39,7 +39,9 @@ const StyledEmail = styled.a`
   color: ${theme.colors.primaryTextColor};
 
   &:hover {
-    color: ${theme.colors.accent};
-    text-decoration: underline;
+    background-image: linear-gradient(90deg, ${theme.colors.accent}, ${theme.colors.contactColor});
+    color: transparent;
+    font-size: 60px;
+    -webkit-background-clip: text;
   }
 `

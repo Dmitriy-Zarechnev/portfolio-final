@@ -51,9 +51,11 @@ const MainText = styled.span`
 const MyName = styled.span`
   font-size: 55px;
   font-weight: 700;
-  color: ${theme.colors.accent};
   margin: 10px 0;
   letter-spacing: -1px;
+  background-image: linear-gradient(90deg, ${theme.colors.accent}, ${theme.colors.contactColor});
+  color: transparent;
+  -webkit-background-clip: text;
 `
 
 const MainTitle = styled.h1`

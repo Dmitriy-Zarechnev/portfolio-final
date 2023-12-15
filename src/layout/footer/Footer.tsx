@@ -74,6 +74,8 @@ const Copyright = styled.small`
 `
 
 const SmallSpan = styled.span`
-  color: ${theme.colors.accent};
   font-weight: bold;
+  background-image: linear-gradient(90deg, ${theme.colors.accent}, ${theme.colors.contactColor});
+  color: transparent;
+  -webkit-background-clip: text;
 `
