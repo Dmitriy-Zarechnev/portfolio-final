@@ -5,6 +5,7 @@ import {Button} from '../../../components/Button'
 import {Container} from '../../../components/Container'
 import {theme} from '../../../styles/theme'
 
+
 export const Contact = () => {
     return (
         <StyledContact>
@@ -60,8 +61,10 @@ const Field = styled.input`
 `
 
 const StyledLabel = styled.label`
-  align-self: flex-start;
+    align-self: flex-start;
   color: ${theme.colors.contactColor};
   text-transform: capitalize;
 `
+
+
 
