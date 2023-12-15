@@ -16,14 +16,42 @@ export const GlobalStyle = createGlobalStyle`
 
   }
 
+  // Стили при выделении
   *::selection {
     color: ${theme.colors.contactColor};
     background-color: ${theme.colors.buttonBg};
   }
 
+  // Рамка при фокусе
   *:focus-visible {
     outline: 2px solid ${theme.colors.borderColor};
   }
+
+  // Стили для скролла FireFox
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: ${theme.colors.primaryTextColor} ${theme.colors.primaryBg};
+  }
+
+  // Стили для скролла Chrome
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background-color: ${theme.colors.primaryBg};
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: ${theme.colors.primaryTextColor};
+    border: 3px solid ${theme.colors.primaryBg};
+    border-radius: 5px;
+
+    &:hover {
+      background-color: ${theme.colors.accent};
+    }
+  }
+
 
   body {
     margin: 0;
