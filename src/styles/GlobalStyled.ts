@@ -36,13 +36,16 @@ export const GlobalStyle = createGlobalStyle`
   // Стили для скролла Chrome
   *::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
   }
 
-  *::-webkit-scrollbar-track {
+  *::-webkit-scrollbar-track,
+  *::-webkit-scrollbar-track:horizontal {
     background-color: ${theme.colors.primaryBg};
   }
 
-  *::-webkit-scrollbar-thumb {
+  *::-webkit-scrollbar-thumb,
+  *::-webkit-scrollbar-thumb:horizontal {
     background-color: ${theme.colors.primaryTextColor};
     border: 3px solid ${theme.colors.primaryBg};
     border-radius: 5px;
