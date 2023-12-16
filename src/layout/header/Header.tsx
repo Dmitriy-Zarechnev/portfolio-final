@@ -5,6 +5,7 @@ import {theme} from '../../styles/theme'
 import {Container} from '../../components/Container'
 import {FlexWrapper} from '../../components/FlexWrapper'
 import {HeaderMenu} from './headerMenu/HeaderMenu'
+import {MobileMenu} from './mobileMenu/MobileMenu'
 
 const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact']
 
@@ -15,6 +16,7 @@ export const Header = () => {
                 <FlexWrapper justify={'space-between'} align={'center'}>
                     <Logo iconId={'logo'} width={'60'} height={'60'} viewBox={'0 0 32 32'} fill={`${theme.colors.accent}`}/>
                     <HeaderMenu menuItems={items}/>
+                    <MobileMenu menuItems={items}/>
                 </FlexWrapper>
             </Container>
         </StyledHeader>
