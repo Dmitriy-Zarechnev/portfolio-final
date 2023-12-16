@@ -44,7 +44,6 @@ const Link = styled.a`
 
   &:hover {
     color: ${theme.colors.accent};
-    //background-color: darkorange;
   }
 
   span {
@@ -69,5 +68,4 @@ const Link = styled.a`
 
 
 const ListItem = styled.li`
-
 `

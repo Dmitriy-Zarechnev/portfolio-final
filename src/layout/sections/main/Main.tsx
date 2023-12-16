@@ -30,6 +30,10 @@ const StyledMain = styled.section`
   min-height: 100vh;
   display: flex;
   margin-top: 70px;
+  
+  @media ${theme.media.mobile} {
+    margin-top: 50px;
+  }
 `
 
 const MainTextArea = styled.div`
