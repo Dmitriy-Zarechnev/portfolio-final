@@ -55,6 +55,12 @@ const AboutTextArea = styled.div`
 
   ${Button} {
     align-self: center;
+
+    @media ${theme.media.tablet} {
+      color: ${theme.colors.accent};
+      border: 2px solid ${theme.colors.borderColor};
+      transform: scale(1.1);
+    }
   }
 `
 

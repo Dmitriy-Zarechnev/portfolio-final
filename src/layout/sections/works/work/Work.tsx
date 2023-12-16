@@ -6,6 +6,7 @@ import {theme} from '../../../../styles/theme'
 import {Button} from '../../../../components/Button'
 import {FlexWrapper} from '../../../../components/FlexWrapper'
 
+
 type WorkPropsType = {
     title: string
     text: string
@@ -107,7 +108,7 @@ const TextWrapper = styled.div`
   padding: 25px 30px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-
+  
 `
 
 export const ProjectTitle = styled.h3`
@@ -134,6 +135,10 @@ const Link = styled.a`
   font-weight: 400;
 
   &:hover {
+    text-decoration: underline;
+  }
+
+  @media ${theme.media.tablet} {
     text-decoration: underline;
   }
 `
