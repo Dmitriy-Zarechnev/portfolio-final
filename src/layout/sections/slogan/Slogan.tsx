@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import {Container} from '../../../components/Container'
 import {theme} from '../../../styles/theme'
 import {FlexWrapper} from '../../../components/FlexWrapper'
+import {font} from '../../../styles/Common'
 
 
 
@@ -33,17 +34,19 @@ const StyledTitle = styled.p`
 `
 
 const StyledEmail = styled.a`
-  font-family: 'DM Sans', sans-serif;
-  font-size: 58px;
-  font-weight: 700;
-  line-height: 70px;
+  ${font({family: 'DM Sans, sans-serif', lineHeight: 1.2, weight: 700, color: theme.colors.primaryTextColor, fontD: 58, fontM: 20})};
+  //font-family: 'DM Sans', sans-serif;
+  //font-size: 58px;
+  //font-weight: 700;
+  //line-height: 70px;
   letter-spacing: -1px;
-  color: ${theme.colors.primaryTextColor};
+    // color: ${theme.colors.primaryTextColor};
 
   &:hover {
     background-image: linear-gradient(90deg, ${theme.colors.accent}, ${theme.colors.contactColor});
-    color: transparent;
-    font-size: 60px;
+    //color: transparent;
+    ${font({lineHeight: 1.2, weight: 700, color: 'transparent', fontD: 60, fontM: 25})};
+    //font-size: 60px;
     -webkit-background-clip: text;
   }
 `

@@ -10,11 +10,11 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={'center'} justify={'space-between'} wrap={'wrap'}>
+                <FlexWrapper align={'center'} justify={'space-around'} wrap={'wrap'}>
                     <MainTextArea>
                         <MainHello>Hello There</MainHello>
                         <MainText>My name is </MainText>
-                        <MyName> Dmitriy Zarechnev</MyName>
+                        <MyName>Dmitriy Zarechnev</MyName>
                         <MainTitle>A Web Developer and a Builder Things for Web</MainTitle>
                     </MainTextArea>
                     <PhotoWrapper>
@@ -35,36 +35,37 @@ const StyledMain = styled.section`
 const MainTextArea = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media ${theme.media.mobile} {
+    margin-bottom: 50px;
+  }
 `
 
 const MainHello = styled.span`
-  color: ${theme.colors.primaryTitle};
-  font-size: 16px;
-  font-weight: 700;
+  ${font({weight: 400, color: theme.colors.primaryTitle, fontD: 16, fontM: 16})};
   letter-spacing: -1px;
 `
 
 const MainText = styled.span`
-  color: ${theme.colors.primaryTitle};
-  font-size: 27px;
-  font-weight: 700;
+  ${font({weight: 400, color: theme.colors.primaryTitle, fontD: 27, fontM: 20})};
   letter-spacing: -1px;
 `
 
 const MyName = styled.h2`
-  ${font({weight: 700, color: 'transparent', Fmax: 50, Fmin: 36})};
-  //font-size: 50px;
-  //font-weight: 700;
+  ${font({weight: 700, color: 'transparent', fontD: 50, fontM: 36})};
   letter-spacing: -1px;
+  margin: 10px 0;
+
   background-image: linear-gradient(90deg, ${theme.colors.accent}, ${theme.colors.contactColor});
-  //color: transparent;
   -webkit-background-clip: text;
+
+  @media ${theme.media.mobile} {
+    margin: 15px 0 22px;
+  }
 `
 
 const MainTitle = styled.h1`
-  font-size: 27px;
-  font-weight: 700;
-  color: ${theme.colors.primaryTitle};
+  ${font({weight: 400, color: theme.colors.primaryTitle, fontD: 27, fontM: 20})};
   letter-spacing: -1px;
 `
 
@@ -86,8 +87,9 @@ const PhotoWrapper = styled.div`
     @media ${theme.media.mobile} {
       width: 314px;
       height: 414px;
+      top: -17px;
+      left: 20px;
     }
-
   }
 `
 
@@ -95,6 +97,7 @@ const Photo = styled.img`
   width: 350px;
   height: 450px;
   object-fit: cover;
+  margin-right: 20px;
 
   @media ${theme.media.mobile} {
     width: 310px;
