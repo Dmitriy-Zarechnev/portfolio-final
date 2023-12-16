@@ -5,11 +5,11 @@ import {theme} from '../../../styles/theme'
 export const MobileMenu = (props: { menuItems: Array<string> }) => {
     return (
         <StyledMobileMenu>
-            <BurgerButton isOpen={true}>
+            <BurgerButton isOpen={false}>
                 <span></span>
             </BurgerButton>
 
-            <MobileMenuPopup isOpen={true}>
+            <MobileMenuPopup isOpen={false}>
                 <ul role="menu">
                     {props.menuItems.map((el: string, index: number) => {
                         return (
@@ -39,7 +39,8 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   bottom: 0;
 
   z-index: 9999;
-  background-color: ${theme.colors.worksCards};
+  background-color: ${theme.colors.primaryBg};
+  opacity: 0.9;
   display: none;
 
   ${props => props.isOpen && css<{ isOpen: boolean }>`
@@ -132,7 +133,6 @@ const Link = styled.a`
 
   &:hover {
     color: ${theme.colors.accent};
-    //background-color: darkorange;
   }
 
   span {
