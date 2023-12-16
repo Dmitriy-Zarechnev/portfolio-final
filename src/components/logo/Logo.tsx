@@ -5,10 +5,10 @@ import {LogoAnimation} from '../../styles/animations/Animations'
 
 type LogoPropsType = {
     iconId: string,
-    width: string,
-    height: string,
-    viewBox: string,
-    fill: string
+    width?: string,
+    height?: string,
+    viewBox?: string,
+    fill?: string
 }
 
 export const Logo = (props: LogoPropsType) => {

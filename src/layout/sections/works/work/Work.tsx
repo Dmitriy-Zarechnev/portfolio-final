@@ -37,6 +37,7 @@ export const Work = (props: WorkPropsType) => {
 
 const StyledWork = styled.div`
   max-width: 375px;
+  width: 100%;
   box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.20);
   border-radius: 20px;
   display: flex;
@@ -48,18 +49,31 @@ const ImageWrapper = styled.div`
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 
+  ${Button} {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    opacity: 0;
+  }
+
   &:hover {
     &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(4px);
-      border-top-right-radius: 20px;
-      border-top-left-radius: 20px;
+      opacity: 1;
     }
 
     ${Button} {
@@ -67,12 +81,14 @@ const ImageWrapper = styled.div`
     }
   }
 
-  ${Button} {
-    opacity: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  @media ${theme.media.tablet} {
+    &::before {
+      opacity: 1;
+    }
+
+    ${Button} {
+      opacity: 1;
+    }
   }
 `
 
@@ -91,6 +107,7 @@ const TextWrapper = styled.div`
   padding: 25px 30px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+
 `
 
 export const ProjectTitle = styled.h3`
