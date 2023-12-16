@@ -33,4 +33,4 @@ const SkillTitle = styled.span`
   text-align: center;
   margin-top: 5px;
   text-transform: uppercase;
-  `
+`

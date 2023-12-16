@@ -4,13 +4,14 @@ import {FlexWrapper} from '../../../components/FlexWrapper'
 import {SectionTitle} from '../../../components/sectionTitle/SectionTitle'
 import {Skill} from './skill/Skill'
 import {Container} from '../../../components/Container'
+import {theme} from '../../../styles/theme'
 
 export const Skills = () => {
     return (
         <StyledSkills>
             <Container>
                 <SectionTitle mainTitle={'My Tech Stack'} subTitle={'Technologies I’ve been working with recently'}/>
-                <FlexWrapper wrap={'wrap'} justify={'center'} gap={'105px'}>
+                <SkillWrapper >
                     <Skill iconId={'css'} title={'CSS3'} iconViewBox={'0 0 120 119'}/>
                     <Skill iconId={'html'} title={'HTML5'} iconViewBox={'0 0 120 120'}/>
                     <Skill iconId={'sass'} title={'SASS'} iconViewBox={'0 0 117 87'}/>
@@ -28,7 +29,7 @@ export const Skills = () => {
                     <Skill iconId={'vscode'} title={'VSCode'} iconViewBox={'0 0 112 112'}/>
 
                     <Skill iconId={'super'} title={'Super'} iconViewBox={'0 0 120 120'}/>
-                </FlexWrapper>
+                </SkillWrapper>
             </Container>
         </StyledSkills>
     )
@@ -36,4 +37,15 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
   
+`
+
+const SkillWrapper=styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 105px;
+
+  @media ${theme.media.tablet} {
+    gap: 60px
+  }
 `
