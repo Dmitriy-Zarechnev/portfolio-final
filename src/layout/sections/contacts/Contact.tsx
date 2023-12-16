@@ -41,6 +41,14 @@ const StyledForm = styled.form`
     resize: none;
     height: 160px;
   }
+  
+  ${Button}{
+    @media ${theme.media.tablet} {
+      color: ${theme.colors.accent};
+      border: 1px solid ${theme.colors.borderColor};
+      transform: scale(1.1);
+    }
+  }
 
 `
 

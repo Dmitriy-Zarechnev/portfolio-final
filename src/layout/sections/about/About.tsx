@@ -58,7 +58,7 @@ const AboutTextArea = styled.div`
 
     @media ${theme.media.tablet} {
       color: ${theme.colors.accent};
-      border: 2px solid ${theme.colors.borderColor};
+      border: 1px solid ${theme.colors.borderColor};
       transform: scale(1.1);
     }
   }
