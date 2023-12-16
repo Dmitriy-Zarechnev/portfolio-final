@@ -22,8 +22,13 @@ export const About = () => {
                             distinctio dolor dolorum excepturi explicabo, harum hic labore numquam officiis quia quos repellat similique sunt totam?
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi consectetur corporis delectus enim eos eveniet harum
                         </AboutText>
-                        <AboutMyBackground expText={'Bachelor in Electronics & Communication'} expPlace={'Loremipsum dolorsit t, consectetur:'} expTime={'Aug 2015 - Dec 2020'}
-                                           eduText={'Specialist in NPP'} eduPlace={'National Research Tomsk Polytechnic University:'} eduTime={'Aug 2012 - Feb 2018'}/>
+                        <AboutMyBackground expText={'Bachelor in Electronics & Communication'}
+                                           expPlace={'Loremipsum dolorsit t, consectetur:'}
+                                           expTime={'Aug 2015 - Dec 2020'}
+                                           eduText={'Specialist in NPP'}
+                                           eduPlace={'National Research Tomsk Polytechnic University:'}
+                                           eduTime={'Aug 2012 - Feb 2018'}
+                        />
                         <Button>Download CV</Button>
                     </AboutTextArea>
                 </FlexWrapper>
