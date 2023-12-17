@@ -1,7 +1,6 @@
 import React from 'react'
 import {Icon} from '../icon/Icon'
-import styled from 'styled-components'
-import {LogoAnimation} from '../../styles/animations/Animations'
+import {S} from './Logo_Styles'
 
 type LogoPropsType = {
     iconId: string,
@@ -13,13 +12,11 @@ type LogoPropsType = {
 
 export const Logo = (props: LogoPropsType) => {
     return (
-        <StyledLogoIcon href="#">
+        <S.Logo href="#">
             <Icon iconId={props.iconId} width={props.width} height={props.height} viewBox={props.viewBox} fill={props.fill}/>
-        </StyledLogoIcon>
+        </S.Logo>
     )
 }
 
-const StyledLogoIcon = styled.a`
-  animation: ${LogoAnimation} 45s linear infinite;
-`
+
 

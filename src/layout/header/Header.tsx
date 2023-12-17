@@ -20,7 +20,7 @@ const logoSetting = {
 export const Header: React.FC = () => {
 
     const [width, setWidth] = React.useState(window.innerWidth)
-    const breackpoint = 768
+    const breackpoint: number = 768
 
     React.useEffect(() => {
         const handleWindowResize = () => setWidth(window.innerWidth)

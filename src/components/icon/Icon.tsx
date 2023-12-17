@@ -9,6 +9,7 @@ type IconPropsType = {
     viewBox?: string,
     fill?: string
 }
+
 export const Icon = (props: IconPropsType) => {
     return (
         <svg width={props.width || '110'} height={props.height || '110'} viewBox={props.viewBox || '0 0 120 120'} fill={props.fill || 'white'} xmlns="http://www.w3.org/2000/svg">
