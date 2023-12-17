@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import hobbyFirst from '..//../assets/images/Hobby_1.webp'
-import {ProjectText, ProjectTitle} from '../../layout/sections/works/work/Work'
 import {theme} from '../../styles/theme'
 import {Container} from '../Container'
 import {font} from '../../styles/Common'
+import {S} from '../../layout/sections/works/Works_Styles'
 
 
 export const Slider = () => {
@@ -12,11 +12,11 @@ export const Slider = () => {
         <StyledSlider>
             <Container>
                 <Slide>
-                    <ProjectTitle>Badminton</ProjectTitle>
+                    <S.ProjectTitle>Badminton</S.ProjectTitle>
                     <Image src={hobbyFirst} alt="Badminton"/>
-                    <ProjectText>
+                    <S.ProjectText>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eos labore quia. A adipisci explicabo fuga iste minima odit sed.
-                    </ProjectText>
+                    </S.ProjectText>
                 </Slide>
 
                 <Pagination>
@@ -39,7 +39,7 @@ const StyledSlider = styled.div`
 const Slide = styled.div`
   text-align: center;
 
-  ${ProjectText} {
+  ${S.ProjectText} {
     ${font({fontD: 18, fontM: 14})}
     padding: 10px;
   }
