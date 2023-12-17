@@ -9,7 +9,7 @@ const titlesData = {
     subTitle: 'How i spend free time'
 }
 
-export const Hobbies = () => {
+export const Hobbies: React.FC = () => {
     return (
         <StyledHobbies>
             <SectionTitle mainTitle={titlesData.mainTitle} subTitle={titlesData.subTitle}/>
@@ -21,6 +21,5 @@ export const Hobbies = () => {
 }
 
 const StyledHobbies = styled.section`
-
 `
 
