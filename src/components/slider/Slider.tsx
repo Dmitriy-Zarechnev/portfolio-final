@@ -59,7 +59,7 @@ const Image = styled.img`
 
 const Pagination = styled.div`
   text-align: center;
-  
+
   span {
     display: inline-block;
     width: 10px;

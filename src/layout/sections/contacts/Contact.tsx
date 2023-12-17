@@ -13,10 +13,10 @@ export const Contact = () => {
                 <SectionTitle mainTitle={'Contact'} subTitle={'Together we will stand'}/>
                 <StyledForm>
                     <StyledLabel htmlFor="name" aria-labelledby="name">Your Name </StyledLabel>
-                    <Field id={'name'} type={'text'} placeholder={'Name'} title={'Write down your name'}/>
+                    <Field id={'name'} type={'text'} placeholder={'Name'} title={'Write down your name'} aria-placeholder={'Name'}/>
                     <StyledLabel htmlFor="email" aria-labelledby="email">Your email address: </StyledLabel>
-                    <Field id={'email'} type={'email'} placeholder={'Email'} title={'Write down your email'}/>
-                    <Field placeholder={'Your message starts with…'} as={'textarea'} title={'Write down message'}/>
+                    <Field id={'email'} type={'email'} placeholder={'Email'} title={'Write down your email'} aria-placeholder={'Email'}/>
+                    <Field placeholder={'Your message starts with…'} as={'textarea'} title={'Write down message'} aria-placeholder={'Your message starts with…'}/>
                     <Button type={'submit'}>Send Message</Button>
                 </StyledForm>
             </Container>
@@ -41,8 +41,8 @@ const StyledForm = styled.form`
     resize: none;
     height: 160px;
   }
-  
-  ${Button}{
+
+  ${Button} {
     @media ${theme.media.tablet} {
       color: ${theme.colors.accent};
       border: 1px solid ${theme.colors.borderColor};
@@ -69,7 +69,7 @@ const Field = styled.input`
 `
 
 const StyledLabel = styled.label`
-    align-self: flex-start;
+  align-self: flex-start;
   color: ${theme.colors.contactColor};
   text-transform: capitalize;
 `
