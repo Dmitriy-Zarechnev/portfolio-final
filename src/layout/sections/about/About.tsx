@@ -8,6 +8,35 @@ import {Button} from '../../../components/Button'
 import {font} from '../../../styles/Common'
 import {AboutMyBackground, SectionAboutTitle} from './aboutMyBackground/AboutMyBackground'
 
+
+const aboutText: string = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque corporis cumque deleniti fugiat hic impedit ipsam ipsum, labore laudantium quisquam quo repellat sed tenetur veniam voluptas voluptatibus. Ad animi asperiores consequuntur cumque dignissimos distinctio dolor dolorum excepturi explicabo, harum hic labore numquam officiis quia quos repellat similique sunt totam Lorempsum dolor sit amet, consectetur adipisicing elit. Accusantium animi consectetur corporis delectus enim eos eveniet harum'
+
+const expData: Array<object> = [
+    {
+        text: 'Bachelor in Electronics & Communication',
+        Place: 'Loremipsum dolorsit t, consectetur:',
+        date: 'Aug 2015 - Dec 2020'
+    },
+    {
+        text: 'Bachelor in Electronics & Communication',
+        Place: 'Loremipsum dolorsit t, consectetur:',
+        date: 'Aug 2015 - Dec 2020'
+    }
+]
+
+const eduData: Array<object> = [
+    {
+        text: 'Specialist in NPP',
+        Place: 'National Research Tomsk Polytechnic University:',
+        date: 'Aug 2012 - Feb 2018'
+    },
+    {
+        text: 'Specialist in NPP',
+        Place: 'National Research Tomsk Polytechnic University:',
+        date: 'Aug 2012 - Feb 2018'
+    }
+]
+
 export const About = () => {
     return (
         <StyledAbout>
@@ -18,9 +47,7 @@ export const About = () => {
                     <AboutTextArea>
                         <SectionAboutTitle>About Me</SectionAboutTitle>
                         <AboutText>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque corporis cumque deleniti fugiat hic impedit ipsam ipsum, labore laudantium quisquam quo repellat sed tenetur veniam voluptas voluptatibus. Ad animi asperiores consequuntur cumque dignissimos
-                            distinctio dolor dolorum excepturi explicabo, harum hic labore numquam officiis quia quos repellat similique sunt totam?
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi consectetur corporis delectus enim eos eveniet harum
+                            {aboutText}
                         </AboutText>
                         <AboutMyBackground expText={'Bachelor in Electronics & Communication'}
                                            expPlace={'Loremipsum dolorsit t, consectetur:'}
