@@ -31,7 +31,7 @@ const eduData: Array<background> = [
     }
 ]
 
-export const About = () => {
+export const About: React.FC = () => {
     return (
         <S.About>
             <Container>
