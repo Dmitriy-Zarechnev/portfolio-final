@@ -1,28 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
-import {theme} from '../../styles/theme'
+import {S} from './TechStack_Styles'
 
-export const TechStack = (props: { techText: string }) => {
+export const TechStack: React.FC<{ techText: string }> = (props: { techText: string }) => {
     return (
-        <StyledTechStack>
-            <TechStackTitle>Tech Stack : </TechStackTitle>
-            <TechStackText>{props.techText}</TechStackText>
-        </StyledTechStack>
+        <S.TechStack>
+            <S.TechStackTitle>Tech Stack : </S.TechStackTitle>
+            <S.TechStackText>{props.techText}</S.TechStackText>
+        </S.TechStack>
     )
 }
 
-const StyledTechStack = styled.div`
-  margin-bottom: 20px;
-`
-
-const TechStackTitle = styled.span`
-  color: ${theme.colors.primaryTitle};
-  font-size: 16px;
-  font-weight: 400;
-`
-
-const TechStackText = styled.span`
-  color: ${theme.colors.primaryTitle};
-  font-size: 14px;
-  font-weight: 300;
-`

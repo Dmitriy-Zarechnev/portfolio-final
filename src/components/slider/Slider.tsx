@@ -14,7 +14,7 @@ const hobbyData = [
 ]
 
 
-export const Slider = () => {
+export const Slider:React.FC = () => {
     return (
         <Sl.Slider>
             <Container>

@@ -8,6 +8,7 @@ type FlexWrapperPropsType = {
     content?: string
     gap?: string
 }
+
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   display: flex;
   flex-direction: ${props => props.direction || 'row'};
