@@ -4,6 +4,11 @@ import {Skill} from './skill/Skill'
 import {Container} from '../../../components/Container'
 import {S} from './Skills_Styles'
 
+const titlesData = {
+    mainTitle: 'My Tech Stack',
+    subTitle: 'Technologies I’ve been working with recently'
+}
+
 const skillData = [
     {
         iconId: 'css',
@@ -84,7 +89,7 @@ export const Skills: React.FC = () => {
     return (
         <S.Skills>
             <Container>
-                <SectionTitle mainTitle={'My Tech Stack'} subTitle={'Technologies I’ve been working with recently'}/>
+                <SectionTitle mainTitle={titlesData.mainTitle} subTitle={titlesData.subTitle}/>
                 <S.SkillWrapper>
                     {skillData.map((el, index) => {
                         return (

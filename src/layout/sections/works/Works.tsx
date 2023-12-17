@@ -12,6 +12,11 @@ import pictureSixth from '..//../../assets/images/img_6.webp'
 import {Container} from '../../../components/Container'
 import {S} from './Works_Styles'
 
+const titlesData = {
+    mainTitle: 'Projects',
+    subTitle: 'Things I’ve built so far'
+}
+
 const worksItems: Array<string> = ['All', 'Landing Page', 'React', 'SPA']
 
 const workData = [
@@ -76,7 +81,7 @@ export const Works: React.FC = () => {
     return (
         <S.Works>
             <Container>
-                <SectionTitle mainTitle={'Projects'} subTitle={'Things I’ve built so far'}/>
+                <SectionTitle mainTitle={titlesData.mainTitle} subTitle={titlesData.subTitle}/>
                 <TabMenu menuItems={worksItems}/>
                 <FlexWrapper justify={'center'} wrap={'wrap'} gap={'60px 34px'} align={'stretch'}>
                     {workData.map((el, index) => {

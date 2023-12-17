@@ -1,5 +1,5 @@
 import React from 'react'
-import {S} from './AboutBG_Styles'
+import {S} from '../About_Styles'
 
 type background = {
     text: string,
