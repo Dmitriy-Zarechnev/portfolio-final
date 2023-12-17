@@ -3,25 +3,28 @@ import styled from 'styled-components'
 import hobbyFirst from '..//../assets/images/Hobby_1.webp'
 import {ProjectText, ProjectTitle} from '../../layout/sections/works/work/Work'
 import {theme} from '../../styles/theme'
+import {Container} from '../Container'
+import {font} from '../../styles/Common'
 
 
 export const Slider = () => {
     return (
         <StyledSlider>
+            <Container>
+                <Slide>
+                    <ProjectTitle>Badminton</ProjectTitle>
+                    <Image src={hobbyFirst} alt="Badminton"/>
+                    <ProjectText>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eos labore quia. A adipisci explicabo fuga iste minima odit sed.
+                    </ProjectText>
+                </Slide>
 
-            <Slide>
-                <ProjectTitle>Badminton</ProjectTitle>
-                <Image src={hobbyFirst} alt="Badminton"/>
-                <ProjectText>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eos labore quia. A adipisci explicabo fuga iste minima odit sed.
-                </ProjectText>
-            </Slide>
-
-            <Pagination>
-                <span> </span>
-                <span className={'active'}> </span>
-                <span> </span>
-            </Pagination>
+                <Pagination>
+                    <span> </span>
+                    <span className={'active'}> </span>
+                    <span> </span>
+                </Pagination>
+            </Container>
         </StyledSlider>
     )
 }
@@ -37,6 +40,7 @@ const Slide = styled.div`
   text-align: center;
 
   ${ProjectText} {
+    ${font({fontD: 18, fontM: 14})}
     padding: 10px;
   }
 `
@@ -45,9 +49,17 @@ const Image = styled.img`
   width: 100%;
   height: 400px;
   object-fit: cover;
+
+  @media ${theme.media.mobile} {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+  }
 `
 
 const Pagination = styled.div`
+  text-align: center;
+  
   span {
     display: inline-block;
     width: 10px;

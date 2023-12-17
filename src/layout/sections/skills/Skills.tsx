@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import {FlexWrapper} from '../../../components/FlexWrapper'
 import {SectionTitle} from '../../../components/sectionTitle/SectionTitle'
 import {Skill} from './skill/Skill'
 import {Container} from '../../../components/Container'
@@ -48,4 +47,5 @@ const SkillWrapper=styled.div`
   @media ${theme.media.tablet} {
     gap: 60px
   }
+
 `
