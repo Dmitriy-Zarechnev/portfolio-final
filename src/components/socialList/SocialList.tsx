@@ -1,46 +1,30 @@
 import React from 'react'
 import {Icon} from '../icon/Icon'
-import styled from 'styled-components'
-import {theme} from '../../styles/theme'
+import {S} from './SocialList_Styles'
 
-type SocialListPropsType = {
-    iconsLink: Array<string>
-    iconsSizesViewBox: Array<string>
-    iconsSize: Array<string>
+
+type iconsType = {
+    id: string
+    size: string
+    viewBox: string
 }
 
-export const SocialList = (props: SocialListPropsType) => {
+export const SocialList: React.FC<{ iconsInfo: Array<iconsType> }> = (props: { iconsInfo: Array<iconsType> }) => {
     return (
-        <StyledSocialList>
-            {props.iconsLink.map((el: string, index: number) => {
+        <S.SocialList>
+            {props.iconsInfo.map((el: iconsType, index: number) => {
                 return (
-                    <SocialItem key={index}>
-                        <SocialLink href={'#'}>
-                            <Icon width={props.iconsSize[index]} height={props.iconsSize[index]} viewBox={props.iconsSizesViewBox[index]} iconId={el}/>
-                        </SocialLink>
-                    </SocialItem>
+                    <S.SocialItem key={index}>
+                        <S.SocialLink href={'#'}>
+                            <Icon iconId={el.id} width={el.size} height={el.size} viewBox={el.viewBox}/>
+                        </S.SocialLink>
+                    </S.SocialItem>
                 )
             })}
-        </StyledSocialList>
+        </S.SocialList>
     )
 }
 
-const StyledSocialList = styled.ul`
-  display: flex;
-  gap: 15px;
-`
 
-const SocialItem = styled.li`
-`
-
-const SocialLink = styled.a`
-  color: ${theme.colors.contactColor};
-  display: inline-block;
-
-  &:hover {
-    color: ${theme.colors.accent};
-    transform: translateY(-4px);
-  }
-`
 
 

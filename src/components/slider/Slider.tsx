@@ -18,6 +18,7 @@ export const Slider:React.FC = () => {
     return (
         <Sl.Slider>
             <Container>
+
                 <Sl.Slide>
                     <S.ProjectTitle>{hobbyData[0].title}</S.ProjectTitle>
                     <Sl.Image src={hobbyData[0].src} alt={hobbyData[0].altText}/>
