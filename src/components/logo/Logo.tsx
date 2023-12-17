@@ -10,7 +10,7 @@ type LogoPropsType = {
     fill?: string
 }
 
-export const Logo = (props: LogoPropsType) => {
+export const Logo: React.FC<LogoPropsType> = (props: LogoPropsType) => {
     return (
         <S.Logo href="#">
             <Icon iconId={props.iconId} width={props.width} height={props.height} viewBox={props.viewBox} fill={props.fill}/>

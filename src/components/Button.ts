@@ -19,6 +19,4 @@ export const Button = styled.button`
     border: 2px solid ${theme.colors.borderColor};
     transform: scale(1.1);
   }
-
-  
 `
