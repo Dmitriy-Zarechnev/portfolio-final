@@ -9,6 +9,14 @@ import {S} from './Header_Styles'
 
 const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact']
 
+const logoSetting = {
+    id: 'logo',
+    width: '60',
+    height: '60',
+    viewBox: '0 0 32 32',
+    fill: theme.colors.accent
+}
+
 export const Header: React.FC = () => {
 
     const [width, setWidth] = React.useState(window.innerWidth)
@@ -24,7 +32,9 @@ export const Header: React.FC = () => {
         <S.Header>
             <Container>
                 <FlexWrapper justify={'space-between'} align={'center'}>
-                    <Logo iconId={'logo'} width={'60'} height={'60'} viewBox={'0 0 32 32'} fill={`${theme.colors.accent}`}/>
+                    <Logo iconId={logoSetting.id} width={logoSetting.width}
+                          height={logoSetting.height} viewBox={logoSetting.viewBox}
+                          fill={logoSetting.fill}/>
 
                     {width < breackpoint ? <MobileMenu menuItems={items}/>
                         : <DesktopMenu menuItems={items}/>}
