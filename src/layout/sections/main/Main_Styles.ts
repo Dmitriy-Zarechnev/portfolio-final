@@ -47,6 +47,10 @@ const MyName = styled.h2`
 const MainTitle = styled.h1`
   ${font({weight: 400, color: theme.colors.primaryTitle, fontD: 27, fontM: 20})};
   letter-spacing: -1px;
+
+  p {
+    display: none;
+  }
 `
 
 const PhotoWrapper = styled.div`
