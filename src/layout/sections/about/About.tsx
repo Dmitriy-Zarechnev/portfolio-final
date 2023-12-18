@@ -30,6 +30,7 @@ export const About: React.FC = () => {
         <S.About>
             <Container>
                 <FlexWrapper align={'center'} justify={'space-between'} gap={'25px'}>
+
                     <S.AboutPhoto src={aboutPhoto} alt={'MyPhotoWithFlowers'}/>
 
                     <S.AboutTextArea>

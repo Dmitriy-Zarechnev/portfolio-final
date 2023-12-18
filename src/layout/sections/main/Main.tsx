@@ -28,9 +28,11 @@ export const Main: React.FC = () => {
                         </S.MainTitle>
                     </S.MainTextArea>
 
+
                     <S.PhotoWrapper>
                         <S.Photo src={mainPhoto} alt="MyMainPhoto"/>
                     </S.PhotoWrapper>
+
                 </FlexWrapper>
             </Container>
         </S.Main>
