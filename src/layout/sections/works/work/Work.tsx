@@ -30,7 +30,7 @@ export const Work:React.FC<WorkPropsType> = (props: WorkPropsType) => {
                 <S.ProjectText>{props.text}</S.ProjectText>
                 <TechStack techText={props.techText}/>
                 <FlexWrapper justify={'space-between'}>
-                    <S.Link href={props.liveLink}>Live Preview</S.Link>
+                    <S.Link  href={props.liveLink}>Live Preview</S.Link>
                     <Icon iconId={'linkLogo'} width={'20'} height={'20'} viewBox={'0 0 32 32'} fill={`${theme.colors.worksCards}`}/>
                     <S.Link href={props.codeLink}>View Code</S.Link>
                 </FlexWrapper>

@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {SectionTitle} from '../../../components/sectionTitle/SectionTitle'
-import {TabMenu} from './tabMenu/TabMenu'
+import {TabMenu, TabsStatusType} from './tabMenu/TabMenu'
 import {FlexWrapper} from '../../../components/FlexWrapper'
 import {Work} from './work/Work'
 import pictureFirst from '..//../../assets/images/img_1.webp'
@@ -17,15 +17,33 @@ const titlesData = {
     subTitle: 'Things I’ve built so far'
 }
 
-const worksItems: Array<string> = ['All', 'Landing Page', 'React', 'SPA']
+const tabsItems: Array<{ title: string, status: TabsStatusType }> = [
+    {
+        title: 'All',
+        status: 'all'
+    },
 
-const workData = [
+    {
+        title: 'Landing Page',
+        status: 'landing'
+    },
+    {
+        title: 'React',
+        status: 'React'
+    },
+    {
+        title: 'SPA',
+        status: 'SPA'
+    }
+]
+
+const worksData = [
     {
         title: 'First Title',
         text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
         src: pictureFirst,
         altText: 'ProjectPicture',
-        techText: 'React, JavaScript, SASS, HTML',
+        techText: 'React',
         liveLink: '#',
         codeLink: '#'
     },
@@ -34,7 +52,7 @@ const workData = [
         text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
         src: pictureSecond,
         altText: 'ProjectPicture',
-        techText: 'React, JavaScript, SASS, HTML',
+        techText: 'SPA',
         liveLink: '#',
         codeLink: '#'
     },
@@ -43,7 +61,7 @@ const workData = [
         text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
         src: pictureThird,
         altText: 'ProjectPicture',
-        techText: 'React, JavaScript, SASS, HTML',
+        techText: 'landing',
         liveLink: '#',
         codeLink: '#'
     },
@@ -52,7 +70,7 @@ const workData = [
         text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
         src: pictureForth,
         altText: 'ProjectPicture',
-        techText: 'React, JavaScript, SASS, HTML',
+        techText: 'SPA, HTML',
         liveLink: '#',
         codeLink: '#'
     },
@@ -61,7 +79,7 @@ const workData = [
         text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
         src: pictureFifth,
         altText: 'ProjectPicture',
-        techText: 'React, JavaScript, SASS, HTML',
+        techText: 'React',
         liveLink: '#',
         codeLink: '#'
     },
@@ -70,7 +88,7 @@ const workData = [
         text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
         src: pictureSixth,
         altText: 'ProjectPicture',
-        techText: 'React, JavaScript, SASS, HTML',
+        techText: 'landing',
         liveLink: '#',
         codeLink: '#'
     }
@@ -78,13 +96,42 @@ const workData = [
 
 
 export const Works: React.FC = () => {
+
+    const [currentFilterStatus, setCurrentFilterStatus] = useState('all')
+
+    let filteredWorks = worksData
+
+    if (currentFilterStatus === 'landing') {
+        filteredWorks = worksData.filter((work) => {
+            return work.techText === 'landing'
+        })
+    }
+
+    if (currentFilterStatus === 'React') {
+        filteredWorks = worksData.filter((work) => {
+            return work.techText === 'React'
+        })
+    }
+
+    if (currentFilterStatus === 'SPA') {
+        filteredWorks = worksData.filter((work) => {
+            return work.techText === 'SPA'
+        })
+    }
+
+    function changeFilterStatus(value: TabsStatusType) {
+        setCurrentFilterStatus(value)
+    }
+
     return (
         <S.Works>
             <Container>
                 <SectionTitle mainTitle={titlesData.mainTitle} subTitle={titlesData.subTitle}/>
-                <TabMenu menuItems={worksItems}/>
+                <TabMenu tabsItems={tabsItems}
+                         changeFilterStatus={changeFilterStatus}
+                         currentFilterStatus={currentFilterStatus}/>
                 <FlexWrapper justify={'center'} wrap={'wrap'} gap={'60px 34px'} align={'stretch'}>
-                    {workData.map((el, index) => {
+                    {filteredWorks.map((el, index) => {
                         return (
                             <Work key={index} title={el.title} text={el.text}
                                   src={el.src} altText={el.altText} techText={el.techText} liveLink={el.liveLink} codeLink={el.codeLink}/>

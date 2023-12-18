@@ -1,14 +1,9 @@
 import React from 'react'
 import {FlexWrapper} from '../../components/FlexWrapper'
-import {SocialList} from '../../components/socialList/SocialList'
+import {iconsType, SocialList} from '../../components/socialList/SocialList'
 import {Container} from '../../components/Container'
 import {S} from './Footer_Styles'
 
-type iconsType = {
-    id: string
-    size: string
-    viewBox: string
-}
 
 const iconsObj: Array<iconsType> = [
     {

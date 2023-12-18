@@ -3,7 +3,7 @@ import {Icon} from '../icon/Icon'
 import {S} from './SocialList_Styles'
 
 
-type iconsType = {
+export type iconsType = {
     id: string
     size: string
     viewBox: string

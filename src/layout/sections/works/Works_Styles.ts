@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 import {Button} from '../../../components/Button'
 import {theme} from '../../../styles/theme'
 
@@ -104,6 +104,7 @@ const Link = styled.a`
   font-size: 16px;
   font-weight: 400;
 
+  
   &:hover {
     text-decoration: underline;
   }
@@ -130,7 +131,7 @@ const ListItem = styled.li`
   position: relative;
 `
 
-const TabLink = styled.a`
+const TabLink = styled.button<{active:boolean}>`
   color: ${theme.colors.worksCards};
   text-align: center;
   font-size: 20px;
@@ -152,6 +153,10 @@ const TabLink = styled.a`
     bottom: -5px;
     left: -10px;
     right: -10px;
+
+    ${props => props.active && css<{ active: boolean }>`
+      height: 5px;
+    `}
   }
 `
 

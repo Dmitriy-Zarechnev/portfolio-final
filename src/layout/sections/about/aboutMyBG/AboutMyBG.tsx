@@ -1,7 +1,7 @@
 import React from 'react'
 import {S} from '../About_Styles'
 
-type background = {
+export type background = {
     text: string,
     place: string,
     date: string

@@ -3,17 +3,11 @@ import {FlexWrapper} from '../../../components/FlexWrapper'
 import aboutPhoto from '../../../assets/images/about_me_photo.webp'
 import {Container} from '../../../components/Container'
 import {Button} from '../../../components/Button'
-import {AboutMyBG} from './aboutMyBG/AboutMyBG'
+import {AboutMyBG, background} from './aboutMyBG/AboutMyBG'
 import {S} from './About_Styles'
 
 
 const aboutText: string = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque corporis cumque deleniti fugiat hic impedit ipsam ipsum, labore laudantium quisquam quo repellat sed tenetur veniam voluptas voluptatibus. Ad animi asperiores consequuntur cumque dignissimos distinctio dolor dolorum excepturi explicabo, harum hic labore numquam officiis quia quos repellat similique sunt totam Lorempsum dolor sit amet, consectetur adipisicing elit. Accusantium animi consectetur corporis delectus enim eos eveniet harum'
-
-type background = {
-    text: string,
-    place: string,
-    date: string
-}
 
 const expData: Array<background> = [
     {
