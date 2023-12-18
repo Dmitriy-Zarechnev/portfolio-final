@@ -134,7 +134,7 @@ const ListItem = styled.li`
 const TabLink = styled.button<{active:boolean}>`
   color: ${theme.colors.worksCards};
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
 

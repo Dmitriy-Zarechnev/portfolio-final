@@ -21,14 +21,17 @@ const AboutPhoto = styled.img`
 const AboutTextArea = styled.div`
   display: flex;
   flex-direction: column;
+  
 
   ${Button} {
     align-self: center;
-
+    max-width: 300px;
+    width: 100%;
+    border-radius: 0;
+    
     @media ${theme.media.tablet} {
       color: ${theme.colors.accent};
       border: 1px solid ${theme.colors.borderColor};
-      transform: scale(1.1);
     }
   }
 `
