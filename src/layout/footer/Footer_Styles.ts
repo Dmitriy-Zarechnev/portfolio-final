@@ -26,6 +26,7 @@ const SmallSpan = styled.span`
   color: transparent;
   -webkit-background-clip: text;
 `
+
 export const S = {
     Footer,
     PhoneMail,
