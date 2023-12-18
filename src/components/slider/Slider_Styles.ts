@@ -33,32 +33,8 @@ const Image = styled.img`
   }
 `
 
-const Pagination = styled.div`
-  text-align: center;
-
-  span {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    
-    border-radius: 50%;
-    background-color: ${theme.colors.secondaryTextColor};
-
-    & + span {
-      margin-left: 10px;
-    }
-
-    &.active {
-      background-color: ${theme.colors.accent};
-      width: 20px;
-      border-radius: 20px;
-    }
-  }
-`
-
-export const Sl ={
+export const Sl = {
     Slider,
     Slide,
-    Image,
-    Pagination
+    Image
 }
