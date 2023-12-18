@@ -5,9 +5,11 @@ import {S} from '../../layout/sections/works/Works_Styles'
 
 const Slider = styled.div`
   max-width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid red;
 `
 
 const Slide = styled.div`
@@ -38,6 +40,7 @@ const Pagination = styled.div`
     display: inline-block;
     width: 10px;
     height: 10px;
+    
     border-radius: 50%;
     background-color: ${theme.colors.secondaryTextColor};
 
