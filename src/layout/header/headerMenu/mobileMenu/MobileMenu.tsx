@@ -11,12 +11,12 @@ export const MobileMenu: React.FC<{ menuItems: Array<string> }> = (props: { menu
     }
 
     return (
-        <S.MobileMenu>
+        <S.MobileMenu >
             <S.BurgerButton isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
                 <span></span>
             </S.BurgerButton>
 
-            <S.MobileMenuPopup isOpen={menuIsOpen} onClick={() => {
+            <S.MobileMenuPopup role={'dialog'} aria-modal={'true'} isOpen={menuIsOpen} onClick={() => {
                 setMenuIsOpen(false)
             }}>
                 <Menu menuItems={props.menuItems}/>
