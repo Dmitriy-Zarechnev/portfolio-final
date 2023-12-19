@@ -36,7 +36,7 @@ export const Menu: React.FC = () => {
                             to={el.href}
                             smooth={true}
                             spy={true}
-                            offset={50}
+                            duration={2000}
                         >
                             {el.title}<span></span></S.NavLink>
                     </S.MenuItem>)

@@ -6,7 +6,7 @@ import {font} from '../../styles/Common'
 const SectionTitle = styled.div`
   text-align: center;
   position: relative;
-  `
+`
 
 const SectionMainTitle = styled.h2`
   ${font({weight: 700, color: theme.colors.primaryTitle, fontD: 48, fontM: 40})};
