@@ -4,7 +4,6 @@ import {Skills} from './layout/sections/skills/Skills'
 import {Works} from './layout/sections/works/Works'
 import {Hobbies} from './layout/sections/hobbies/Hobbies'
 import {Contact} from './layout/sections/contacts/Contact'
-import {Slogan} from './layout/sections/slogan/Slogan'
 import {Footer} from './layout/footer/Footer'
 import {About} from './layout/sections/about/About'
 import {Particle} from './components/particle/Particle'
@@ -20,7 +19,6 @@ function App() {
             <Works/>
             <Hobbies/>
             <Contact/>
-            <Slogan/>
             <Footer/>
         </div>
     )

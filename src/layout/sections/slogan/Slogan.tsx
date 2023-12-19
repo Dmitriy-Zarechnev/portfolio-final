@@ -10,7 +10,7 @@ export const Slogan: React.FC = () => {
             <Container>
                 <FlexWrapper direction={'column'} align={'center'} justify={'center'}>
                     <S.StyledTitle> Let’s work together on your next product:</S.StyledTitle>
-                    <S.StyledEmail href={'#'}>zarechnev5021@gmail.com</S.StyledEmail>
+                    <S.StyledEmail>zarechnev5021@gmail.com</S.StyledEmail>
                 </FlexWrapper>
             </Container>
         </S.Slogan>

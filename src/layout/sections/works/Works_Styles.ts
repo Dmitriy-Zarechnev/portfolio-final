@@ -36,7 +36,8 @@ const ImageWrapper = styled.div`
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
+    transition: ${theme.animations.fastTransition};
   }
 
   &::before {
@@ -47,10 +48,11 @@ const ImageWrapper = styled.div`
     top: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(2px);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     opacity: 0;
+    transition: ${theme.animations.fastTransition};
   }
 
   &:hover {
@@ -59,6 +61,7 @@ const ImageWrapper = styled.div`
     }
 
     ${Button} {
+      transform: translate(-50%, -50%);
       opacity: 1;
     }
   }
@@ -89,9 +92,7 @@ const TextWrapper = styled.div`
   padding: 25px 30px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-
-  
-`
+  `
 
 const ProjectTitle = styled.h3`
   color: ${theme.colors.worksCards};
@@ -114,14 +115,15 @@ const Link = styled.a`
   color: ${theme.colors.worksCards};
   font-size: 16px;
   font-weight: 400;
-
+  background: linear-gradient(${theme.colors.worksCards}, ${theme.colors.worksCards}) 0 75% /0 2px no-repeat;
+  transition: ${theme.animations.fastTransition};
 
   &:hover {
-    text-decoration: underline;
+    background-size: 100% 2px;
   }
 
   @media ${theme.media.tablet} {
-    text-decoration: underline;
+    background-size: 100% 2px;
   }
 `
 
@@ -143,10 +145,10 @@ const ListItem = styled.li`
 `
 
 const TabLink = styled.button<{ active: boolean }>`
-  color: ${theme.colors.worksCards};
+  ${font({weight: 500, color: theme.colors.worksCards, fontD: 20, fontM: 18})}
   text-align: center;
-  ${font({weight: 500, fontD: 20, fontM: 18})}
   text-transform: uppercase;
+
 
   &:hover {
     &::before {
@@ -158,11 +160,13 @@ const TabLink = styled.button<{ active: boolean }>`
     content: '';
     display: inline-block;
     background-color: ${theme.colors.accent};
-
+    height: 0;
     position: absolute;
     bottom: -5px;
     left: -10px;
     right: -10px;
+    transition: ${theme.animations.fastTransition};
+
 
     ${props => props.active && css<{ active: boolean }>`
       height: 5px;

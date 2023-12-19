@@ -3,6 +3,7 @@ import {SectionTitle} from '../../../components/sectionTitle/SectionTitle'
 import {Button} from '../../../components/Button'
 import {Container} from '../../../components/Container'
 import {S} from './Contacts_Styles'
+import {Slogan} from '../slogan/Slogan'
 
 const titlesData = {
     mainTitle: 'Contact',
@@ -22,6 +23,7 @@ export const Contact: React.FC = () => {
                     <S.Field placeholder={'Your message starts with…'} as={'textarea'} title={'Write down message'} aria-placeholder={'Your message starts with…'}/>
                     <Button type={'submit'}>Send Message</Button>
                 </S.StyledForm>
+                <Slogan/>
             </Container>
         </S.Contact>
     )

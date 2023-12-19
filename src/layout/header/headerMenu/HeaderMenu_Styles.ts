@@ -4,7 +4,6 @@ import {Link} from 'react-scroll'
 
 //  ----------------- Menu styles --------------------
 const MenuItem = styled.li`
-  
 `
 
 const NavLink = styled(Link)`
@@ -17,7 +16,7 @@ const NavLink = styled(Link)`
   text-align: center;
   color: ${theme.colors.primaryTextColor};
   padding: 6px 20px;
-  transition: .5s;
+  transition: ${theme.animations.slowTransition};
   z-index: 1;
 
   &:hover, &.active {
@@ -35,10 +34,10 @@ const NavLink = styled(Link)`
     border-radius: 15px;
     transform: scale(0) translateY(30px);
     opacity: 0;
-    transition: .5s;
+    transition: ${theme.animations.slowTransition};
   }
 
-  &:hover span, &.active span  {
+  &:hover span, &.active span {
     transform: scale(1) translateY(0);
     opacity: 1;
   }
@@ -58,20 +57,29 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   z-index: 9999;
   background-color: ${theme.colors.primaryBg};
   opacity: 0.9;
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: ${theme.animations.burgerTransition};
 
-  ${props => props.isOpen && css<{ isOpen: boolean }>`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  `}
+  
   ul {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 5px;
     justify-content: center;
     align-items: center;
+    transition: ${theme.animations.burgerTransition};
   }
+
+  ${props => props.isOpen && css<{ isOpen: boolean }>`
+    transform: translateX(0);
+
+    & ul {
+      gap: 20px;
+    }
+  `}
 `
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`

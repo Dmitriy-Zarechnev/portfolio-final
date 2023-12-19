@@ -12,7 +12,9 @@ const SocialItem = styled.li`
 
 const SocialLink = styled.a`
   color: ${theme.colors.contactColor};
+  transform: translateY(0px);
   display: inline-block;
+  transition: ${theme.animations.fastTransition};
 
   &:hover {
     color: ${theme.colors.accent};
