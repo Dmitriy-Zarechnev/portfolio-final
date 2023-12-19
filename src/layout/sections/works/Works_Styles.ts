@@ -5,8 +5,17 @@ import {font} from '../../../styles/Common'
 
 //  ---------------- Works Styles -------------------
 const Works = styled.section`
-`
 
+`
+const WorkWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px 34px;
+  align-items: stretch;
+  position: relative;
+  height: 100%;
+`
 //  ---------------- Work Styles -------------------
 const Work = styled.div`
   max-width: 375px;
@@ -80,7 +89,7 @@ const TextWrapper = styled.div`
   padding: 25px 30px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  
+
 `
 
 const ProjectTitle = styled.h3`
@@ -105,7 +114,7 @@ const Link = styled.a`
   font-size: 16px;
   font-weight: 400;
 
-  
+
   &:hover {
     text-decoration: underline;
   }
@@ -118,7 +127,7 @@ const Link = styled.a`
 //  ---------------- TabMenu Styles -------------------
 
 const TabMenu = styled.nav`
-  
+
   ul {
     display: flex;
     justify-content: space-between;
@@ -132,7 +141,7 @@ const ListItem = styled.li`
   position: relative;
 `
 
-const TabLink = styled.button<{active:boolean}>`
+const TabLink = styled.button<{ active: boolean }>`
   color: ${theme.colors.worksCards};
   text-align: center;
   ${font({weight: 500, fontD: 20, fontM: 18})}
@@ -161,8 +170,9 @@ const TabLink = styled.button<{active:boolean}>`
 `
 
 //  ---------------- Export -------------------
-export const S={
+export const S = {
     Works,
+    WorkWrapper,
     Work,
     ImageWrapper,
     Image,

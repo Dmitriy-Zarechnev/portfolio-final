@@ -4,6 +4,7 @@ import {theme} from '../../styles/theme'
 const SocialList = styled.ul`
   display: flex;
   gap: 15px;
+  z-index: 2;
 `
 
 const SocialItem = styled.li`

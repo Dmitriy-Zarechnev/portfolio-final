@@ -6,6 +6,7 @@ const Main = styled.section`
   min-height: 100vh;
   display: flex;
   margin-top: 70px;
+  
 
   @media ${theme.media.mobile} {
     margin-top: 50px;
@@ -15,6 +16,7 @@ const Main = styled.section`
 const MainTextArea = styled.div`
   display: flex;
   flex-direction: column;
+  z-index: 2;
 
   @media ${theme.media.mobile} {
     margin-bottom: 50px;

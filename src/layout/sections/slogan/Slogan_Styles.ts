@@ -13,6 +13,7 @@ const StyledTitle = styled.p`
   color: ${theme.colors.primaryTitle};
   text-align: center;
   letter-spacing: -1px;
+  z-index: 2;
 
   @media ${theme.media.tablet} {
     ${font({family: '\'DM Sans\', sans-serif', weight: 700, color: theme.colors.primaryTitle, lineHeight: 1.2, fontD: 58, fontM: 30})};
@@ -26,6 +27,7 @@ const StyledEmail = styled.a`
   line-height: 70px;
   letter-spacing: -1px;
   color: ${theme.colors.primaryTextColor};
+  z-index: 2;
 
   &:hover {
     background-image: linear-gradient(90deg, ${theme.colors.accent}, ${theme.colors.contactColor});

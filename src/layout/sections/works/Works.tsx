@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {SectionTitle} from '../../../components/sectionTitle/SectionTitle'
 import {TabMenu, TabsStatusType} from './tabMenu/TabMenu'
-import {FlexWrapper} from '../../../components/FlexWrapper'
 import {Work} from './work/Work'
 import pictureFirst from '..//../../assets/images/img_1.webp'
 import pictureSecond from '..//../../assets/images/img_2.webp'
@@ -130,14 +129,14 @@ export const Works: React.FC = () => {
                 <TabMenu tabsItems={tabsItems}
                          changeFilterStatus={changeFilterStatus}
                          currentFilterStatus={currentFilterStatus}/>
-                <FlexWrapper justify={'center'} wrap={'wrap'} gap={'60px 34px'} align={'stretch'}>
+                <S.WorkWrapper>
                     {filteredWorks.map((el, index) => {
                         return (
                             <Work key={index} title={el.title} text={el.text}
                                   src={el.src} altText={el.altText} techText={el.techText} liveLink={el.liveLink} codeLink={el.codeLink}/>
                         )
                     })}
-                </FlexWrapper>
+                </S.WorkWrapper>
             </Container>
         </S.Works>
     )

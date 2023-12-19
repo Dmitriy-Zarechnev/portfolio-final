@@ -7,17 +7,19 @@ const Footer = styled.footer`
   display: flex;
   flex-direction: column;
   padding: 30px 0;
-`
+  `
 
 
 const PhoneMail = styled.span`
   ${font({family: '\'DM Sans\', sans-serif', weight: 400, color: theme.colors.primaryTextColor, lineHeight: 1.4, fontD: 18, fontM: 16})};
+  z-index: 2;
 `
 
 const Copyright = styled.small`
   font-size: 14px;
   font-weight: 400;
   text-align: center;
+  z-index: 2;
 `
 
 const SmallSpan = styled.span`
@@ -25,6 +27,7 @@ const SmallSpan = styled.span`
   background-image: linear-gradient(90deg, ${theme.colors.accent}, ${theme.colors.contactColor});
   color: transparent;
   -webkit-background-clip: text;
+  z-index: 2;
 `
 
 export const S = {

@@ -3,6 +3,7 @@ import {theme} from '../../../styles/theme'
 
 //  ----------------- Skills styles --------------
 const Skills = styled.section`
+    
 `
 
 const SkillWrapper = styled.div`
@@ -10,6 +11,7 @@ const SkillWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 105px;
+  
 
   @media ${theme.media.tablet} {
     gap: 60px
@@ -22,6 +24,7 @@ const Skill = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 110px;
+  z-index: 2;
 `
 
 const SkillTitle = styled.span`

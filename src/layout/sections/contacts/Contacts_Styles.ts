@@ -3,6 +3,7 @@ import {Button} from '../../../components/Button'
 import {theme} from '../../../styles/theme'
 
 const Contact = styled.section`
+   
 `
 
 const StyledForm = styled.form`
@@ -15,6 +16,7 @@ const StyledForm = styled.form`
   align-items: center;
   gap: 16px;
 
+  position: relative;
   textarea {
     resize: none;
     height: 160px;

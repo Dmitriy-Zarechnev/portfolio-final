@@ -12,7 +12,7 @@ const About = styled.section`
 const AboutPhoto = styled.img`
   width: 300px;
   object-fit: cover;
-
+  z-index: 2;
   @media ${theme.media.tablet} {
     display: none;
   }
@@ -21,7 +21,7 @@ const AboutPhoto = styled.img`
 const AboutTextArea = styled.div`
   display: flex;
   flex-direction: column;
-
+  z-index: 2;
 
   ${Button} {
     align-self: center;
@@ -53,6 +53,7 @@ const AboutText = styled.p`
 // ---------------- AboutBG Styles ----------------------
 
 const AboutBG = styled.div`
+  
 `
 
 const MyBackground = styled.div`
