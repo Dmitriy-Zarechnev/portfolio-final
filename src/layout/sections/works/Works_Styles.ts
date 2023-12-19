@@ -1,6 +1,7 @@
 import styled, {css} from 'styled-components'
 import {Button} from '../../../components/Button'
 import {theme} from '../../../styles/theme'
+import {font} from '../../../styles/Common'
 
 //  ---------------- Works Styles -------------------
 const Works = styled.section`
@@ -134,8 +135,7 @@ const ListItem = styled.li`
 const TabLink = styled.button<{active:boolean}>`
   color: ${theme.colors.worksCards};
   text-align: center;
-  font-size: 18px;
-  font-weight: 500;
+  ${font({weight: 500, fontD: 20, fontM: 18})}
   text-transform: uppercase;
 
   &:hover {
