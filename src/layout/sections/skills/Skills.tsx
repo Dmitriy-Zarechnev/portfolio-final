@@ -3,6 +3,7 @@ import {SectionTitle} from '../../../components/sectionTitle/SectionTitle'
 import {Skill} from './skill/Skill'
 import {Container} from '../../../components/Container'
 import {S} from './Skills_Styles'
+import {Fade} from 'react-awesome-reveal'
 
 const titlesData = {
     mainTitle: 'My Tech Stack',
@@ -90,13 +91,17 @@ export const Skills: React.FC = () => {
         <S.Skills id={'techStack'}>
             <Container>
                 <SectionTitle mainTitle={titlesData.mainTitle} subTitle={titlesData.subTitle}/>
+                <Fade cascade={true} damping={0.3} >
                 <S.SkillWrapper>
-                    {skillData.map((el, index) => {
-                        return (
-                            <Skill key={index} iconId={el.iconId} title={el.title} iconViewBox={el.iconViewBox}/>
-                        )
-                    })}
+
+                        {skillData.map((el, index) => {
+                            return (
+                                <Skill key={index} iconId={el.iconId} title={el.title} iconViewBox={el.iconViewBox}/>
+                            )
+                        })}
+
                 </S.SkillWrapper>
+                </Fade>
             </Container>
         </S.Skills>
     )

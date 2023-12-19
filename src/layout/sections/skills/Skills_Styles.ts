@@ -12,7 +12,6 @@ const SkillWrapper = styled.div`
   justify-content: center;
   gap: 105px;
   
-
   @media ${theme.media.tablet} {
     gap: 60px
   }
