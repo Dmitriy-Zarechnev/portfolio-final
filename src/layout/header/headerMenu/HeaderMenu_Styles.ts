@@ -1,11 +1,13 @@
 import styled, {css} from 'styled-components'
 import {theme} from '../../../styles/theme'
+import {Link} from 'react-scroll'
 
 //  ----------------- Menu styles --------------------
 const MenuItem = styled.li`
+  
 `
 
-const Link = styled.a`
+const NavLink = styled(Link)`
   display: block;
   position: relative;
 
@@ -18,7 +20,7 @@ const Link = styled.a`
   transition: .5s;
   z-index: 1;
 
-  &:hover {
+  &:hover, &.active {
     color: ${theme.colors.accent};
   }
 
@@ -36,7 +38,7 @@ const Link = styled.a`
     transition: .5s;
   }
 
-  &:hover span {
+  &:hover span, &.active span  {
     transform: scale(1) translateY(0);
     opacity: 1;
   }
@@ -138,10 +140,10 @@ const DesktopMenu = styled.nav`
 
 //  ----------------- Export styles -------------------
 export const S = {
-    Link,
+    NavLink,
     MenuItem,
     MobileMenu,
     MobileMenuPopup,
     BurgerButton,
-    DesktopMenu,
+    DesktopMenu
 }

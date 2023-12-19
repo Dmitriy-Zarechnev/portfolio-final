@@ -87,7 +87,7 @@ const skillData = [
 
 export const Skills: React.FC = () => {
     return (
-        <S.Skills>
+        <S.Skills id={'techStack'}>
             <Container>
                 <SectionTitle mainTitle={titlesData.mainTitle} subTitle={titlesData.subTitle}/>
                 <S.SkillWrapper>

@@ -8,7 +8,7 @@ import Typewriter from 'typewriter-effect'
 
 export const Main: React.FC = () => {
     return (
-        <S.Main>
+        <S.Main id={'home'}>
             <Container>
                 <FlexWrapper align={'center'} justify={'space-around'} wrap={'wrap'}>
                     <S.MainTextArea>
@@ -27,7 +27,6 @@ export const Main: React.FC = () => {
                             />
                         </S.MainTitle>
                     </S.MainTextArea>
-
 
                     <S.PhotoWrapper>
                         <S.Photo src={mainPhoto} alt="MyMainPhoto"/>

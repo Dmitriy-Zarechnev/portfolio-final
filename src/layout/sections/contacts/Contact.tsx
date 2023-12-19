@@ -11,9 +11,9 @@ const titlesData = {
 
 export const Contact: React.FC = () => {
     return (
-        <S.Contact>
-            <Container>
-                <SectionTitle mainTitle={titlesData.mainTitle} subTitle={titlesData.subTitle}/>
+        <S.Contact id={'contact'}>
+            <Container >
+                <SectionTitle  mainTitle={titlesData.mainTitle} subTitle={titlesData.subTitle} />
                 <S.StyledForm>
                     <S.StyledLabel htmlFor="name" aria-labelledby="name">Your Name </S.StyledLabel>
                     <S.Field id={'name'} type={'text'} placeholder={'Name'} title={'Write down your name'} aria-placeholder={'Name'}/>

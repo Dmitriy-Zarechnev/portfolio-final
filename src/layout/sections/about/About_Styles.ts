@@ -27,7 +27,7 @@ const AboutTextArea = styled.div`
     align-self: center;
     max-width: 300px;
     width: 100%;
-    
+
     @media ${theme.media.tablet} {
       color: ${theme.colors.accent};
       border: 2px solid ${theme.colors.borderColor};
@@ -43,17 +43,26 @@ const SectionAboutTitle = styled.h2`
   @media ${theme.media.tablet} {
     margin-bottom: 20px;
   }
+
+  @media ${theme.media.mobile} {
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
 `
 
 const AboutText = styled.p`
   ${font({weight: 300, color: theme.colors.primaryTextColor, fontD: 24, fontM: 14})};
   margin-bottom: 40px;
+
+  @media ${theme.media.mobile} {
+    margin-bottom: 0;
+  }
 `
 
 // ---------------- AboutBG Styles ----------------------
 
 const AboutBG = styled.div`
-  
+
 `
 
 const MyBackground = styled.div`

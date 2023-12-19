@@ -27,7 +27,7 @@ const eduData: Array<background> = [
 
 export const About: React.FC = () => {
     return (
-        <S.About>
+        <S.About id={'about'}>
             <Container>
                 <FlexWrapper align={'center'} justify={'space-between'} gap={'25px'}>
 

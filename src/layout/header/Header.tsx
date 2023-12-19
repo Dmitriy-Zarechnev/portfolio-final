@@ -7,7 +7,7 @@ import {DesktopMenu} from './headerMenu/desktopMenu/DesktopMenu'
 import {MobileMenu} from './headerMenu/mobileMenu/MobileMenu'
 import {S} from './Header_Styles'
 
-const items: Array<string> = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact']
+
 
 const logoSetting = {
     id: 'logo',
@@ -36,8 +36,8 @@ export const Header: React.FC = () => {
                           height={logoSetting.height} viewBox={logoSetting.viewBox}
                           fill={logoSetting.fill}/>
 
-                    {width < breackpoint ? <MobileMenu menuItems={items}/>
-                        : <DesktopMenu menuItems={items}/>}
+                    {width < breackpoint ? <MobileMenu/>
+                        : <DesktopMenu/>}
                 </FlexWrapper>
             </Container>
         </S.Header>

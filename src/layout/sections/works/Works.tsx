@@ -123,7 +123,7 @@ export const Works: React.FC = () => {
     }
 
     return (
-        <S.Works>
+        <S.Works id={'projects'}>
             <Container>
                 <SectionTitle mainTitle={titlesData.mainTitle} subTitle={titlesData.subTitle}/>
                 <TabMenu tabsItems={tabsItems}
