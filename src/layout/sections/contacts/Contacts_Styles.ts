@@ -22,12 +22,7 @@ const StyledForm = styled.form`
 
   ${Button} {
     width: 100%;
-    border-radius: 0;
-    background-color: ${theme.colors.buttonBg};
-
-    color: ${theme.colors.accent};
-    border: 1px solid ${theme.colors.borderColor};
-
+         
     &:hover {
       border: 2px solid ${theme.colors.borderColor};
     }
