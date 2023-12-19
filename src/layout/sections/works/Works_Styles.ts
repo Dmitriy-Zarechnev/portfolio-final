@@ -90,6 +90,7 @@ const TextWrapper = styled.div`
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 
+  
 `
 
 const ProjectTitle = styled.h3`
