@@ -3,7 +3,6 @@ import {Button} from '../../../components/Button'
 import {theme} from '../../../styles/theme'
 
 const Contact = styled.section`
-   
 `
 
 const StyledForm = styled.form`
@@ -17,6 +16,7 @@ const StyledForm = styled.form`
   gap: 16px;
 
   position: relative;
+
   textarea {
     resize: none;
     height: 160px;
@@ -24,11 +24,11 @@ const StyledForm = styled.form`
 
   ${Button} {
     width: 100%;
-         
+
     &:hover {
       border: 2px solid ${theme.colors.borderColor};
     }
-    
+
     @media ${theme.media.tablet} {
       border: 2px solid ${theme.colors.borderColor};
     }
