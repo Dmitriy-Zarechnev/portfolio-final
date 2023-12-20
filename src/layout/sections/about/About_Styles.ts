@@ -45,7 +45,7 @@ const SectionAboutTitle = styled.h2`
   }
 
   @media ${theme.media.mobile} {
-    margin-top: 45px;
+    
     margin-bottom: 20px;
   }
 `
