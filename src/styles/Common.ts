@@ -7,6 +7,7 @@ type FontPropsType = {
     lineHeight?: number
     fontM?: number
     fontD?: number
+
 }
 
 
