@@ -9,22 +9,26 @@ const iconsObj: Array<iconsType> = [
     {
         id: 'gitHubSocialLink',
         size: '30',
-        viewBox: '0 0 30 30'
+        viewBox: '0 0 30 30',
+        link: 'https://github.com/Dmitriy-Zarechnev'
     },
     {
         id: 'gmailSocialLink',
         size: '30',
-        viewBox: '-0.5 0 48 48'
+        viewBox: '-0.5 0 48 48',
+        link: 'mailto:zarechnev5021@gmail.com'
     },
     {
         id: 'whatsAppSocialLink',
         size: '30',
-        viewBox: '0 0 32 32'
+        viewBox: '0 0 32 32',
+        link: 'https://wa.me/79208743215'
     },
     {
         id: 'telegrammSocialLink',
         size: '30',
-        viewBox: '2 2 20 20'
+        viewBox: '2 2 20 20',
+        link: 'https://t.me/ZarDmit'
     }
 ]
 
