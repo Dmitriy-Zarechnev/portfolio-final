@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import {theme} from '../../../styles/theme'
 import {font} from '../../../styles/Common'
 
-const Slogan = styled.section`
+const Slogan = styled.div`
+    margin-top: 30px;
 `
 
 const StyledTitle = styled.p`
