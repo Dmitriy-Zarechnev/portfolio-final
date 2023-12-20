@@ -34,11 +34,12 @@ export const Contact: React.FC = () => {
             })
 
     }
+
     return (
         <S.Contact id={'contact'}>
             <Container>
                 <SectionTitle mainTitle={titlesData.mainTitle} subTitle={titlesData.subTitle}/>
-                <S.StyledForm ref={form} onSubmit={sendEmail}>
+                <S.StyledForm  autoComplete="off" ref={form} onSubmit={sendEmail} >
                     <S.StyledLabel htmlFor="name" aria-labelledby="name">Your Name </S.StyledLabel>
                     <S.Field required id={'name'}
                              type={'text'} placeholder={'Name'}

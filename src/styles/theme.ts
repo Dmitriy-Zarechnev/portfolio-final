@@ -23,7 +23,7 @@ export const theme = {
     },
 
     animations:{
-        slowTransition: '.5s',
+        slowTransition: '.2s',
         fastTransition: '.2s',
         burgerTransition: '1s'
     }

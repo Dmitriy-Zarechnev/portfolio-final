@@ -95,4 +95,5 @@ export const GlobalStyle = createGlobalStyle`
   label {
     cursor: pointer;
   }
+  
 `
