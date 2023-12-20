@@ -53,7 +53,7 @@ export const Contact: React.FC = () => {
                              title={'Write down your email'} aria-placeholder={'Email'}
                              name={'email'}/>
 
-                    <S.StyledLabel htmlFor="subject" aria-labelledby="subject">Your subject theme: </S.StyledLabel>
+                    <S.StyledLabel htmlFor="subject" aria-labelledby="subject">Subject theme: </S.StyledLabel>
                     <S.Field required id={'subject'}
                              type={'text'} placeholder={'Subject'}
                              title={'Write down your Subject'} aria-placeholder={'Subject'}
