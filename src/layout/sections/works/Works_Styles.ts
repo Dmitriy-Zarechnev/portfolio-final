@@ -3,6 +3,7 @@ import {Button} from '../../../components/Button'
 import {theme} from '../../../styles/theme'
 import {font} from '../../../styles/Common'
 
+
 //  ---------------- Works Styles -------------------
 const Works = styled.section`
 
@@ -92,7 +93,7 @@ const TextWrapper = styled.div`
   padding: 25px 30px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  `
+`
 
 const ProjectTitle = styled.h3`
   color: ${theme.colors.worksCards};

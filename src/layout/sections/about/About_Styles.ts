@@ -45,7 +45,6 @@ const SectionAboutTitle = styled.h2`
   }
 
   @media ${theme.media.mobile} {
-    
     margin-bottom: 20px;
   }
 `
@@ -55,7 +54,7 @@ const AboutText = styled.p`
   margin-bottom: 40px;
 
   @media ${theme.media.mobile} {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 `
 

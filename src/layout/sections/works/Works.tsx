@@ -10,6 +10,7 @@ import pictureFifth from '..//../../assets/images/img_5.webp'
 import pictureSixth from '..//../../assets/images/img_6.webp'
 import {Container} from '../../../components/Container'
 import {S} from './Works_Styles'
+import {AnimatePresence, motion} from 'framer-motion'
 
 const titlesData = {
     mainTitle: 'Projects',
@@ -44,7 +45,8 @@ const worksData = [
         altText: 'ProjectPicture',
         techText: 'React',
         liveLink: '#',
-        codeLink: '#'
+        codeLink: '#',
+        id: 1
     },
     {
         title: 'Second Title',
@@ -53,7 +55,8 @@ const worksData = [
         altText: 'ProjectPicture',
         techText: 'SPA',
         liveLink: '#',
-        codeLink: '#'
+        codeLink: '#',
+        id: 2
     },
     {
         title: 'Third Title',
@@ -62,7 +65,8 @@ const worksData = [
         altText: 'ProjectPicture',
         techText: 'landing',
         liveLink: '#',
-        codeLink: '#'
+        codeLink: '#',
+        id: 3
     },
     {
         title: 'Forth Title',
@@ -71,7 +75,8 @@ const worksData = [
         altText: 'ProjectPicture',
         techText: 'SPA, HTML',
         liveLink: '#',
-        codeLink: '#'
+        codeLink: '#',
+        id: 4
     },
     {
         title: 'Fifth Title',
@@ -80,7 +85,8 @@ const worksData = [
         altText: 'ProjectPicture',
         techText: 'React',
         liveLink: '#',
-        codeLink: '#'
+        codeLink: '#',
+        id: 5
     },
     {
         title: 'Sixth Title',
@@ -89,7 +95,8 @@ const worksData = [
         altText: 'ProjectPicture',
         techText: 'landing',
         liveLink: '#',
-        codeLink: '#'
+        codeLink: '#',
+        id: 6
     }
 ]
 
@@ -130,12 +137,24 @@ export const Works: React.FC = () => {
                          changeFilterStatus={changeFilterStatus}
                          currentFilterStatus={currentFilterStatus}/>
                 <S.WorkWrapper>
-                    {filteredWorks.map((el, index) => {
-                        return (
-                            <Work key={index} title={el.title} text={el.text}
-                                  src={el.src} altText={el.altText} techText={el.techText} liveLink={el.liveLink} codeLink={el.codeLink}/>
-                        )
-                    })}
+                    <AnimatePresence>
+                        {filteredWorks.map((el) => {
+                            return (
+                                <motion.div
+                                    layout={true}
+                                    initial={{opacity: 0}}
+                                    animate={{opacity: 1}}
+                                    exit={{opacity: 0}}
+                                    key={el.id}
+                                >
+                                    <Work key={el.id} title={el.title} text={el.text}
+                                          src={el.src} altText={el.altText} techText={el.techText}
+                                          liveLink={el.liveLink} codeLink={el.codeLink}
+                                    />
+                                </motion.div>
+                            )
+                        })}
+                    </AnimatePresence>
                 </S.WorkWrapper>
             </Container>
         </S.Works>
