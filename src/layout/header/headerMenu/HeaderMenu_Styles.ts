@@ -21,6 +21,7 @@ const NavLink = styled(Link)`
 
   &:hover, &.active {
     color: ${theme.colors.accent};
+    text-shadow: 0 0 2px ${theme.colors.accent};
   }
 
   span {
@@ -30,7 +31,7 @@ const NavLink = styled(Link)`
     width: 100%;
     height: 100%;
     z-index: -1;
-    border-bottom: 2px solid ${theme.colors.accent};
+    border-bottom: 3px solid ${theme.colors.accent};
     border-radius: 15px;
     transform: scale(0) translateY(30px);
     opacity: 0;
