@@ -27,11 +27,6 @@ const AboutTextArea = styled.div`
     align-self: center;
     max-width: 300px;
     width: 100%;
-
-    @media ${theme.media.tablet} {
-      color: ${theme.colors.accent};
-      border: 2px solid ${theme.colors.borderColor};
-    }
   }
 `
 

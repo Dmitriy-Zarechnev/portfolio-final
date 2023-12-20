@@ -4,8 +4,9 @@ import {theme} from '../styles/theme'
 export const Button = styled.button`
   width: 170px;
   height: 32px;
+  color: ${theme.colors.primaryTextColor};
   background-color: ${theme.colors.buttonBg};
-  border: 1px solid ${theme.colors.borderColor};
+  border: 3px solid ${theme.colors.primaryTextColor};
   padding: 7px 0;
   text-align: center;
   font-size: 14px;
@@ -16,6 +17,12 @@ export const Button = styled.button`
 
   &:hover {
     color: ${theme.colors.accent};
-    border: 2px solid ${theme.colors.borderColor};
+    border: 3px solid ${theme.colors.borderColor};
+    box-shadow: 0 0 2px 2px ${theme.colors.borderColor};
   }
+
+  @media ${theme.media.tablet} {
+    border: 3px solid ${theme.colors.borderColor};
+  }
+  
 `

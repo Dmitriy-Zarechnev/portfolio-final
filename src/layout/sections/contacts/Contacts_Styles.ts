@@ -24,14 +24,6 @@ const StyledForm = styled.form`
 
   ${Button} {
     width: 100%;
-
-    &:hover {
-      border: 2px solid ${theme.colors.borderColor};
-    }
-
-    @media ${theme.media.tablet} {
-      border: 2px solid ${theme.colors.borderColor};
-    }
   }
 `
 
