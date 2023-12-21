@@ -10,25 +10,29 @@ const iconsObj: Array<iconsType> = [
         id: 'gitHubSocialLink',
         size: '30',
         viewBox: '0 0 30 30',
-        link: 'https://github.com/Dmitriy-Zarechnev'
+        link: 'https://github.com/Dmitriy-Zarechnev',
+        aria: 'Link to my gitHub'
     },
     {
         id: 'gmailSocialLink',
         size: '30',
         viewBox: '-0.5 0 48 48',
-        link: 'mailto:zarechnev5021@gmail.com'
+        link: 'mailto:zarechnev5021@gmail.com',
+        aria: 'Link to email'
     },
     {
         id: 'whatsAppSocialLink',
         size: '30',
         viewBox: '0 0 32 32',
-        link: 'https://wa.me/79208743215'
+        link: 'https://wa.me/79208743215',
+        aria: 'Link to my WhatsApp'
     },
     {
         id: 'telegrammSocialLink',
         size: '30',
         viewBox: '2 2 20 20',
-        link: 'https://t.me/ZarDmit'
+        link: 'https://t.me/ZarDmit',
+        aria: 'Link to my Telegramm'
     }
 ]
 

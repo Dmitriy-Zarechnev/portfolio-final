@@ -8,6 +8,7 @@ export type iconsType = {
     size: string
     viewBox: string
     link: string
+    aria: string
 }
 
 export const SocialList: React.FC<{ iconsInfo: Array<iconsType> }> = (props: { iconsInfo: Array<iconsType> }) => {
@@ -16,7 +17,7 @@ export const SocialList: React.FC<{ iconsInfo: Array<iconsType> }> = (props: { i
             {props.iconsInfo.map((el: iconsType, index: number) => {
                 return (
                     <S.SocialItem key={index}>
-                        <S.SocialLink href={el.link} target={'_blank'}>
+                        <S.SocialLink href={el.link} target={'_blank'} aria-label={el.aria}>
                             <Icon iconId={el.id} width={el.size} height={el.size} viewBox={el.viewBox}/>
                         </S.SocialLink>
                     </S.SocialItem>
