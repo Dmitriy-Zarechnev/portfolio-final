@@ -94,14 +94,12 @@ export const Skills: React.FC = () => {
 
                 <S.SkillWrapper>
                     <Reveal cascade={true}
-                            damping={0.3}
+                            damping={0.2}
                             triggerOnce={true}
                     >
                         {skillData.map((el, index) => {
                             return (
-
                                 <Skill key={index} iconId={el.iconId} title={el.title} iconViewBox={el.iconViewBox}/>
-
                             )
                         })}
                     </Reveal>

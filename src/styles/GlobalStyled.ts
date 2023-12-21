@@ -13,7 +13,6 @@ export const GlobalStyle = createGlobalStyle`
     @media (prefers-reduced-motion: reduce) {
       animation: none;
     }
-
   }
 
   // Стили при выделении
@@ -95,5 +94,4 @@ export const GlobalStyle = createGlobalStyle`
   label {
     cursor: pointer;
   }
-  
 `

@@ -32,7 +32,6 @@ const iconsObj: Array<iconsType> = [
     }
 ]
 
-
 export const Footer: React.FC = () => {
     return (
         <S.Footer>

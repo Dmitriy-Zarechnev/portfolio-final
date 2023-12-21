@@ -6,7 +6,6 @@ import {FlexWrapper} from '../../../../components/FlexWrapper'
 import {S} from '../Works_Styles'
 import {Logo} from '../../../../components/logo/Logo'
 
-
 type WorkPropsType = {
     title: string
     text: string

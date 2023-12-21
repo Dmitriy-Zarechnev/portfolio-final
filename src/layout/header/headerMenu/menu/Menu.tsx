@@ -24,7 +24,6 @@ const items = [
     }
 ]
 
-
 export const Menu: React.FC = () => {
     return (
         <ul role="menu">

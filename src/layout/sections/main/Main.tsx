@@ -31,7 +31,6 @@ export const Main: React.FC = () => {
                     <S.PhotoWrapper>
                         <S.Photo src={mainPhoto} alt="MyMainPhoto"/>
                     </S.PhotoWrapper>
-
                 </FlexWrapper>
             </Container>
         </S.Main>

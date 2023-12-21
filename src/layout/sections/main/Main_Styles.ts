@@ -6,7 +6,6 @@ const Main = styled.section`
   min-height: 100vh;
   display: flex;
   
-  
 
   @media ${theme.media.mobile} {
     margin-top: 50px;

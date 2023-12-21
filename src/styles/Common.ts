@@ -7,9 +7,7 @@ type FontPropsType = {
     lineHeight?: number
     fontM?: number
     fontD?: number
-
 }
-
 
 export const font = ({family, weight, color, lineHeight, fontM, fontD}: FontPropsType) => `
     font-family:${family || 'Poppins'};

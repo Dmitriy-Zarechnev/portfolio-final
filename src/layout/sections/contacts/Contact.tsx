@@ -32,7 +32,6 @@ export const Contact: React.FC = () => {
             }, (error) => {
                 console.log(error.text)
             })
-
     }
 
     return (
@@ -70,7 +69,6 @@ export const Contact: React.FC = () => {
             </Container>
         </S.Contact>
     )
-
 }
 
 
