@@ -56,7 +56,6 @@ const AboutText = styled.p`
 // ---------------- AboutBG Styles ----------------------
 
 const AboutBG = styled.div`
-
 `
 
 const MyBackground = styled.div`
