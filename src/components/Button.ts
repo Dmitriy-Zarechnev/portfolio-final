@@ -25,5 +25,4 @@ export const Button = styled.button`
     border: 3px solid ${theme.colors.borderColor};
     box-shadow: 0 0 2px 2px ${theme.colors.borderColor};
   }
-
 `
