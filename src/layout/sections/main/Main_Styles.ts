@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 import {theme} from '../../../styles/theme'
-import {font} from '../../../styles/Common'
+import { respFont} from '../../../styles/Common'
 
 const Main = styled.section`
   min-height: 100vh;
   display: flex;
-  
 
   @media ${theme.media.mobile} {
     margin-top: 50px;
@@ -23,17 +22,23 @@ const MainTextArea = styled.div`
 `
 
 const MainHello = styled.span`
-  ${font({weight: 400, color: theme.colors.primaryTitle, fontD: 16, fontM: 16})};
+  font-weight: 400;
+  color: ${theme.colors.primaryTitle};
+  font-size: 16px;
   letter-spacing: -1px;
 `
 
 const MainText = styled.span`
-  ${font({weight: 400, color: theme.colors.primaryTitle, fontD: 27, fontM: 20})};
+  ${respFont({ PxMax: 27, PxMin: 20})};
+  font-weight: 400;
+  color:${theme.colors.primaryTitle};
   letter-spacing: -1px;
 `
 
 const MyName = styled.h2`
-  ${font({weight: 700, color: 'transparent', fontD: 50, fontM: 36})};
+  ${respFont({ PxMax: 50, PxMin: 36})};
+  font-weight: 700;
+  color: transparent;
   letter-spacing: -1px;
   margin: 10px 0;
 
@@ -46,7 +51,9 @@ const MyName = styled.h2`
 `
 
 const MainTitle = styled.h1`
-  ${font({weight: 400, color: theme.colors.primaryTitle, fontD: 27, fontM: 20})};
+  ${respFont({ PxMax: 27, PxMin: 20})};
+  font-weight: 400;
+  color: ${theme.colors.primaryTitle};
   letter-spacing: -1px;
 
   p {
