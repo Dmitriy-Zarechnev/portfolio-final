@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import {theme} from '../../../styles/theme'
 import {Button} from '../../../components/Button'
-import {font} from '../../../styles/Common'
+import {respFont} from '../../../styles/Common'
 
 
 // ----------------- About Styles ----------------------
@@ -13,6 +13,7 @@ const AboutPhoto = styled.img`
   width: 300px;
   object-fit: cover;
   z-index: 2;
+
   @media ${theme.media.tablet} {
     display: none;
   }
@@ -31,21 +32,21 @@ const AboutTextArea = styled.div`
 `
 
 const SectionAboutTitle = styled.h2`
-  ${font({weight: 700, color: theme.colors.primaryTitle, fontD: 42, fontM: 24})};
+  ${respFont({PxMax: 42, PxMin: 24})};
+  font-weight: 700;
+  color: ${theme.colors.primaryTitle};
   margin-bottom: 30px;
   letter-spacing: -0.4px;
 
   @media ${theme.media.tablet} {
     margin-bottom: 20px;
   }
-
-  @media ${theme.media.mobile} {
-    margin-bottom: 20px;
-  }
 `
 
 const AboutText = styled.p`
-  ${font({weight: 300, color: theme.colors.primaryTextColor, fontD: 24, fontM: 14})};
+  ${respFont({PxMax: 24, PxMin: 14})};
+  font-weight: 300;
+  color: ${theme.colors.primaryTextColor};
   margin-bottom: 40px;
 
   @media ${theme.media.mobile} {
@@ -63,17 +64,23 @@ const MyBackground = styled.div`
 `
 
 const MyBackgroundText = styled.p`
-  ${font({weight: 400, color: theme.colors.secondaryTitle, fontD: 20, fontM: 16})};
+  ${respFont({ PxMax: 20, PxMin: 16})};
+  font-weight: 400;
+  color: ${theme.colors.secondaryTitle};
   letter-spacing: 1px;
 `
 
 const Place = styled.p`
-  ${font({weight: 500, color: theme.colors.contactColor, fontD: 20, fontM: 16})};
+  ${respFont({ PxMax: 20, PxMin: 16})};
+  font-weight: 500;
+  color: ${theme.colors.contactColor};
   letter-spacing: 1px;
 `
 
 const Date = styled.span`
-  ${font({weight: 500, color: theme.colors.accent, fontD: 18, fontM: 14})};
+  ${respFont({PxMax: 18, PxMin: 14})};
+  font-weight: 500;
+  color: ${theme.colors.accent};
   letter-spacing: 1px;
 `
 
