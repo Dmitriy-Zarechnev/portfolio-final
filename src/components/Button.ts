@@ -15,6 +15,7 @@ export const Button = styled.button`
   text-transform: uppercase;
   transition: ${theme.animations.fastTransition};
 
+  
   &:hover {
     color: ${theme.colors.accent};
     border: 3px solid ${theme.colors.borderColor};
