@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {theme} from '../../styles/theme'
-import {font} from '../../styles/Common'
+import {respFont} from '../../styles/Common'
 
 
 const SectionTitle = styled.div`
@@ -9,9 +9,11 @@ const SectionTitle = styled.div`
 `
 
 const SectionMainTitle = styled.h2`
-  ${font({weight: 700, color: theme.colors.primaryTitle, fontD: 48, fontM: 40})};
+  ${respFont({PxMax: 48, PxMin: 40})};
+  font-weight: 700;
+  color: ${theme.colors.primaryTitle};
   margin-bottom: 30px;
-  
+
   @media ${theme.media.mobile} {
     margin-top: 60px;
     margin-bottom: 20px;
@@ -19,9 +21,11 @@ const SectionMainTitle = styled.h2`
 `
 
 const SectionSubTitle = styled.h3`
-  ${font({weight: 400, color: theme.colors.secondaryTitle, fontD: 32, fontM: 26})};
+  ${respFont({PxMax: 32, PxMin: 26})};
+  font-weight: 400;
+  color: ${theme.colors.secondaryTitle};
   margin-bottom: 75px;
-  
+
 
   @media ${theme.media.mobile} {
     margin-bottom: 50px;
