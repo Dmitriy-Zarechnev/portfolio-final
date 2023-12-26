@@ -52,7 +52,7 @@ const skillData = [
     },
     {
         iconId: 'styledComp',
-        title: 'Styled Comp',
+        title: 'Styled Comp.',
         iconViewBox: '0 0 120 120'
     },
     {
