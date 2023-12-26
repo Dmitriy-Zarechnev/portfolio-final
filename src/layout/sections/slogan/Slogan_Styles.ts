@@ -1,13 +1,16 @@
 import styled from 'styled-components'
 import {theme} from '../../../styles/theme'
-import {font} from '../../../styles/Common'
+import {respFont} from '../../../styles/Common'
 
 const Slogan = styled.div`
-    margin-top: 30px;
+  margin-top: 30px;
 `
 
 const StyledTitle = styled.p`
-  ${font({family: '\'DM Sans\', sans-serif', weight: 700, color: theme.colors.primaryTitle, lineHeight: 1.2, fontD: 58, fontM: 30})};
+  ${respFont({PxMax: 58, PxMin: 30})};
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
   color: ${theme.colors.primaryTitle};
   text-align: center;
   letter-spacing: -1px;
@@ -15,7 +18,11 @@ const StyledTitle = styled.p`
 `
 
 const StyledEmail = styled.span`
-  ${font({family: '\'DM Sans\', sans-serif', weight: 700, color: 'transparent', lineHeight: 1.2, fontD: 58, fontM: 25})}
+  ${respFont({PxMax: 58, PxMin: 25})};
+  font-family: 'DM Sans', sans-serif;
+  color: transparent;
+  font-weight: 700;
+  line-height: 1.2;
   letter-spacing: -1px;
   z-index: 2;
   background-image: linear-gradient(90deg, ${theme.colors.accent}, ${theme.colors.contactColor});

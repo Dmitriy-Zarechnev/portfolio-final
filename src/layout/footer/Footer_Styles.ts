@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {font} from '../../styles/Common'
+import {respFont} from '../../styles/Common'
 import {theme} from '../../styles/theme'
 
 
@@ -10,7 +10,10 @@ const Footer = styled.footer`
 `
 
 const PhoneMail = styled.span`
-  ${font({family: '\'DM Sans\', sans-serif', weight: 400, color: theme.colors.primaryTextColor, lineHeight: 1.4, fontD: 18, fontM: 16})};
+  ${respFont({PxMax: 18, PxMin: 16})};
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  color: ${theme.colors.primaryTextColor};
   z-index: 2;
 `
 

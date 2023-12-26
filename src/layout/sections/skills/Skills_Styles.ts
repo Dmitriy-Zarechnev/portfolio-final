@@ -3,7 +3,6 @@ import {theme} from '../../../styles/theme'
 
 //  ----------------- Skills styles --------------
 const Skills = styled.section`
-    
 `
 
 const SkillWrapper = styled.div`

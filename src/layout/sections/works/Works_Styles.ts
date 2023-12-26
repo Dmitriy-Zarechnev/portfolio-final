@@ -1,13 +1,14 @@
 import styled, {css} from 'styled-components'
 import {Button} from '../../../components/Button'
 import {theme} from '../../../styles/theme'
-import {font} from '../../../styles/Common'
+import {respFont} from '../../../styles/Common'
 
 
 //  ---------------- Works Styles -------------------
 const Works = styled.section`
 
 `
+
 const WorkWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -17,6 +18,7 @@ const WorkWrapper = styled.div`
   position: relative;
   height: 100%;
 `
+
 //  ---------------- Work Styles -------------------
 const Work = styled.div`
   max-width: 375px;
@@ -146,10 +148,11 @@ const ListItem = styled.li`
 `
 
 const TabLink = styled.button<{ active: boolean }>`
-  ${font({weight: 500, color: theme.colors.worksCards, fontD: 20, fontM: 18})}
+  ${respFont({PxMax: 20, PxMin: 18})};
+  font-weight: 500;
+  color: ${theme.colors.worksCards};
   text-align: center;
   text-transform: uppercase;
-
 
   &:hover {
     &::before {
