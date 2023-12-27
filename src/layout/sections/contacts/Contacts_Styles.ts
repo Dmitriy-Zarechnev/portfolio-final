@@ -40,8 +40,7 @@ const Field = styled.input`
     color: ${theme.colors.primaryTextColor};
     text-transform: capitalize;
   }
-  
-`
+  `
 
 const StyledLabel = styled.label`
   align-self: flex-start;
