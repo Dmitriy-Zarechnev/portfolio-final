@@ -6,7 +6,8 @@ import {S} from '../HeaderMenu_Styles'
 export const MobileMenu: React.FC = () => {
 
     const [menuIsOpen, setMenuIsOpen] = useState(false)
-    const onBurgerBtnClick = () => {
+
+    function onBurgerBtnClick() {
         setMenuIsOpen(!menuIsOpen)
     }
 
@@ -19,7 +20,7 @@ export const MobileMenu: React.FC = () => {
             <S.MobileMenuPopup role={'dialog'} aria-modal={'true'} aria-label="MobileMenu_Modal_Window" isOpen={menuIsOpen} onClick={() => {
                 setMenuIsOpen(false)
             }}>
-                <Menu/>
+                <Menu closeMenu={()=> setMenuIsOpen(false)}/>
             </S.MobileMenuPopup>
         </S.MobileMenu>
     )

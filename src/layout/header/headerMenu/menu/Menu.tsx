@@ -1,6 +1,7 @@
 import React from 'react'
 import {S} from '../HeaderMenu_Styles'
 
+
 const items = [
     {
         title: 'Home',
@@ -24,13 +25,21 @@ const items = [
     }
 ]
 
-export const Menu: React.FC = () => {
+
+export const Menu: React.FC<{ closeMenu?: () => void }> = (props: { closeMenu?: () => void }) => {
     return (
         <ul role="menu">
             {items.map((el: { title: string, href: string }, index: number) => {
                 return (
-                    <S.MenuItem key={index} role="menuitem">
+                    <S.MenuItem key={index}
+                                role="menuitem"
+                    >
                         <S.NavLink
+                            onClick={() => {
+                                if (props.closeMenu) {
+                                    props.closeMenu();
+                                }
+                            }}
                             activeClass="active"
                             to={el.href}
                             smooth={true}
@@ -38,7 +47,9 @@ export const Menu: React.FC = () => {
                             duration={2000}
                             offset={-50}
                         >
-                            {el.title}<span></span></S.NavLink>
+                            {el.title}
+                            <span></span>
+                        </S.NavLink>
                     </S.MenuItem>)
             })}
         </ul>
