@@ -14,7 +14,15 @@ export const GlobalStyle = createGlobalStyle`
       animation: none;
     }
   }
-
+ // Стили для автокомплита
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px ${theme.colors.buttonBg} inset !important;
+    color: ${theme.colors.accent};
+  }
+  
   // Стили при выделении
   *::selection {
     color: ${theme.colors.contactColor};
