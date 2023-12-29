@@ -1,4 +1,4 @@
-import React, {ElementRef, useRef} from 'react'
+import React, {ElementRef, useRef, useState} from 'react'
 import {SectionTitle} from '../../../components/sectionTitle/SectionTitle'
 import {Button} from '../../../components/Button'
 import {Container} from '../../../components/Container'
@@ -14,15 +14,24 @@ const titlesData = {
 
 export const Contact: React.FC = () => {
 
+    // Открытие модалки после отправки
+
+    const [sendMessage, setSendMessage] = useState(false)
+
+    function onSendBtnClick() {
+        setSendMessage(!sendMessage)
+    }
+
     // -------------------------- Отправка писем -----------------------
 
     const form = useRef<ElementRef<'form'>>(null)
+
 
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault()
 
         if (!form.current) return
-
+        onSendBtnClick()
         emailjs.sendForm('service_1y80rfp', 'template_612lbth', form.current, 'BG6Lud8Z8dhMzh5Fo')
             .then((result) => {
                 console.log(result.text)
@@ -64,9 +73,13 @@ export const Contact: React.FC = () => {
                              title={'Write down message'} aria-placeholder={'Your message starts with…'}
                              name={'message'}/>
 
-                    <Button type={'submit'}>Send Message</Button>
+                    <Button
 
-                    <S.SendMessageWindow>
+                        type={'submit'}>
+                        Send Message
+                    </Button>
+
+                    <S.SendMessageWindow isOpen={sendMessage}>
                         <ProjectTitle>your message has been sent 😎</ProjectTitle>
                         <Button>ok</Button>
                     </S.SendMessageWindow>

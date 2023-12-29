@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 import {Button} from '../../../components/Button'
 import {theme} from '../../../styles/theme'
 import {ProjectTitle} from '../works/Works_Styles'
@@ -51,7 +51,7 @@ const StyledLabel = styled.label`
 `
 
 
-const SendMessageWindow = styled.div`
+const SendMessageWindow = styled.div<{ isOpen: boolean }>`
   width: 100%;
   height: 60%;
   background-color: ${theme.colors.primaryBg};
@@ -61,7 +61,7 @@ const SendMessageWindow = styled.div`
   left: 0;
   transform: translateY(-50%);
 
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
 
@@ -76,6 +76,10 @@ const SendMessageWindow = styled.div`
     width: 50%;
     align-self: center;
   }
+
+  ${props => props.isOpen && css<{ isOpen: boolean }>`
+      display: flex;
+    `}
 `
 
 export const S = {
