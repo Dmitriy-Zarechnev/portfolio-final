@@ -64,6 +64,7 @@ const SendMessageWindow = styled.div<{ isOpen: boolean }>`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  
   opacity: 0;
   z-index: -3;
   transition: ${theme.animations.slowTransition};
@@ -83,6 +84,7 @@ const SendMessageWindow = styled.div<{ isOpen: boolean }>`
   ${props => props.isOpen && css<{ isOpen: boolean }>`
     opacity: 1;
     z-index: 3;
+   
   `}
 `
 

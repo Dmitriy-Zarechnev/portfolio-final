@@ -15,7 +15,6 @@ const titlesData = {
 export const Contact: React.FC = () => {
 
     // Открытие модалки после отправки
-
     const [sendMessage, setSendMessage] = useState(false)
 
     function onSendBtnClick() {
