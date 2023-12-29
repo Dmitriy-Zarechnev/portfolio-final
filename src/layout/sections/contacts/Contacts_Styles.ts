@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import {Button} from '../../../components/Button'
 import {theme} from '../../../styles/theme'
+import {ProjectTitle} from '../works/Works_Styles'
+import {respFont} from '../../../styles/Common'
 
 const Contact = styled.section`
 `
@@ -48,9 +50,38 @@ const StyledLabel = styled.label`
   text-transform: capitalize;
 `
 
+
+const SendMessageWindow = styled.div`
+  width: 100%;
+  height: 60%;
+  background-color: ${theme.colors.primaryBg};
+  
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  border: 15px solid;
+  border-image: linear-gradient(130deg, ${theme.colors.accent}, ${theme.colors.contactColor}) 1;
+
+  ${ProjectTitle} {
+    ${respFont({PxMax: 28, PxMin: 20})};
+  }
+
+  ${Button} {
+    width: 50%;
+    align-self: center;
+  }
+`
+
 export const S = {
     Contact,
     StyledForm,
     Field,
-    StyledLabel
+    StyledLabel,
+    SendMessageWindow
 }

@@ -5,6 +5,7 @@ import {Container} from '../../../components/Container'
 import {S} from './Contacts_Styles'
 import {Slogan} from '../slogan/Slogan'
 import emailjs from '@emailjs/browser'
+import {ProjectTitle} from '../works/Works_Styles'
 
 const titlesData = {
     mainTitle: 'Contact',
@@ -64,6 +65,11 @@ export const Contact: React.FC = () => {
                              name={'message'}/>
 
                     <Button type={'submit'}>Send Message</Button>
+
+                    <S.SendMessageWindow>
+                        <ProjectTitle>your message has been sent 😎</ProjectTitle>
+                        <Button>ok</Button>
+                    </S.SendMessageWindow>
                 </S.StyledForm>
                 <Slogan/>
             </Container>

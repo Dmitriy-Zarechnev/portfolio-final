@@ -97,7 +97,7 @@ const TextWrapper = styled.div`
   border-bottom-right-radius: 20px;
 `
 
-const ProjectTitle = styled.h3`
+export const ProjectTitle = styled.h3`
   color: ${theme.colors.worksCards};
   text-align: center;
   font-size: 28px;
