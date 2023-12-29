@@ -55,15 +55,18 @@ const SendMessageWindow = styled.div<{ isOpen: boolean }>`
   width: 100%;
   height: 60%;
   background-color: ${theme.colors.primaryBg};
-  
+
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
+  opacity: 0;
+  z-index: -3;
+  transition: ${theme.animations.slowTransition};
 
   border: 15px solid;
   border-image: linear-gradient(130deg, ${theme.colors.accent}, ${theme.colors.contactColor}) 1;
@@ -78,8 +81,9 @@ const SendMessageWindow = styled.div<{ isOpen: boolean }>`
   }
 
   ${props => props.isOpen && css<{ isOpen: boolean }>`
-      display: flex;
-    `}
+    opacity: 1;
+    z-index: 3;
+  `}
 `
 
 export const S = {

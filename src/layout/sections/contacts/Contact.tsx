@@ -74,14 +74,18 @@ export const Contact: React.FC = () => {
                              name={'message'}/>
 
                     <Button
-
                         type={'submit'}>
                         Send Message
                     </Button>
 
-                    <S.SendMessageWindow isOpen={sendMessage}>
+                    <S.SendMessageWindow isOpen={sendMessage}
+                                         onClick={() => {
+                                             setSendMessage(false)
+                                         }}>
                         <ProjectTitle>your message has been sent 😎</ProjectTitle>
-                        <Button>ok</Button>
+                        <Button type={'button'}>
+                            ok
+                        </Button>
                     </S.SendMessageWindow>
                 </S.StyledForm>
                 <Slogan/>
