@@ -6,8 +6,8 @@ import {S} from './Skills_Styles'
 import {Reveal} from 'react-awesome-reveal'
 
 const titlesData = {
-    mainTitle: 'My Tech Stack',
-    subTitle: 'Technologies I’ve been working with recently'
+    mainTitle: 'Технологии',
+    subTitle: 'Технологии с которыми я работаю'
 }
 
 const skillData = [
@@ -22,9 +22,9 @@ const skillData = [
         iconViewBox: '0 0 120 120'
     },
     {
-        iconId: 'sass',
-        title: 'SASS',
-        iconViewBox: '0 0 117 87'
+        iconId: 'redux',
+        title: 'Redux',
+        iconViewBox: '0 0 120 120'
     },
 
 
@@ -61,28 +61,15 @@ const skillData = [
         iconViewBox: '0 0 88 88'
     },
 
-
     {
-        iconId: 'nodeJS',
-        title: 'NodeJS',
-        iconViewBox: '0 0 32 32'
+        iconId: 'nextJS',
+        title: 'NextJS',
+        iconViewBox: '0 0 512 512'
     },
     {
-        iconId: 'figma',
-        title: 'Figma',
-        iconViewBox: '0 0 59 90'
-    },
-    {
-        iconId: 'vscode',
-        title: 'VSCode',
-        iconViewBox: '0 0 112 112'
-    },
-
-
-    {
-        iconId: 'super',
-        title: 'Super',
-        iconViewBox: '0 0 120 120'
+        iconId: 'MUI',
+        title: 'MUI',
+        iconViewBox: '0 0 24 24'
     }
 ]
 

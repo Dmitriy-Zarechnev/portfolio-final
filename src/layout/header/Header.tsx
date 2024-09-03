@@ -8,7 +8,6 @@ import {MobileMenu} from './headerMenu/mobileMenu/MobileMenu'
 import {S} from './Header_Styles'
 
 
-
 const logoSetting = {
     id: 'logo',
     width: '60',
@@ -20,7 +19,7 @@ const logoSetting = {
 export const Header: React.FC = () => {
 
     const [width, setWidth] = React.useState(window.innerWidth)
-    const breackpoint: number = 768
+    const breakPoint: number = 768
 
     React.useEffect(() => {
         const handleWindowResize = () => setWidth(window.innerWidth)
@@ -36,7 +35,7 @@ export const Header: React.FC = () => {
                           height={logoSetting.height} viewBox={logoSetting.viewBox}
                           fill={logoSetting.fill}/>
 
-                    {width < breackpoint ? <MobileMenu/>
+                    {width < breakPoint ? <MobileMenu/>
                         : <DesktopMenu/>}
                 </FlexWrapper>
             </Container>

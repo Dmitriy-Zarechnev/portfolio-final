@@ -12,14 +12,14 @@ export const Main: React.FC = () => {
             <Container>
                 <FlexWrapper align={'center'} justify={'space-around'} wrap={'wrap'}>
                     <S.MainTextArea>
-                        <S.MainHello>Hello There</S.MainHello>
-                        <S.MainText>My name is </S.MainText>
-                        <S.MyName>Dmitriy Zarechnev</S.MyName>
+                        <S.MainHello>Приветствую!</S.MainHello>
+                        <S.MainText>Меня зовут </S.MainText>
+                        <S.MyName>Заречнев Дмитрий</S.MyName>
                         <S.MainTitle>
-                            <p>A Web Developer and a Builder Things for Web</p>
+                            <p>FrontEnd разработчик и хороший человек</p>
                             <Typewriter
                                 options={{
-                                    strings: ['A Web Developer', 'A Builder Things for Web', 'A FrontEnd Developer'],
+                                    strings: ['React разработчик', 'Создаю Web-будущее', 'FrontEnd Developer', 'NextJS разработчик'],
                                     autoStart: true,
                                     loop: true,
                                     delay: 150

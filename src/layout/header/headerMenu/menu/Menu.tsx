@@ -4,24 +4,20 @@ import {S} from '../HeaderMenu_Styles'
 
 const items = [
     {
-        title: 'Home',
+        title: 'Главная',
         href: 'home'
     },
     {
-        title: 'About',
+        title: 'О себе',
         href: 'about'
     },
     {
-        title: 'Tech Stack',
+        title: 'Технологии',
         href: 'techStack'
     },
     {
-        title: 'Projects',
+        title: 'Проекты',
         href: 'projects'
-    },
-    {
-        title: 'Contact',
-        href: 'contact'
     }
 ]
 
@@ -37,7 +33,7 @@ export const Menu: React.FC<{ closeMenu?: () => void }> = (props: { closeMenu?: 
                         <S.NavLink
                             onClick={() => {
                                 if (props.closeMenu) {
-                                    props.closeMenu();
+                                    props.closeMenu()
                                 }
                             }}
                             activeClass="active"

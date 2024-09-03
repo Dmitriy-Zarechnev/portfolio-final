@@ -28,11 +28,11 @@ const iconsObj: Array<iconsType> = [
         aria: 'Link to my WhatsApp'
     },
     {
-        id: 'telegrammSocialLink',
+        id: 'telegramSocialLink',
         size: '30',
         viewBox: '2 2 20 20',
         link: 'https://t.me/ZarDmit',
-        aria: 'Link to my Telegramm'
+        aria: 'Link to my Telegram'
     }
 ]
 
@@ -41,6 +41,7 @@ export const Footer: React.FC = () => {
         <S.Footer>
             <Container>
                 <FlexWrapper direction={'column'} justify={'space-between'} align={'center'} gap={'10px'}>
+                    <S.Title>Контакты</S.Title>
                     <S.PhoneMail>+7 920-874-3215</S.PhoneMail>
                     <S.PhoneMail>zarechnev5021@gmail.com</S.PhoneMail>
 

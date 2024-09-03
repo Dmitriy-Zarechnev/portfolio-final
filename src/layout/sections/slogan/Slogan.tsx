@@ -9,7 +9,7 @@ export const Slogan: React.FC = () => {
         <S.Slogan>
             <Container>
                 <FlexWrapper direction={'column'} align={'center'} justify={'center'}>
-                    <S.StyledTitle> Let’s work together on your next product:</S.StyledTitle>
+                    <S.StyledTitle> Давайте поработаем вместе над вашим проектом:</S.StyledTitle>
                     <S.StyledEmail>zarechnev5021@gmail.com</S.StyledEmail>
                 </FlexWrapper>
             </Container>
