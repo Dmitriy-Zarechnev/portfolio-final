@@ -6,7 +6,7 @@ import flashCardsImg from '..//../../assets/images/flashCards.png'
 import toDoListImg from '..//../../assets/images/toDoList.jpeg'
 import socialNetwork from '..//../../assets/images/picturesOfLife.jpg'
 import counterImg from '..//../../assets/images/counter.jpg'
-import clicker from '..//../../assets/images/clicker.png'
+import clicker from '..//../../assets/images/clicker.jpeg'
 import {Container} from '../../../components/Container'
 import {S} from './Works_Styles'
 import {AnimatePresence, motion} from 'framer-motion'
@@ -68,7 +68,7 @@ const worksData = [
     },
     {
         title: 'Counter',
-        text: 'Простое, но полезное приложение, предназначенное для отслеживания числовых значений или событий. Оно может быть использовано в самых разных целях, таких как подсчет дней до события, ведение учета задач, отслеживание времени или просто подсчет чего-либо',
+        text: 'Простое, но полезное приложение, предназначенное для отслеживания числовых значений. Оно может быть использовано в самых разных целях, таких как подсчет дней до события, ведение учета задач, отслеживание времени или просто подсчет чего-либо',
         src: counterImg,
         altText: 'Counter project',
         techText: 'Mini project',
@@ -78,7 +78,7 @@ const worksData = [
     },
     {
         title: 'Mini game',
-        text: 'Игровое или развлекательное приложение, в котором пользователи взаимодействуют с элементами на экране, обычно квадратами, для выполнения различных задач или достижения целей. Оно может быть использовано для развлечения, тренировки внимательности или скорости реакции.',
+        text: 'Игровое или развлекательное приложение, в котором пользователи взаимодействуют с элементами на экране для достижения большего числа очков. Оно может быть использовано для развлечения, тренировки внимательности или скорости реакции.',
         src: clicker,
         altText: 'Clicker project',
         techText: 'Mini project',
