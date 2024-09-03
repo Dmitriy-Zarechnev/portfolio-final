@@ -5,7 +5,7 @@ import {Work} from './work/Work'
 import flashCardsImg from '..//../../assets/images/flashCards.png'
 import toDoListImg from '..//../../assets/images/toDoList.jpeg'
 import socialNetwork from '..//../../assets/images/picturesOfLife.jpg'
-import pictureForth from '..//../../assets/images/img_4.webp'
+import counterImg from '..//../../assets/images/counter.jpg'
 import pictureFifth from '..//../../assets/images/img_5.webp'
 import pictureSixth from '..//../../assets/images/img_6.webp'
 import {Container} from '../../../components/Container'
@@ -29,6 +29,10 @@ const tabsItems: Array<{ title: string, status: TabsStatusType }> = [
     {
         title: 'NextJS',
         status: 'NextJS'
+    },
+    {
+        title: 'Мини',
+        status: 'Mini project'
     }
 ]
 
@@ -64,13 +68,13 @@ const worksData = [
         id: 3
     },
     {
-        title: 'Forth Title',
-        text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        src: pictureForth,
-        altText: 'ProjectPicture',
-        techText: 'SPA, HTML',
-        liveLink: '#',
-        codeLink: '#',
+        title: 'Counter',
+        text: 'Простое, но полезное приложение, предназначенное для отслеживания числовых значений или событий. Оно может быть использовано в самых разных целях, таких как подсчет дней до события, ведение учета задач, отслеживание времени или просто подсчет чего-либо',
+        src: counterImg,
+        altText: 'Counter project',
+        techText: 'Mini project',
+        liveLink: 'https://dmitriy-zarechnev.github.io/Counter_v2/',
+        codeLink: 'https://github.com/Dmitriy-Zarechnev/Counter_v2',
         id: 4
     },
     {
@@ -112,6 +116,12 @@ export const Works: React.FC = () => {
     if (currentFilterStatus === 'NextJS') {
         filteredWorks = worksData.filter((work) => {
             return work.techText === 'NextJS'
+        })
+    }
+
+    if (currentFilterStatus === 'Mini project') {
+        filteredWorks = worksData.filter((work) => {
+            return work.techText === 'Mini project'
         })
     }
 
