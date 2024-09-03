@@ -1,5 +1,5 @@
 import React from 'react'
-import mainPhoto from '../../../assets/images/main_photo.webp'
+import mainPhoto from '../../../assets/images/main_photo.jpg'
 import {FlexWrapper} from '../../../components/FlexWrapper'
 import {Container} from '../../../components/Container'
 import {S} from './Main_Styles'

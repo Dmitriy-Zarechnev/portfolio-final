@@ -1,6 +1,6 @@
 import React from 'react'
 import {FlexWrapper} from '../../../components/FlexWrapper'
-import aboutPhoto from '../../../assets/images/about_me_photo.webp'
+import aboutPhoto from '../../../assets/images/about_me_photo.jpg'
 import {Container} from '../../../components/Container'
 import {Button} from '../../../components/Button'
 import {AboutMyBG, background} from './aboutMyBG/AboutMyBG'

@@ -2,9 +2,9 @@ import React, {useState} from 'react'
 import {SectionTitle} from '../../../components/sectionTitle/SectionTitle'
 import {TabMenu, TabsStatusType} from './tabMenu/TabMenu'
 import {Work} from './work/Work'
-import pictureFirst from '..//../../assets/images/img_1.webp'
-import pictureSecond from '..//../../assets/images/img_2.webp'
-import pictureThird from '..//../../assets/images/img_3.webp'
+import flashCardsImg from '..//../../assets/images/flashCards.png'
+import toDoListImg from '..//../../assets/images/toDoList.jpeg'
+import socialNetwork from '..//../../assets/images/picturesOfLife.jpg'
 import pictureForth from '..//../../assets/images/img_4.webp'
 import pictureFifth from '..//../../assets/images/img_5.webp'
 import pictureSixth from '..//../../assets/images/img_6.webp'
@@ -13,59 +13,54 @@ import {S} from './Works_Styles'
 import {AnimatePresence, motion} from 'framer-motion'
 
 const titlesData = {
-    mainTitle: 'Projects',
-    subTitle: 'Things I’ve built so far'
+    mainTitle: 'Проекты',
+    subTitle: 'Проекты разработанные мной'
 }
 
 const tabsItems: Array<{ title: string, status: TabsStatusType }> = [
     {
-        title: 'All',
+        title: 'Все',
         status: 'all'
-    },
-
-    {
-        title: 'Landing Page',
-        status: 'landing'
     },
     {
         title: 'React',
         status: 'React'
     },
     {
-        title: 'SPA',
-        status: 'SPA'
+        title: 'NextJS',
+        status: 'NextJS'
     }
 ]
 
 const worksData = [
     {
-        title: 'First Title',
-        text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        src: pictureFirst,
-        altText: 'ProjectPicture',
+        title: 'Flash Cards',
+        text: 'Приложение, которое позволяет пользователям создавать, организовывать и использовать карточки для запоминания информации. Такие платформы часто используются для изучения языков, подготовки к экзаменам, или просто для запоминания различных фактов.',
+        src: flashCardsImg,
+        altText: 'Flash Cards project',
         techText: 'React',
-        liveLink: '#',
-        codeLink: '#',
+        liveLink: 'https://flashcards-lemon-seven.vercel.app/sign-in',
+        codeLink: 'https://github.com/Dmitriy-Zarechnev/flashcards',
         id: 1
     },
     {
-        title: 'Second Title',
-        text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        src: pictureSecond,
-        altText: 'ProjectPicture',
-        techText: 'SPA',
-        liveLink: '#',
-        codeLink: '#',
+        title: 'TO DO LIST',
+        text: 'Приложение, которое помогает пользователям организовывать свои задачи и управлять временем. Такие платформы предназначены для планирования дел, постановки целей и отслеживания прогресса в выполнении задач. Они могут быть полезны как для личного использования, так и для работы в команде.',
+        src: toDoListImg,
+        altText: 'TO DO LIST project',
+        techText: 'React',
+        liveLink: 'https://dmitriy-zarechnev.github.io/ToDoList_ui/',
+        codeLink: 'https://github.com/Dmitriy-Zarechnev/ToDoList_ui',
         id: 2
     },
     {
-        title: 'Third Title',
-        text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        src: pictureThird,
-        altText: 'ProjectPicture',
-        techText: 'landing',
-        liveLink: '#',
-        codeLink: '#',
+        title: 'Pictures-Of-Life',
+        text: 'Онлайн-пространство, предназначенное для взаимодействия между пользователями, создания и обмена контентом, а также построения и поддержания социальных связей. Такие платформы позволяют людям общаться, делиться информацией, находить сообщества по интересам и участвовать в общественной жизни, независимо от географического расположения.',
+        src: socialNetwork,
+        altText: 'Pictures-Of-Life project',
+        techText: 'NextJS',
+        liveLink: 'https://pictures-of-life.online/ru',
+        codeLink: 'https://github.com/technosamuraiway/pictures-of-life',
         id: 3
     },
     {
@@ -107,11 +102,6 @@ export const Works: React.FC = () => {
 
     let filteredWorks = worksData
 
-    if (currentFilterStatus === 'landing') {
-        filteredWorks = worksData.filter((work) => {
-            return work.techText === 'landing'
-        })
-    }
 
     if (currentFilterStatus === 'React') {
         filteredWorks = worksData.filter((work) => {
@@ -119,9 +109,9 @@ export const Works: React.FC = () => {
         })
     }
 
-    if (currentFilterStatus === 'SPA') {
+    if (currentFilterStatus === 'NextJS') {
         filteredWorks = worksData.filter((work) => {
-            return work.techText === 'SPA'
+            return work.techText === 'NextJS'
         })
     }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import {S} from '../Works_Styles'
 
-export type TabsStatusType = 'all' | 'landing' | 'React' | 'SPA'
+export type TabsStatusType = 'all' | 'React' | 'NextJS'
 
 type TabMenuPropsType = {
     tabsItems: Array<{ title: string, status: TabsStatusType }>,
