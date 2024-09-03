@@ -6,8 +6,7 @@ import flashCardsImg from '..//../../assets/images/flashCards.png'
 import toDoListImg from '..//../../assets/images/toDoList.jpeg'
 import socialNetwork from '..//../../assets/images/picturesOfLife.jpg'
 import counterImg from '..//../../assets/images/counter.jpg'
-import pictureFifth from '..//../../assets/images/img_5.webp'
-import pictureSixth from '..//../../assets/images/img_6.webp'
+import clicker from '..//../../assets/images/clicker.png'
 import {Container} from '../../../components/Container'
 import {S} from './Works_Styles'
 import {AnimatePresence, motion} from 'framer-motion'
@@ -78,24 +77,14 @@ const worksData = [
         id: 4
     },
     {
-        title: 'Fifth Title',
-        text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        src: pictureFifth,
-        altText: 'ProjectPicture',
-        techText: 'React',
-        liveLink: '#',
-        codeLink: '#',
+        title: 'Mini game',
+        text: 'Игровое или развлекательное приложение, в котором пользователи взаимодействуют с элементами на экране, обычно квадратами, для выполнения различных задач или достижения целей. Оно может быть использовано для развлечения, тренировки внимательности или скорости реакции.',
+        src: clicker,
+        altText: 'Clicker project',
+        techText: 'Mini project',
+        liveLink: 'https://dmitriy-zarechnev.github.io/Game/',
+        codeLink: 'https://github.com/Dmitriy-Zarechnev/Game',
         id: 5
-    },
-    {
-        title: 'Sixth Title',
-        text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        src: pictureSixth,
-        altText: 'ProjectPicture',
-        techText: 'landing',
-        liveLink: '#',
-        codeLink: '#',
-        id: 6
     }
 ]
 
