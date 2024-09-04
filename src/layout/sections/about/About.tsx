@@ -11,7 +11,7 @@ const aboutText: string = 'Frontend-разработчик прошел обуч
 
 const expData: Array<background> = [
     {
-        text: 'Front-end development: React Redux TypeScript NextJS Git Storybook',
+        text: 'Front-end development: React, Redux, TypeScript, NextJS, Storybook',
         place: 'IT-Incubator:',
         date: '2023 - н.в.'
     }

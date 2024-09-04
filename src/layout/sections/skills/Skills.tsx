@@ -71,6 +71,11 @@ const skillData = [
         title: 'MUI',
         iconViewBox: '0 0 24 24'
     }
+    ,{
+        iconId: 'storyBook',
+        title: 'StoryBook',
+        iconViewBox: '-31.5 0 319 319'
+    }
 ]
 
 export const Skills: React.FC = () => {
