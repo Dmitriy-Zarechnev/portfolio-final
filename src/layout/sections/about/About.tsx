@@ -2,7 +2,6 @@ import React from 'react'
 import {FlexWrapper} from '../../../components/FlexWrapper'
 import aboutPhoto from '../../../assets/images/about_me_photo.jpg'
 import {Container} from '../../../components/Container'
-import {Button} from '../../../components/Button'
 import {AboutMyBG, background} from './aboutMyBG/AboutMyBG'
 import {S} from './About_Styles'
 
@@ -43,7 +42,6 @@ export const About: React.FC = () => {
                         <S.SectionAboutTitle>Образование</S.SectionAboutTitle>
                         <AboutMyBG infoAboutMe={eduData}/>
 
-                        <Button>Загрузить CV</Button>
                     </S.AboutTextArea>
                 </FlexWrapper>
             </Container>
