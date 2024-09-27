@@ -18,10 +18,15 @@ const expData: Array<background> = [
 
 const eduData: Array<background> = [
     {
-        text: 'Специалист АЭС',
+        text: 'Ведущий Инженер',
+        place: 'Техническая Академия Росатом:',
+        date: '2018 - 2021'
+    },{
+        text: 'Инженер',
         place: 'НИ ТПУ:',
         date: '2012 - 2018'
-    }
+    },
+
 ]
 
 export const About: React.FC = () => {
